@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:PTNArtifacts/PTNArtifacts.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PTNTestApp/PTNTestApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PTNControls/PTNControls.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PTNStorage/PTNStorage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PTNLogger/PTNLogger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PTNAdditions/PTNAdditions.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F328E68B1626B4EA00654270 /* PTNAdditions.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = F328E68A1626B4EA00654270 /* PTNAdditions.xcodeproj */; };
+		F3FF809B15BEC17300D1684B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF809A15BEC17300D1684B /* Foundation.framework */; };
+		F3FF80A115BEC17300D1684B /* PTNStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FF80A015BEC17300D1684B /* PTNStorage.m */; };
+		F3FF80A915BEC17400D1684B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF80A815BEC17400D1684B /* SenTestingKit.framework */; };
+		F3FF80AB15BEC17400D1684B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF80AA15BEC17400D1684B /* UIKit.framework */; };
+		F3FF80AC15BEC17400D1684B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF809A15BEC17300D1684B /* Foundation.framework */; };
+		F3FF80AF15BEC17400D1684B /* libPTNStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF809715BEC17300D1684B /* libPTNStorage.a */; };
+		F3FF80B515BEC17400D1684B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3FF80B315BEC17400D1684B /* InfoPlist.strings */; };
+		F3FF80B815BEC17400D1684B /* PTNStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FF80B715BEC17400D1684B /* PTNStorageTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3863B811626F7AD00FF686B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F328E68A1626B4EA00654270 /* PTNAdditions.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F328E65A1626AD0A00654270;
+			remoteInfo = PTNAdditions;
+		};
+		F3F5CE261626B624004522E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F328E68A1626B4EA00654270 /* PTNAdditions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F328E65B1626AD0A00654270;
+			remoteInfo = PTNAdditions;
+		};
+		F3F5CE281626B624004522E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F328E68A1626B4EA00654270 /* PTNAdditions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3F7FD4215DA329400F1725F;
+			remoteInfo = PTNAdditionsTests;
+		};
+		F3FF80AD15BEC17400D1684B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3FF808E15BEC17200D1684B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3FF809615BEC17300D1684B;
+			remoteInfo = PTNStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F328E68A1626B4EA00654270 /* PTNAdditions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTNAdditions.xcodeproj; path = ../PTNAdditions/PTNAdditions.xcodeproj; sourceTree = "<group>"; };
+		F328E68D1626B4F900654270 /* libPTNAdditions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNAdditions.a; path = "../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos/libPTNAdditions.a"; sourceTree = "<group>"; };
+		F3FF809715BEC17300D1684B /* libPTNStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPTNStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FF809A15BEC17300D1684B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3FF809E15BEC17300D1684B /* PTNStorage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNStorage-Prefix.pch"; sourceTree = "<group>"; };
+		F3FF809F15BEC17300D1684B /* PTNStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNStorage.h; sourceTree = "<group>"; };
+		F3FF80A015BEC17300D1684B /* PTNStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNStorage.m; sourceTree = "<group>"; };
+		F3FF80A715BEC17400D1684B /* PTNStorageTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTNStorageTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FF80A815BEC17400D1684B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3FF80AA15BEC17400D1684B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3FF80B215BEC17400D1684B /* PTNStorageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTNStorageTests-Info.plist"; sourceTree = "<group>"; };
+		F3FF80B415BEC17400D1684B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3FF80B615BEC17400D1684B /* PTNStorageTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNStorageTests.h; sourceTree = "<group>"; };
+		F3FF80B715BEC17400D1684B /* PTNStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNStorageTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3FF809415BEC17300D1684B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FF809B15BEC17300D1684B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FF80A315BEC17400D1684B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FF80A915BEC17400D1684B /* SenTestingKit.framework in Frameworks */,
+				F3FF80AB15BEC17400D1684B /* UIKit.framework in Frameworks */,
+				F3FF80AC15BEC17400D1684B /* Foundation.framework in Frameworks */,
+				F3FF80AF15BEC17400D1684B /* libPTNStorage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3F5CE221626B624004522E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3F5CE271626B624004522E7 /* libPTNAdditions.a */,
+				F3F5CE291626B624004522E7 /* PTNAdditionsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3FF808C15BEC17200D1684B = {
+			isa = PBXGroup;
+			children = (
+				F3FF809C15BEC17300D1684B /* PTNStorage */,
+				F3FF80B015BEC17400D1684B /* PTNStorageTests */,
+				F3FF809915BEC17300D1684B /* Frameworks */,
+				F3FF809815BEC17300D1684B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3FF809815BEC17300D1684B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3FF809715BEC17300D1684B /* libPTNStorage.a */,
+				F3FF80A715BEC17400D1684B /* PTNStorageTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3FF809915BEC17300D1684B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F328E68D1626B4F900654270 /* libPTNAdditions.a */,
+				F328E68A1626B4EA00654270 /* PTNAdditions.xcodeproj */,
+				F3FF809A15BEC17300D1684B /* Foundation.framework */,
+				F3FF80A815BEC17400D1684B /* SenTestingKit.framework */,
+				F3FF80AA15BEC17400D1684B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3FF809C15BEC17300D1684B /* PTNStorage */ = {
+			isa = PBXGroup;
+			children = (
+				F3FF809F15BEC17300D1684B /* PTNStorage.h */,
+				F3FF80A015BEC17300D1684B /* PTNStorage.m */,
+				F3FF809D15BEC17300D1684B /* Supporting Files */,
+			);
+			path = PTNStorage;
+			sourceTree = "<group>";
+		};
+		F3FF809D15BEC17300D1684B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3FF809E15BEC17300D1684B /* PTNStorage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3FF80B015BEC17400D1684B /* PTNStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3FF80B615BEC17400D1684B /* PTNStorageTests.h */,
+				F3FF80B715BEC17400D1684B /* PTNStorageTests.m */,
+				F3FF80B115BEC17400D1684B /* Supporting Files */,
+			);
+			path = PTNStorageTests;
+			sourceTree = "<group>";
+		};
+		F3FF80B115BEC17400D1684B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3FF80B215BEC17400D1684B /* PTNStorageTests-Info.plist */,
+				F3FF80B315BEC17400D1684B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F3FF809515BEC17300D1684B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F3FF809615BEC17300D1684B /* PTNStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FF80BB15BEC17400D1684B /* Build configuration list for PBXNativeTarget "PTNStorage" */;
+			buildPhases = (
+				F3FF809315BEC17300D1684B /* Sources */,
+				F3FF809415BEC17300D1684B /* Frameworks */,
+				F3FF809515BEC17300D1684B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3863B821626F7AD00FF686B /* PBXTargetDependency */,
+			);
+			name = PTNStorage;
+			productName = PTNStorage;
+			productReference = F3FF809715BEC17300D1684B /* libPTNStorage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F3FF80A615BEC17400D1684B /* PTNStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FF80BE15BEC17400D1684B /* Build configuration list for PBXNativeTarget "PTNStorageTests" */;
+			buildPhases = (
+				F3FF80A215BEC17400D1684B /* Sources */,
+				F3FF80A315BEC17400D1684B /* Frameworks */,
+				F3FF80A415BEC17400D1684B /* Resources */,
+				F3FF80A515BEC17400D1684B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3FF80AE15BEC17400D1684B /* PBXTargetDependency */,
+			);
+			name = PTNStorageTests;
+			productName = PTNStorageTests;
+			productReference = F3FF80A715BEC17400D1684B /* PTNStorageTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3FF808E15BEC17200D1684B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "peetonn inc";
+			};
+			buildConfigurationList = F3FF809115BEC17200D1684B /* Build configuration list for PBXProject "PTNStorage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3FF808C15BEC17200D1684B;
+			productRefGroup = F3FF809815BEC17300D1684B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F3F5CE221626B624004522E7 /* Products */;
+					ProjectRef = F328E68A1626B4EA00654270 /* PTNAdditions.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F3FF809615BEC17300D1684B /* PTNStorage */,
+				F3FF80A615BEC17400D1684B /* PTNStorageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F3F5CE271626B624004522E7 /* libPTNAdditions.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPTNAdditions.a;
+			remoteRef = F3F5CE261626B624004522E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3F5CE291626B624004522E7 /* PTNAdditionsTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PTNAdditionsTests.octest;
+			remoteRef = F3F5CE281626B624004522E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3FF80A415BEC17400D1684B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FF80B515BEC17400D1684B /* InfoPlist.strings in Resources */,
+				F328E68B1626B4EA00654270 /* PTNAdditions.xcodeproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3FF80A515BEC17400D1684B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3FF809315BEC17300D1684B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FF80A115BEC17300D1684B /* PTNStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FF80A215BEC17400D1684B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FF80B815BEC17400D1684B /* PTNStorageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3863B821626F7AD00FF686B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PTNAdditions;
+			targetProxy = F3863B811626F7AD00FF686B /* PBXContainerItemProxy */;
+		};
+		F3FF80AE15BEC17400D1684B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3FF809615BEC17300D1684B /* PTNStorage */;
+			targetProxy = F3FF80AD15BEC17400D1684B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3FF80B315BEC17400D1684B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3FF80B415BEC17400D1684B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3FF80B915BEC17400D1684B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3FF80BA15BEC17400D1684B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3FF80BC15BEC17400D1684B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PTNStorage.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNStorage/PTNStorage-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F3FF80BD15BEC17400D1684B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PTNStorage.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNStorage/PTNStorage-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F3FF80BF15BEC17400D1684B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNStorage/PTNStorage-Prefix.pch";
+				INFOPLIST_FILE = "PTNStorageTests/PTNStorageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F3FF80C015BEC17400D1684B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNStorage/PTNStorage-Prefix.pch";
+				INFOPLIST_FILE = "PTNStorageTests/PTNStorageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3FF809115BEC17200D1684B /* Build configuration list for PBXProject "PTNStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FF80B915BEC17400D1684B /* Debug */,
+				F3FF80BA15BEC17400D1684B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FF80BB15BEC17400D1684B /* Build configuration list for PBXNativeTarget "PTNStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FF80BC15BEC17400D1684B /* Debug */,
+				F3FF80BD15BEC17400D1684B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FF80BE15BEC17400D1684B /* Build configuration list for PBXNativeTarget "PTNStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FF80BF15BEC17400D1684B /* Debug */,
+				F3FF80C015BEC17400D1684B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3FF808E15BEC17200D1684B /* Project object */;
+}

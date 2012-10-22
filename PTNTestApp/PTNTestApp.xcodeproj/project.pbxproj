@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F307D58E162AF29200340F22 /* ptnalertview_tfbg.png in Resources */ = {isa = PBXBuildFile; fileRef = F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */; };
+		F3B315B015FFABBF008AA3B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315AF15FFABBF008AA3B7 /* UIKit.framework */; };
+		F3B315B215FFABBF008AA3B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B115FFABBF008AA3B7 /* Foundation.framework */; };
+		F3B315B415FFABBF008AA3B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B315FFABBF008AA3B7 /* CoreGraphics.framework */; };
+		F3B315BA15FFABBF008AA3B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B315B815FFABBF008AA3B7 /* InfoPlist.strings */; };
+		F3B315BC15FFABBF008AA3B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B315BB15FFABBF008AA3B7 /* main.m */; };
+		F3B315C015FFABBF008AA3B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B315BF15FFABBF008AA3B7 /* AppDelegate.m */; };
+		F3B315D815FFAC1F008AA3B7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315D715FFAC1F008AA3B7 /* SenTestingKit.framework */; };
+		F3B315D915FFAC1F008AA3B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315AF15FFABBF008AA3B7 /* UIKit.framework */; };
+		F3B315DA15FFAC1F008AA3B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B115FFABBF008AA3B7 /* Foundation.framework */; };
+		F3B315E015FFAC1F008AA3B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B315DE15FFAC1F008AA3B7 /* InfoPlist.strings */; };
+		F3B315E315FFAC1F008AA3B7 /* PTNTester.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B315E215FFAC1F008AA3B7 /* PTNTester.m */; };
+		F3B315F515FFAD69008AA3B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B315BF15FFABBF008AA3B7 /* AppDelegate.m */; };
+		F3B315F715FFAD99008AA3B7 /* libPTNControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315CC15FFABD6008AA3B7 /* libPTNControls.a */; };
+		F3B3161315FFB0E6008AA3B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B3161215FFB0E6008AA3B7 /* QuartzCore.framework */; };
+		F3B3161415FFB0FE008AA3B7 /* libPTNControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315CC15FFABD6008AA3B7 /* libPTNControls.a */; };
+		F3B3161715FFBA5A008AA3B7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B3161615FFBA5A008AA3B7 /* CoreText.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3B315CB15FFABD6008AA3B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F32363F215DB816C00AFF591;
+			remoteInfo = PTNControls;
+		};
+		F3B315CD15FFABD6008AA3B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F323640215DB816C00AFF591;
+			remoteInfo = PTNControlsTests;
+		};
+		F3B315CF15FFABF7008AA3B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F32363F115DB816C00AFF591;
+			remoteInfo = PTNControls;
+		};
+		F3B3161015FFB0AD008AA3B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F32363F115DB816C00AFF591;
+			remoteInfo = PTNControls;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ptnalertview_tfbg.png; sourceTree = "<group>"; };
+		F3B315AB15FFABBF008AA3B7 /* PTNTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTNTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B315AF15FFABBF008AA3B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3B315B115FFABBF008AA3B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3B315B315FFABBF008AA3B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3B315B715FFABBF008AA3B7 /* PTNTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTNTestApp-Info.plist"; sourceTree = "<group>"; };
+		F3B315B915FFABBF008AA3B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3B315BB15FFABBF008AA3B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3B315BD15FFABBF008AA3B7 /* PTNTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		F3B315BE15FFABBF008AA3B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3B315BF15FFABBF008AA3B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTNControls.xcodeproj; path = ../PTNControls/PTNControls.xcodeproj; sourceTree = "<group>"; };
+		F3B315D615FFAC1F008AA3B7 /* PTNTester.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTNTester.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B315D715FFAC1F008AA3B7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3B315DD15FFAC1F008AA3B7 /* PTNTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTNTester-Info.plist"; sourceTree = "<group>"; };
+		F3B315DF15FFAC1F008AA3B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3B315E115FFAC1F008AA3B7 /* PTNTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNTester.h; sourceTree = "<group>"; };
+		F3B315E215FFAC1F008AA3B7 /* PTNTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNTester.m; sourceTree = "<group>"; };
+		F3B315E415FFAC1F008AA3B7 /* PTNTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNTester-Prefix.pch"; sourceTree = "<group>"; };
+		F3B315EC15FFAD28008AA3B7 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Attributes.h"; path = "../PTNControls/PTNControls/NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
+		F3B315ED15FFAD28008AA3B7 /* PTNControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNControls.h; path = ../PTNControls/PTNControls/PTNControls.h; sourceTree = "<group>"; };
+		F3B315EE15FFAD28008AA3B7 /* PTNCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNCoverView.h; path = ../PTNControls/PTNControls/PTNCoverView.h; sourceTree = "<group>"; };
+		F3B315EF15FFAD28008AA3B7 /* PTNReadMoreLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNReadMoreLabel.h; path = ../PTNControls/PTNControls/PTNReadMoreLabel.h; sourceTree = "<group>"; };
+		F3B3161215FFB0E6008AA3B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3B3161615FFBA5A008AA3B7 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3B315A815FFABBF008AA3B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B315F715FFAD99008AA3B7 /* libPTNControls.a in Frameworks */,
+				F3B315B015FFABBF008AA3B7 /* UIKit.framework in Frameworks */,
+				F3B315B215FFABBF008AA3B7 /* Foundation.framework in Frameworks */,
+				F3B315B415FFABBF008AA3B7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B315D215FFAC1F008AA3B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B3161715FFBA5A008AA3B7 /* CoreText.framework in Frameworks */,
+				F3B3161415FFB0FE008AA3B7 /* libPTNControls.a in Frameworks */,
+				F3B3161315FFB0E6008AA3B7 /* QuartzCore.framework in Frameworks */,
+				F3B315D815FFAC1F008AA3B7 /* SenTestingKit.framework in Frameworks */,
+				F3B315D915FFAC1F008AA3B7 /* UIKit.framework in Frameworks */,
+				F3B315DA15FFAC1F008AA3B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3B315A015FFABBF008AA3B7 = {
+			isa = PBXGroup;
+			children = (
+				F3B3161615FFBA5A008AA3B7 /* CoreText.framework */,
+				F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */,
+				F3B315B515FFABBF008AA3B7 /* PTNTestApp */,
+				F3B315DB15FFAC1F008AA3B7 /* PTNTester */,
+				F3B315AE15FFABBF008AA3B7 /* Frameworks */,
+				F3B315AC15FFABBF008AA3B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3B315AC15FFABBF008AA3B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3B315AB15FFABBF008AA3B7 /* PTNTestApp.app */,
+				F3B315D615FFAC1F008AA3B7 /* PTNTester.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3B315AE15FFABBF008AA3B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3B3161215FFB0E6008AA3B7 /* QuartzCore.framework */,
+				F3B315AF15FFABBF008AA3B7 /* UIKit.framework */,
+				F3B315B115FFABBF008AA3B7 /* Foundation.framework */,
+				F3B315B315FFABBF008AA3B7 /* CoreGraphics.framework */,
+				F3B315D715FFAC1F008AA3B7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3B315B515FFABBF008AA3B7 /* PTNTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				F3B315BE15FFABBF008AA3B7 /* AppDelegate.h */,
+				F3B315BF15FFABBF008AA3B7 /* AppDelegate.m */,
+				F3B315B615FFABBF008AA3B7 /* Supporting Files */,
+			);
+			path = PTNTestApp;
+			sourceTree = "<group>";
+		};
+		F3B315B615FFABBF008AA3B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3B315B715FFABBF008AA3B7 /* PTNTestApp-Info.plist */,
+				F3B315B815FFABBF008AA3B7 /* InfoPlist.strings */,
+				F3B315BB15FFABBF008AA3B7 /* main.m */,
+				F3B315BD15FFABBF008AA3B7 /* PTNTestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3B315C715FFABD6008AA3B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3B315CC15FFABD6008AA3B7 /* libPTNControls.a */,
+				F3B315CE15FFABD6008AA3B7 /* PTNControlsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3B315DB15FFAC1F008AA3B7 /* PTNTester */ = {
+			isa = PBXGroup;
+			children = (
+				F3B315F415FFAD32008AA3B7 /* PTNControls Headers */,
+				F3B315E115FFAC1F008AA3B7 /* PTNTester.h */,
+				F3B315E215FFAC1F008AA3B7 /* PTNTester.m */,
+				F3B315DC15FFAC1F008AA3B7 /* Supporting Files */,
+			);
+			path = PTNTester;
+			sourceTree = "<group>";
+		};
+		F3B315DC15FFAC1F008AA3B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */,
+				F3B315DD15FFAC1F008AA3B7 /* PTNTester-Info.plist */,
+				F3B315DE15FFAC1F008AA3B7 /* InfoPlist.strings */,
+				F3B315E415FFAC1F008AA3B7 /* PTNTester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3B315F415FFAD32008AA3B7 /* PTNControls Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F3B315EC15FFAD28008AA3B7 /* NSAttributedString+Attributes.h */,
+				F3B315ED15FFAD28008AA3B7 /* PTNControls.h */,
+				F3B315EE15FFAD28008AA3B7 /* PTNCoverView.h */,
+				F3B315EF15FFAD28008AA3B7 /* PTNReadMoreLabel.h */,
+			);
+			name = "PTNControls Headers";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3B315AA15FFABBF008AA3B7 /* PTNTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B315C315FFABBF008AA3B7 /* Build configuration list for PBXNativeTarget "PTNTestApp" */;
+			buildPhases = (
+				F3B315A715FFABBF008AA3B7 /* Sources */,
+				F3B315A815FFABBF008AA3B7 /* Frameworks */,
+				F3B315A915FFABBF008AA3B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B315D015FFABF7008AA3B7 /* PBXTargetDependency */,
+			);
+			name = PTNTestApp;
+			productName = PTNTestApp;
+			productReference = F3B315AB15FFABBF008AA3B7 /* PTNTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3B315D515FFAC1F008AA3B7 /* PTNTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B315E515FFAC1F008AA3B7 /* Build configuration list for PBXNativeTarget "PTNTester" */;
+			buildPhases = (
+				F3B315D115FFAC1F008AA3B7 /* Sources */,
+				F3B315D215FFAC1F008AA3B7 /* Frameworks */,
+				F3B315D315FFAC1F008AA3B7 /* Resources */,
+				F3B315D415FFAC1F008AA3B7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B3161115FFB0AD008AA3B7 /* PBXTargetDependency */,
+			);
+			name = PTNTester;
+			productName = PTNTester;
+			productReference = F3B315D615FFAC1F008AA3B7 /* PTNTester.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3B315A215FFABBF008AA3B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "peetonn inc";
+			};
+			buildConfigurationList = F3B315A515FFABBF008AA3B7 /* Build configuration list for PBXProject "PTNTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3B315A015FFABBF008AA3B7;
+			productRefGroup = F3B315AC15FFABBF008AA3B7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F3B315C715FFABD6008AA3B7 /* Products */;
+					ProjectRef = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F3B315AA15FFABBF008AA3B7 /* PTNTestApp */,
+				F3B315D515FFAC1F008AA3B7 /* PTNTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F3B315CC15FFABD6008AA3B7 /* libPTNControls.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPTNControls.a;
+			remoteRef = F3B315CB15FFABD6008AA3B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3B315CE15FFABD6008AA3B7 /* PTNControlsTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PTNControlsTests.octest;
+			remoteRef = F3B315CD15FFABD6008AA3B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3B315A915FFABBF008AA3B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B315BA15FFABBF008AA3B7 /* InfoPlist.strings in Resources */,
+				F307D58E162AF29200340F22 /* ptnalertview_tfbg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B315D315FFAC1F008AA3B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B315E015FFAC1F008AA3B7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3B315D415FFAC1F008AA3B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3B315A715FFABBF008AA3B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B315BC15FFABBF008AA3B7 /* main.m in Sources */,
+				F3B315C015FFABBF008AA3B7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B315D115FFAC1F008AA3B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B315E315FFAC1F008AA3B7 /* PTNTester.m in Sources */,
+				F3B315F515FFAD69008AA3B7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3B315D015FFABF7008AA3B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PTNControls;
+			targetProxy = F3B315CF15FFABF7008AA3B7 /* PBXContainerItemProxy */;
+		};
+		F3B3161115FFB0AD008AA3B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PTNControls;
+			targetProxy = F3B3161015FFB0AD008AA3B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3B315B815FFABBF008AA3B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B315B915FFABBF008AA3B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F3B315DE15FFAC1F008AA3B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B315DF15FFAC1F008AA3B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3B315C115FFABBF008AA3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3B315C215FFABBF008AA3B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3B315C415FFABBF008AA3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNTestApp/PTNTestApp-Prefix.pch";
+				INFOPLIST_FILE = "PTNTestApp/PTNTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3B315C515FFABBF008AA3B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNTestApp/PTNTestApp-Prefix.pch";
+				INFOPLIST_FILE = "PTNTestApp/PTNTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F3B315E615FFAC1F008AA3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PTNTestApp.app/PTNTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNTester/PTNTester-Prefix.pch";
+				INFOPLIST_FILE = "PTNTester/PTNTester-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "$(WORKSPACE_DIR)/PTNControls/PTNControls/**";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F3B315E715FFAC1F008AA3B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PTNTestApp.app/PTNTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNTester/PTNTester-Prefix.pch";
+				INFOPLIST_FILE = "PTNTester/PTNTester-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "$(WORKSPACE_DIR)/PTNControls/PTNControls/**";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3B315A515FFABBF008AA3B7 /* Build configuration list for PBXProject "PTNTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B315C115FFABBF008AA3B7 /* Debug */,
+				F3B315C215FFABBF008AA3B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B315C315FFABBF008AA3B7 /* Build configuration list for PBXNativeTarget "PTNTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B315C415FFABBF008AA3B7 /* Debug */,
+				F3B315C515FFABBF008AA3B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B315E515FFAC1F008AA3B7 /* Build configuration list for PBXNativeTarget "PTNTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B315E615FFAC1F008AA3B7 /* Debug */,
+				F3B315E715FFAC1F008AA3B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3B315A215FFABBF008AA3B7 /* Project object */;
+}
