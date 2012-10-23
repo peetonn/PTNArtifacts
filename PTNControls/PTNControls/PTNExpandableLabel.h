@@ -28,6 +28,7 @@ typedef enum _PTNExpandableLableState {
 @property (nonatomic) NSUInteger visibleCharactersNum;
 @property (nonatomic) UIColor *functionColor;
 @property (nonatomic) UIColor *functionHighlightedColor;
+@property (nonatomic) BOOL isExpandable;
 
 @end
 

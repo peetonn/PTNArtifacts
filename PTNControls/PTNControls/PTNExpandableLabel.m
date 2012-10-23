@@ -69,6 +69,7 @@
     [self updateCustomLayerToSize:self.frame.size];
     
     self.visibleCharactersNum = PTN_EXPLABEL_DEFAULT_VISIBLE_CHNUM;
+    self.isExpandable = YES;
 }
 
 -(void)dealloc
@@ -99,6 +100,13 @@
 }
 -(void)setFrame:(CGRect)frame
 {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(expandableLabel:willExpandToNewSize:duration:)])
+    {
+        [self.delegate expandableLabel:self
+                   willExpandToNewSize:frame.size
+                              duration:(self.isExpandable)?PTN_EXPLABEL_EXPANSION_DURATION:0];
+    }
+    
     [super setFrame:frame];
     [self updateCustomLayerToSize:frame.size];
 }
@@ -112,7 +120,7 @@
 {
     text = [[text componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] componentsJoinedByString:@" "];
     
-    if ([text length] > self.visibleCharactersNum)
+    if ([text length] > self.visibleCharactersNum && self.isExpandable)
     {
         _originalText = text;
         [super setText:[self truncateText:text byVisibleCharacters:self.visibleCharactersNum]];
@@ -140,13 +148,6 @@
     
         [UIView animateWithDuration:PTN_EXPLABEL_EXPANSION_DURATION
                          animations:^(void){
-                             if (self.delegate && [self.delegate respondsToSelector:@selector(expandableLabel:willExpandToNewSize:duration:)])
-                             {
-                                 [self.delegate expandableLabel:self
-                                            willExpandToNewSize:newLabelSize
-                                                       duration:PTN_EXPLABEL_EXPANSION_DURATION];
-                             }
-                             
                              CGRect newFrame = self.frame;
                              newFrame.size.height = newLabelSize.height;
                              self.frame = newFrame;
