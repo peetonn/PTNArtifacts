@@ -53,6 +53,8 @@
     view.backgroundColor = [UIColor lightGrayColor];
     view.userInteractionEnabled = YES;
     
+    [self.delegate.window addSubview:view];
+    
     UIView *measure = [[UIView alloc] initWithFrame:CGRectMake(0, 20, 10, 35)];
     measure.backgroundColor = [UIColor redColor];
     [view addSubview:measure];
@@ -71,10 +73,11 @@
     label.font = [label.font fontWithSize:13.];
     label.textColor = [UIColor blackColor];
     label.visibleCharactersNum = 70;
+    label.isExpandable = NO;
     label.text = @"123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*";
     
-    [label sizeToFit];
-    [self.delegate.window addSubview:view];
+//    [label sizeToFit];
+
     
     [self waitFor:30];
 }

@@ -182,8 +182,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "74"
          endingLineNumber = "74"
-         landmarkName = "-dealloc"
-         landmarkType = "5">
+         landmarkName = "@implementation PTNExpandableLabel"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -195,8 +195,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "219"
          endingLineNumber = "219"
-         landmarkName = "@implementation PTNExpandableLabel"
-         landmarkType = "3">
+         landmarkName = "-functionHighlightedColor"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -260,7 +260,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "247"
          endingLineNumber = "247"
-         landmarkName = "-updateCustomLayerToSize:"
+         landmarkName = "-redrawCustomLayer"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
