@@ -10,7 +10,7 @@
 #define PTN_EXPLABEL_DEFAULT_VISIBLE_CHNUM 140
 #define PTN_EXPLABEL_KX -2
 #define PTN_EXPLABEL_KY 2
-#define PTN_EXPLABEL_EXPANSION_DURATION .2
+#define PTN_EXPLABEL_EXPANSION_DURATION .15
 
 #import "PTNExpandableLabel.h"
 #import "NSAttributedString+Attributes.h"
@@ -70,6 +70,7 @@
     
     self.visibleCharactersNum = PTN_EXPLABEL_DEFAULT_VISIBLE_CHNUM;
     self.isExpandable = YES;
+    self.expansionAnimationDuration = PTN_EXPLABEL_EXPANSION_DURATION;
 }
 
 -(void)dealloc
@@ -95,18 +96,10 @@
     CGSize sz = [super sizeThatFits:size];
     sz.width = size.width;
     
-//    [self updateCustomLayerToSize:sz];
     return sz;
 }
 -(void)setFrame:(CGRect)frame
 {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(expandableLabel:willExpandToNewSize:duration:)])
-    {
-        [self.delegate expandableLabel:self
-                   willExpandToNewSize:frame.size
-                              duration:(self.isExpandable)?PTN_EXPLABEL_EXPANSION_DURATION:0];
-    }
-    
     [super setFrame:frame];
     [self updateCustomLayerToSize:frame.size];
 }
@@ -130,7 +123,7 @@
         [super setText:text];
         self.customLayer.hidden = YES;
     }
-    [self sizeToFit];
+    [self sizeToFit];    
 }
 -(void)setHighlighted:(BOOL)highlighted
 {
@@ -145,13 +138,22 @@
 
         [super setText:_originalText];        
         self.customLayer.hidden = YES;
-    
-        [UIView animateWithDuration:PTN_EXPLABEL_EXPANSION_DURATION
+        
+        [UIView animateWithDuration:self.expansionAnimationDuration
+                              delay:0.
+                            options:UIViewAnimationCurveLinear
                          animations:^(void){
                              CGRect newFrame = self.frame;
                              newFrame.size.height = newLabelSize.height;
+                             
+                             if (self.delegate && [self.delegate respondsToSelector:@selector(expandableLabel:willExpandToNewSize:duration:)])
+                             {
+                                 [self.delegate expandableLabel:self
+                                            willExpandToNewSize:newFrame.size
+                                                       duration:self.expansionAnimationDuration];
+                             }
+                             
                              self.frame = newFrame;
-//                             [self updateCustomLayerToSize:self.frame.size];
                          }
                          completion:^(BOOL finished) {
                              _state = PTNExpandableLabelStateMaximized;
@@ -175,7 +177,7 @@
     if (event.type == UIEventTypeTouches && touches.count == 1)
     {
         UITouch *touch = [touches anyObject];
-        if ([self.customLayer hitTest:[touch locationInView:self]] == self.customLayer)
+        if ([self.customLayer hitTest:[touch locationInView:self]] == self.customLayer)//|| [self.layer hitTest:[touch locationInView:self]] == self.layer)
             [self setHighlighted:YES];
     }
 }
@@ -217,7 +219,15 @@
         _functionHighlightedColor = [UIColor redColor];
     return _functionHighlightedColor;
 }
-
+-(void)setIsExpandable:(BOOL)isExpandable
+{
+    _isExpandable = isExpandable;
+    self.customLayer.hidden = !isExpandable;
+}
+-(BOOL)isExpandable
+{
+    return _isExpandable;
+}
 //********************************************************************
 #pragma mark - public methods
 // <#your public methods' code goes here#>

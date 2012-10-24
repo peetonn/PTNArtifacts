@@ -18,7 +18,7 @@ typedef enum _PTNExpandableLableState {
 @interface PTNExpandableLabel : UILabel
 {
     PTNExpandableLabelState _state;
-    BOOL _isAnimating;
+    BOOL _isAnimating, _isExpandable;
     NSString *_originalText;
     UIColor *_functionColor, *_functionHighlightedColor;
 }
@@ -29,12 +29,13 @@ typedef enum _PTNExpandableLableState {
 @property (nonatomic) UIColor *functionColor;
 @property (nonatomic) UIColor *functionHighlightedColor;
 @property (nonatomic) BOOL isExpandable;
+@property (nonatomic) float expansionAnimationDuration;
 
 @end
 
 @protocol PTNExpandableLabelDelegate <NSObject>
-
+// called upon exapnsion animation started
 -(void)expandableLabel:(PTNExpandableLabel*)expandableLabel willExpandToNewSize:(CGSize)newLabelSize duration:(NSTimeInterval)duration;
+// called upon expansion animation ended
 -(void)expandableLabelDidAnimationFinished:(PTNExpandableLabel *)expandableLabel;
-
 @end
