@@ -14,4 +14,19 @@
  */
 +(UIImage*)putImage:(UIImage*)img1 onImage:(UIImage*)img2 withScale:(CGFloat)scale andCenterRatioX:(CGFloat)kx andY:(CGFloat)ky;
 
+/**
+ * Creates new image resized to new size
+ */
++(UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
+
+/**
+ * Createds new images cropped to rectangle
+ */
++(UIImage*)imageWithImage:(UIImage *)image croppedToRect:(CGRect)rect;
+
+/**
+ * Creates new image by aspect resise of provided image to provided size and crops from upper and down sides 
+ */
++(UIImage*)imageWithImage:(UIImage *)image aspectScaledAndCropped:(CGRect)rect;
+
 @end

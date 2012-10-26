@@ -30,4 +30,35 @@
     return res;
 }
 
++ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize
+{
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, image.scale);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
++(UIImage*)imageWithImage:(UIImage *)image croppedToRect:(CGRect)rect
+{
+    rect = CGRectMake(rect.origin.x*image.scale,
+                          rect.origin.y*image.scale,
+                          rect.size.width*image.scale,
+                          rect.size.height*image.scale);
+    
+    CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
+    UIImage *result = [UIImage imageWithCGImage:imageRef];
+    CGImageRelease(imageRef);
+    return result;
+}
+
++(UIImage*)imageWithImage:(UIImage *)image aspectScaledAndCropped:(CGRect)rect
+{
+    CGFloat scaleX = rect.size.width/image.size.width;
+    CGFloat scaleY = rect.size.height/image.size.height;
+    CGFloat scaleK = (scaleX > scaleY)?scaleX:scaleY;
+    CGSize resizeSize = CGSizeMake(image.size.width*scaleK, image.size.height*scaleK);
+    
+    return [UIImage imageWithImage:[UIImage imageWithImage:image scaledToSize:resizeSize] croppedToRect:rect];
+}
 @end
