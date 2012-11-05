@@ -17,9 +17,9 @@
 		F323641015DB816C00AFF591 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F323640E15DB816C00AFF591 /* InfoPlist.strings */; };
 		F323641315DB816C00AFF591 /* PTNControlsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F323641215DB816C00AFF591 /* PTNControlsTests.m */; };
 		F323641F15DB81BB00AFF591 /* PTNCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F323641D15DB81BB00AFF591 /* PTNCoverView.m */; };
-		F328E5EC1626A22700654270 /* PTNControls.h in Headers */ = {isa = PBXBuildFile; fileRef = F32363FA15DB816C00AFF591 /* PTNControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F328E5F01626A31300654270 /* PTNCoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = F323641C15DB81BB00AFF591 /* PTNCoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F328E5F11626A31300654270 /* PTNExpandableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D48A516248D8B004D7165 /* PTNExpandableLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F328E5EC1626A22700654270 /* PTNControls.h in Headers */ = {isa = PBXBuildFile; fileRef = F32363FA15DB816C00AFF591 /* PTNControls.h */; settings = {ATTRIBUTES = (); }; };
+		F328E5F01626A31300654270 /* PTNCoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = F323641C15DB81BB00AFF591 /* PTNCoverView.h */; settings = {ATTRIBUTES = (); }; };
+		F328E5F11626A31300654270 /* PTNExpandableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D48A516248D8B004D7165 /* PTNExpandableLabel.h */; settings = {ATTRIBUTES = (); }; };
 		F3B3153115FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */; };
 		F3B3153215FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */; };
 		F3B3153415FFA11B008AA3B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B3153315FFA11B008AA3B7 /* QuartzCore.framework */; };
@@ -191,10 +191,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F307D587162ACFBD00340F22 /* PTNAlertView.h in Headers */,
 				F328E5EC1626A22700654270 /* PTNControls.h in Headers */,
 				F328E5F01626A31300654270 /* PTNCoverView.h in Headers */,
 				F328E5F11626A31300654270 /* PTNExpandableLabel.h in Headers */,
-				F307D587162ACFBD00340F22 /* PTNAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +348,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				SYMROOT = build;
 			};
 			name = Debug;
@@ -366,6 +367,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				SYMROOT = build;
 				VALIDATE_PRODUCT = YES;
 			};
