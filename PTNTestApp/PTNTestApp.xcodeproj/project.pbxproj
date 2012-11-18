@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F307D58E162AF29200340F22 /* ptnalertview_tfbg.png in Resources */ = {isa = PBXBuildFile; fileRef = F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */; };
+		F313E44F1658777F0032F7D3 /* PTNExpandableLabel.h in Resources */ = {isa = PBXBuildFile; fileRef = F313E44E1658777F0032F7D3 /* PTNExpandableLabel.h */; };
 		F3B315B015FFABBF008AA3B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315AF15FFABBF008AA3B7 /* UIKit.framework */; };
 		F3B315B215FFABBF008AA3B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B115FFABBF008AA3B7 /* Foundation.framework */; };
 		F3B315B415FFABBF008AA3B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B315FFABBF008AA3B7 /* CoreGraphics.framework */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ptnalertview_tfbg.png; sourceTree = "<group>"; };
+		F313E44E1658777F0032F7D3 /* PTNExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = PTNExpandableLabel.h; path = ../PTNControls/PTNControls/PTNExpandableLabel.h; sourceTree = "<group>"; };
 		F3B315AB15FFABBF008AA3B7 /* PTNTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTNTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B315AF15FFABBF008AA3B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3B315B115FFABBF008AA3B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,10 +79,9 @@
 		F3B315E115FFAC1F008AA3B7 /* PTNTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNTester.h; sourceTree = "<group>"; };
 		F3B315E215FFAC1F008AA3B7 /* PTNTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNTester.m; sourceTree = "<group>"; };
 		F3B315E415FFAC1F008AA3B7 /* PTNTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNTester-Prefix.pch"; sourceTree = "<group>"; };
-		F3B315EC15FFAD28008AA3B7 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Attributes.h"; path = "../PTNControls/PTNControls/NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
+		F3B315EC15FFAD28008AA3B7 /* NSAttributedString+PTNAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+PTNAttributes.h"; path = "../PTNControls/PTNControls/NSAttributedString+PTNAttributes.h"; sourceTree = "<group>"; };
 		F3B315ED15FFAD28008AA3B7 /* PTNControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNControls.h; path = ../PTNControls/PTNControls/PTNControls.h; sourceTree = "<group>"; };
 		F3B315EE15FFAD28008AA3B7 /* PTNCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNCoverView.h; path = ../PTNControls/PTNControls/PTNCoverView.h; sourceTree = "<group>"; };
-		F3B315EF15FFAD28008AA3B7 /* PTNReadMoreLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNReadMoreLabel.h; path = ../PTNControls/PTNControls/PTNReadMoreLabel.h; sourceTree = "<group>"; };
 		F3B3161215FFB0E6008AA3B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F3B3161615FFBA5A008AA3B7 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -201,10 +202,10 @@
 		F3B315F415FFAD32008AA3B7 /* PTNControls Headers */ = {
 			isa = PBXGroup;
 			children = (
-				F3B315EC15FFAD28008AA3B7 /* NSAttributedString+Attributes.h */,
+				F3B315EC15FFAD28008AA3B7 /* NSAttributedString+PTNAttributes.h */,
 				F3B315ED15FFAD28008AA3B7 /* PTNControls.h */,
 				F3B315EE15FFAD28008AA3B7 /* PTNCoverView.h */,
-				F3B315EF15FFAD28008AA3B7 /* PTNReadMoreLabel.h */,
+				F313E44E1658777F0032F7D3 /* PTNExpandableLabel.h */,
 			);
 			name = "PTNControls Headers";
 			path = ..;
@@ -315,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B315E015FFAC1F008AA3B7 /* InfoPlist.strings in Resources */,
+				F313E44F1658777F0032F7D3 /* PTNExpandableLabel.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
