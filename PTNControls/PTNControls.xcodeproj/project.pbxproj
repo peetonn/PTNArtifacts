@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F307D587162ACFBD00340F22 /* PTNAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = F307D585162ACFBD00340F22 /* PTNAlertView.h */; };
 		F307D588162ACFBD00340F22 /* PTNAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F307D586162ACFBD00340F22 /* PTNAlertView.m */; };
+		F313E47D165878C40032F7D3 /* NSAttributedString+PTNAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B3159815FFA927008AA3B7 /* NSAttributedString+PTNAttributes.h */; };
 		F32363F615DB816C00AFF591 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32363F515DB816C00AFF591 /* Foundation.framework */; };
 		F32363FC15DB816C00AFF591 /* PTNControls.m in Sources */ = {isa = PBXBuildFile; fileRef = F32363FB15DB816C00AFF591 /* PTNControls.m */; };
 		F323640415DB816C00AFF591 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F323640315DB816C00AFF591 /* SenTestingKit.framework */; };
@@ -23,8 +24,8 @@
 		F3B3153115FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */; };
 		F3B3153215FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */; };
 		F3B3153415FFA11B008AA3B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B3153315FFA11B008AA3B7 /* QuartzCore.framework */; };
-		F3B3159B15FFA927008AA3B7 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3159915FFA927008AA3B7 /* NSAttributedString+Attributes.m */; };
-		F3B3159C15FFA927008AA3B7 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3159915FFA927008AA3B7 /* NSAttributedString+Attributes.m */; };
+		F3B3159B15FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3159915FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m */; };
+		F3B3159C15FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3159915FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +49,8 @@
 		F35D48A516248D8B004D7165 /* PTNExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNExpandableLabel.h; sourceTree = "<group>"; };
 		F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNExpandableLabel.m; sourceTree = "<group>"; };
 		F3B3153315FFA11B008AA3B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		F3B3159815FFA927008AA3B7 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
-		F3B3159915FFA927008AA3B7 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
+		F3B3159815FFA927008AA3B7 /* NSAttributedString+PTNAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+PTNAttributes.h"; sourceTree = "<group>"; };
+		F3B3159915FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+PTNAttributes.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +170,8 @@
 			children = (
 				F35D48A516248D8B004D7165 /* PTNExpandableLabel.h */,
 				F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */,
-				F3B3159815FFA927008AA3B7 /* NSAttributedString+Attributes.h */,
-				F3B3159915FFA927008AA3B7 /* NSAttributedString+Attributes.m */,
+				F3B3159815FFA927008AA3B7 /* NSAttributedString+PTNAttributes.h */,
+				F3B3159915FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m */,
 			);
 			name = "Expandable label";
 			sourceTree = "<group>";
@@ -191,6 +192,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F313E47D165878C40032F7D3 /* NSAttributedString+PTNAttributes.h in Headers */,
 				F307D587162ACFBD00340F22 /* PTNAlertView.h in Headers */,
 				F328E5EC1626A22700654270 /* PTNControls.h in Headers */,
 				F328E5F01626A31300654270 /* PTNCoverView.h in Headers */,
@@ -298,7 +300,7 @@
 				F32363FC15DB816C00AFF591 /* PTNControls.m in Sources */,
 				F323641F15DB81BB00AFF591 /* PTNCoverView.m in Sources */,
 				F3B3153115FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */,
-				F3B3159B15FFA927008AA3B7 /* NSAttributedString+Attributes.m in Sources */,
+				F3B3159B15FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m in Sources */,
 				F307D588162ACFBD00340F22 /* PTNAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +311,7 @@
 			files = (
 				F323641315DB816C00AFF591 /* PTNControlsTests.m in Sources */,
 				F3B3153215FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */,
-				F3B3159C15FFA927008AA3B7 /* NSAttributedString+Attributes.m in Sources */,
+				F3B3159C15FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

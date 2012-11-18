@@ -13,7 +13,7 @@
 #define PTN_EXPLABEL_EXPANSION_DURATION .15
 
 #import "PTNExpandableLabel.h"
-#import "NSAttributedString+Attributes.h"
+#import "NSAttributedString+PTNAttributes.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface PTNExpandableLabel()

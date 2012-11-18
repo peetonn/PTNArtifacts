@@ -30,7 +30,7 @@
  ***********************************************************************************/
 
 
-#import "NSAttributedString+Attributes.h"
+#import "NSAttributedString+PTNAttributes.h"
 
 #if __has_feature(objc_arc)
 #define BRIDGE_CAST __bridge
