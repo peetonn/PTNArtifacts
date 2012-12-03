@@ -31,6 +31,10 @@ static float PTNPopupAnimationDelay = 0.;
    animationOptions:(UIViewAnimationOptions)animationOptions
  completionCallback:(void (^)())callback
 {
+    // if already shown - skip
+    if (setVisible && !slideView.hidden && [self.subviews containsObject:slideView])
+        return;
+    
     CGRect initialFrame = slideView.frame;
     CGRect hiddenFrame = slideView.frame;
     CGRect visibleFrame = slideView.frame;
