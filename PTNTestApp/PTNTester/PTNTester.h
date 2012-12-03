@@ -7,7 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "PTNControls.h"
+#import <PTNArtifacts/PTNArtifacts.h>
 
 @interface PTNTester : SenTestCase<PTNExpandableLabelDelegate, UIAlertViewDelegate>
 {

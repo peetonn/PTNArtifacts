@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F307D58E162AF29200340F22 /* ptnalertview_tfbg.png in Resources */ = {isa = PBXBuildFile; fileRef = F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */; };
-		F313E44F1658777F0032F7D3 /* PTNExpandableLabel.h in Resources */ = {isa = PBXBuildFile; fileRef = F313E44E1658777F0032F7D3 /* PTNExpandableLabel.h */; };
+		F336388F166CDA9C0091D62E /* libPTNArtifacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F336388B166CD9890091D62E /* libPTNArtifacts.a */; };
+		F3363896166CDC720091D62E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B315FFABBF008AA3B7 /* CoreGraphics.framework */; };
+		F38AECE8166CD822005AFC7F /* PTNArtifacts.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */; };
+		F38AECE9166CD822005AFC7F /* PTNArtifacts.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */; };
+		F38AECEB166CD878005AFC7F /* libPTNArtifacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F38AECEA166CD878005AFC7F /* libPTNArtifacts.a */; };
 		F3B315B015FFABBF008AA3B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315AF15FFABBF008AA3B7 /* UIKit.framework */; };
 		F3B315B215FFABBF008AA3B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B115FFABBF008AA3B7 /* Foundation.framework */; };
 		F3B315B415FFABBF008AA3B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B315FFABBF008AA3B7 /* CoreGraphics.framework */; };
@@ -21,46 +25,38 @@
 		F3B315E015FFAC1F008AA3B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3B315DE15FFAC1F008AA3B7 /* InfoPlist.strings */; };
 		F3B315E315FFAC1F008AA3B7 /* PTNTester.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B315E215FFAC1F008AA3B7 /* PTNTester.m */; };
 		F3B315F515FFAD69008AA3B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B315BF15FFABBF008AA3B7 /* AppDelegate.m */; };
-		F3B315F715FFAD99008AA3B7 /* libPTNControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315CC15FFABD6008AA3B7 /* libPTNControls.a */; };
 		F3B3161315FFB0E6008AA3B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B3161215FFB0E6008AA3B7 /* QuartzCore.framework */; };
-		F3B3161415FFB0FE008AA3B7 /* libPTNControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315CC15FFABD6008AA3B7 /* libPTNControls.a */; };
 		F3B3161715FFBA5A008AA3B7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B3161615FFBA5A008AA3B7 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F3B315CB15FFABD6008AA3B7 /* PBXContainerItemProxy */ = {
+		F336388A166CD9890091D62E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+			containerPortal = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F32363F215DB816C00AFF591;
-			remoteInfo = PTNControls;
+			remoteGlobalIDString = F3C642AE1626F4EC00D5D81B;
+			remoteInfo = PTNArtifacts;
 		};
-		F3B315CD15FFABD6008AA3B7 /* PBXContainerItemProxy */ = {
+		F336388D166CD9C20091D62E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F323640215DB816C00AFF591;
-			remoteInfo = PTNControlsTests;
-		};
-		F3B315CF15FFABF7008AA3B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+			containerPortal = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = F32363F115DB816C00AFF591;
-			remoteInfo = PTNControls;
+			remoteGlobalIDString = F3C642AD1626F4EC00D5D81B;
+			remoteInfo = PTNArtifacts;
 		};
-		F3B3161015FFB0AD008AA3B7 /* PBXContainerItemProxy */ = {
+		F3363890166CDAA00091D62E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+			containerPortal = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = F32363F115DB816C00AFF591;
-			remoteInfo = PTNControls;
+			remoteGlobalIDString = F3C642AD1626F4EC00D5D81B;
+			remoteInfo = PTNArtifacts;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ptnalertview_tfbg.png; sourceTree = "<group>"; };
-		F313E44E1658777F0032F7D3 /* PTNExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = PTNExpandableLabel.h; path = ../PTNControls/PTNControls/PTNExpandableLabel.h; sourceTree = "<group>"; };
+		F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTNArtifacts.xcodeproj; path = ../PTNArtifacts/PTNArtifacts.xcodeproj; sourceTree = "<group>"; };
+		F38AECEA166CD878005AFC7F /* libPTNArtifacts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNArtifacts.a; path = "../PTNArtifacts/build/Release-iphoneos/libPTNArtifacts.a"; sourceTree = "<group>"; };
 		F3B315AB15FFABBF008AA3B7 /* PTNTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTNTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B315AF15FFABBF008AA3B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3B315B115FFABBF008AA3B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,7 +67,6 @@
 		F3B315BD15FFABBF008AA3B7 /* PTNTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNTestApp-Prefix.pch"; sourceTree = "<group>"; };
 		F3B315BE15FFABBF008AA3B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3B315BF15FFABBF008AA3B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTNControls.xcodeproj; path = ../PTNControls/PTNControls.xcodeproj; sourceTree = "<group>"; };
 		F3B315D615FFAC1F008AA3B7 /* PTNTester.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTNTester.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B315D715FFAC1F008AA3B7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F3B315DD15FFAC1F008AA3B7 /* PTNTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTNTester-Info.plist"; sourceTree = "<group>"; };
@@ -79,9 +74,6 @@
 		F3B315E115FFAC1F008AA3B7 /* PTNTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNTester.h; sourceTree = "<group>"; };
 		F3B315E215FFAC1F008AA3B7 /* PTNTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNTester.m; sourceTree = "<group>"; };
 		F3B315E415FFAC1F008AA3B7 /* PTNTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNTester-Prefix.pch"; sourceTree = "<group>"; };
-		F3B315EC15FFAD28008AA3B7 /* NSAttributedString+PTNAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+PTNAttributes.h"; path = "../PTNControls/PTNControls/NSAttributedString+PTNAttributes.h"; sourceTree = "<group>"; };
-		F3B315ED15FFAD28008AA3B7 /* PTNControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNControls.h; path = ../PTNControls/PTNControls/PTNControls.h; sourceTree = "<group>"; };
-		F3B315EE15FFAD28008AA3B7 /* PTNCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNCoverView.h; path = ../PTNControls/PTNControls/PTNCoverView.h; sourceTree = "<group>"; };
 		F3B3161215FFB0E6008AA3B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F3B3161615FFBA5A008AA3B7 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -91,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B315F715FFAD99008AA3B7 /* libPTNControls.a in Frameworks */,
+				F38AECEB166CD878005AFC7F /* libPTNArtifacts.a in Frameworks */,
 				F3B315B015FFABBF008AA3B7 /* UIKit.framework in Frameworks */,
 				F3B315B215FFABBF008AA3B7 /* Foundation.framework in Frameworks */,
 				F3B315B415FFABBF008AA3B7 /* CoreGraphics.framework in Frameworks */,
@@ -102,8 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3363896166CDC720091D62E /* CoreGraphics.framework in Frameworks */,
+				F336388F166CDA9C0091D62E /* libPTNArtifacts.a in Frameworks */,
 				F3B3161715FFBA5A008AA3B7 /* CoreText.framework in Frameworks */,
-				F3B3161415FFB0FE008AA3B7 /* libPTNControls.a in Frameworks */,
 				F3B3161315FFB0E6008AA3B7 /* QuartzCore.framework in Frameworks */,
 				F3B315D815FFAC1F008AA3B7 /* SenTestingKit.framework in Frameworks */,
 				F3B315D915FFAC1F008AA3B7 /* UIKit.framework in Frameworks */,
@@ -114,11 +107,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3363887166CD9890091D62E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F336388B166CD9890091D62E /* libPTNArtifacts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F3B315A015FFABBF008AA3B7 = {
 			isa = PBXGroup;
 			children = (
 				F3B3161615FFBA5A008AA3B7 /* CoreText.framework */,
-				F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */,
 				F3B315B515FFABBF008AA3B7 /* PTNTestApp */,
 				F3B315DB15FFAC1F008AA3B7 /* PTNTester */,
 				F3B315AE15FFABBF008AA3B7 /* Frameworks */,
@@ -138,6 +138,8 @@
 		F3B315AE15FFABBF008AA3B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F38AECEA166CD878005AFC7F /* libPTNArtifacts.a */,
+				F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */,
 				F3B3161215FFB0E6008AA3B7 /* QuartzCore.framework */,
 				F3B315AF15FFABBF008AA3B7 /* UIKit.framework */,
 				F3B315B115FFABBF008AA3B7 /* Foundation.framework */,
@@ -168,19 +170,9 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F3B315C715FFABD6008AA3B7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F3B315CC15FFABD6008AA3B7 /* libPTNControls.a */,
-				F3B315CE15FFABD6008AA3B7 /* PTNControlsTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F3B315DB15FFAC1F008AA3B7 /* PTNTester */ = {
 			isa = PBXGroup;
 			children = (
-				F3B315F415FFAD32008AA3B7 /* PTNControls Headers */,
 				F3B315E115FFAC1F008AA3B7 /* PTNTester.h */,
 				F3B315E215FFAC1F008AA3B7 /* PTNTester.m */,
 				F3B315DC15FFAC1F008AA3B7 /* Supporting Files */,
@@ -199,18 +191,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F3B315F415FFAD32008AA3B7 /* PTNControls Headers */ = {
-			isa = PBXGroup;
-			children = (
-				F3B315EC15FFAD28008AA3B7 /* NSAttributedString+PTNAttributes.h */,
-				F3B315ED15FFAD28008AA3B7 /* PTNControls.h */,
-				F3B315EE15FFAD28008AA3B7 /* PTNCoverView.h */,
-				F313E44E1658777F0032F7D3 /* PTNExpandableLabel.h */,
-			);
-			name = "PTNControls Headers";
-			path = ..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,7 +205,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F3B315D015FFABF7008AA3B7 /* PBXTargetDependency */,
+				F336388E166CD9C20091D62E /* PBXTargetDependency */,
 			);
 			name = PTNTestApp;
 			productName = PTNTestApp;
@@ -244,7 +224,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F3B3161115FFB0AD008AA3B7 /* PBXTargetDependency */,
+				F3363891166CDAA00091D62E /* PBXTargetDependency */,
 			);
 			name = PTNTester;
 			productName = PTNTester;
@@ -272,8 +252,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F3B315C715FFABD6008AA3B7 /* Products */;
-					ProjectRef = F3B315C615FFABD6008AA3B7 /* PTNControls.xcodeproj */;
+					ProductGroup = F3363887166CD9890091D62E /* Products */;
+					ProjectRef = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -285,18 +265,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F3B315CC15FFABD6008AA3B7 /* libPTNControls.a */ = {
+		F336388B166CD9890091D62E /* libPTNArtifacts.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libPTNControls.a;
-			remoteRef = F3B315CB15FFABD6008AA3B7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F3B315CE15FFABD6008AA3B7 /* PTNControlsTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PTNControlsTests.octest;
-			remoteRef = F3B315CD15FFABD6008AA3B7 /* PBXContainerItemProxy */;
+			path = libPTNArtifacts.a;
+			remoteRef = F336388A166CD9890091D62E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -308,6 +281,7 @@
 			files = (
 				F3B315BA15FFABBF008AA3B7 /* InfoPlist.strings in Resources */,
 				F307D58E162AF29200340F22 /* ptnalertview_tfbg.png in Resources */,
+				F38AECE8166CD822005AFC7F /* PTNArtifacts.xcodeproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B315E015FFAC1F008AA3B7 /* InfoPlist.strings in Resources */,
-				F313E44F1658777F0032F7D3 /* PTNExpandableLabel.h in Resources */,
+				F38AECE9166CD822005AFC7F /* PTNArtifacts.xcodeproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,15 +334,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F3B315D015FFABF7008AA3B7 /* PBXTargetDependency */ = {
+		F336388E166CD9C20091D62E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PTNControls;
-			targetProxy = F3B315CF15FFABF7008AA3B7 /* PBXContainerItemProxy */;
+			name = PTNArtifacts;
+			targetProxy = F336388D166CD9C20091D62E /* PBXContainerItemProxy */;
 		};
-		F3B3161115FFB0AD008AA3B7 /* PBXTargetDependency */ = {
+		F3363891166CDAA00091D62E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PTNControls;
-			targetProxy = F3B3161015FFB0AD008AA3B7 /* PBXContainerItemProxy */;
+			name = PTNArtifacts;
+			targetProxy = F3363890166CDAA00091D62E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

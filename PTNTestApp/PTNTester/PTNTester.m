@@ -32,20 +32,20 @@
     [super tearDown];
 }
 
-//-(void)testAlertView
-//{
-//    PTNAlertView *alert = [[PTNAlertView alloc] initWithTitle:@"Alert view" message:@"Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-//    
-//    alert.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
-//    
-//    [alert show];
-//    [self waitFor:30];
-//}
-//
-//-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-//{
-//    NSLog(@"%@",((PTNAlertView*)alertView).enteredText);
-//}
+-(void)testAlertView
+{
+    PTNAlertView *alert = [[PTNAlertView alloc] initWithTitle:@"Alert view" message:@"Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    
+    alert.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
+    
+    [alert show];
+    [self waitFor:30];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"%@",((PTNAlertView*)alertView).enteredText);
+}
 
 - (void)testReadMoreLabel
 {
@@ -80,6 +80,49 @@
 
     
     [self waitFor:30];
+}
+
+-(void)testPopupViews
+{
+    UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 320, 200)];
+    bg.backgroundColor = [UIColor grayColor];
+    bg.userInteractionEnabled = YES;
+    
+
+    [self.delegate.window addSubview:bg];
+    
+    UIView *popup = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 150, 44)];
+    popup.backgroundColor = [UIColor redColor];
+    
+    [UIView setPopupAnimationDuration:0.1];
+    for (int alignmentMask = 1; alignmentMask < (1<<5); alignmentMask++)
+    {
+        for (int slideMask = 1; slideMask < (1<<2); slideMask++)
+        {
+            [bg setSlideView:popup
+                     visible:YES
+                    animated:YES
+               alignmentMask:alignmentMask//PTNPopupAlignmentMaskTop|PTNPopupAlignmentMaskCenter
+                   slideMask:slideMask //PTNSlideDirectionMaskVertical
+            animationOptions:UIViewAnimationCurveEaseInOut
+          completionCallback:nil];
+            
+            STAssertTrue(popup.hidden == NO, @"popup should be visible");
+            [self waitFor:0.25];
+            
+            [bg setSlideView:popup
+                     visible:NO
+                    animated:YES
+               alignmentMask:alignmentMask//PTNPopupAlignmentMaskTop|PTNPopupAlignmentMaskCenter
+                   slideMask:slideMask//PTNSlideDirectionMaskVertical
+            animationOptions:UIViewAnimationCurveEaseInOut
+          completionCallback:nil];
+            
+            [self waitFor:0.25];
+            STAssertTrue(popup.hidden, @"popup should be hidden");
+            
+        }
+    }
 }
 
 //********************************************************************************

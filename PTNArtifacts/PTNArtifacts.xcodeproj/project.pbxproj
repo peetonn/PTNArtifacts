@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F307D58A162AED1400340F22 /* PTNAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F307D589162AED0500340F22 /* PTNAlertView.h */; };
+		F3363892166CDBB60091D62E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642B11626F4EC00D5D81B /* Foundation.framework */; };
+		F3363893166CDBBB0091D62E /* libPTNAdditions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B081626F54800FF686B /* libPTNAdditions.a */; };
+		F3363894166CDBBB0091D62E /* libPTNLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B181626F54900FF686B /* libPTNLogger.a */; };
+		F3363895166CDBBB0091D62E /* libPTNStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B101626F54900FF686B /* libPTNStorage.a */; };
 		F3863B2D1626F67300FF686B /* PTNExpandableLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2C1626F63A00FF686B /* PTNExpandableLabel.h */; };
 		F3863B2E1626F67300FF686B /* PTNCoverView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2B1626F60F00FF686B /* PTNCoverView.h */; };
 		F3863B2F1626F67300FF686B /* PTNControls.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2A1626F60400FF686B /* PTNControls.h */; };
@@ -18,12 +22,9 @@
 		F3863B341626F67300FF686B /* NSString+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B261626F5DC00FF686B /* NSString+PTNAdditions.h */; };
 		F3863B351626F67300FF686B /* PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B271626F5DC00FF686B /* PTNAdditions.h */; };
 		F3863C2B16283FBD00FF686B /* libPTNControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863AFF1626F54800FF686B /* libPTNControls.a */; };
-		F3C642B21626F4EC00D5D81B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642B11626F4EC00D5D81B /* Foundation.framework */; };
+		F38AECEC166CD93C005AFC7F /* UIView+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */; };
 		F3C642B71626F4EC00D5D81B /* PTNArtifacts.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3C642B61626F4EC00D5D81B /* PTNArtifacts.h */; };
 		F3C642B91626F4EC00D5D81B /* PTNArtifacts.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C642B81626F4EC00D5D81B /* PTNArtifacts.m */; };
-		F3C642C71626F52600D5D81B /* libPTNAdditions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642C31626F52600D5D81B /* libPTNAdditions.a */; };
-		F3C642C91626F52600D5D81B /* libPTNLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642C51626F52600D5D81B /* libPTNLogger.a */; };
-		F3C642CA1626F52600D5D81B /* libPTNStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642C61626F52600D5D81B /* libPTNStorage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				F38AECEC166CD93C005AFC7F /* UIView+PTNAdditions.h in CopyFiles */,
 				F307D58A162AED1400340F22 /* PTNAlertView.h in CopyFiles */,
 				F3863B2D1626F67300FF686B /* PTNExpandableLabel.h in CopyFiles */,
 				F3863B2E1626F67300FF686B /* PTNCoverView.h in CopyFiles */,
@@ -147,6 +149,7 @@
 		F3863B2A1626F60400FF686B /* PTNControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTNControls.h; path = ../../PTNControls/PTNControls/PTNControls.h; sourceTree = "<group>"; };
 		F3863B2B1626F60F00FF686B /* PTNCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNCoverView.h; path = ../../PTNControls/PTNControls/PTNCoverView.h; sourceTree = "<group>"; };
 		F3863B2C1626F63A00FF686B /* PTNExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNExpandableLabel.h; path = ../../PTNControls/PTNControls/PTNExpandableLabel.h; sourceTree = "<group>"; };
+		F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/UIView+PTNAdditions.h"; sourceTree = "<group>"; };
 		F3C642AE1626F4EC00D5D81B /* libPTNArtifacts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPTNArtifacts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C642B11626F4EC00D5D81B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3C642B51626F4EC00D5D81B /* PTNArtifacts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNArtifacts-Prefix.pch"; sourceTree = "<group>"; };
@@ -166,11 +169,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3363893166CDBBB0091D62E /* libPTNAdditions.a in Frameworks */,
+				F3363894166CDBBB0091D62E /* libPTNLogger.a in Frameworks */,
+				F3363895166CDBBB0091D62E /* libPTNStorage.a in Frameworks */,
+				F3363892166CDBB60091D62E /* Foundation.framework in Frameworks */,
 				F3863C2B16283FBD00FF686B /* libPTNControls.a in Frameworks */,
-				F3C642C71626F52600D5D81B /* libPTNAdditions.a in Frameworks */,
-				F3C642C91626F52600D5D81B /* libPTNLogger.a in Frameworks */,
-				F3C642CA1626F52600D5D81B /* libPTNStorage.a in Frameworks */,
-				F3C642B21626F4EC00D5D81B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +228,7 @@
 				F3863B241626F5DC00FF686B /* NSObject+PTNAdditions.h */,
 				F3863B251626F5DC00FF686B /* UIImage+PTNAdditions.h */,
 				F3863B261626F5DC00FF686B /* NSString+PTNAdditions.h */,
+				F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */,
 				F3863B271626F5DC00FF686B /* PTNAdditions.h */,
 			);
 			name = Headers;

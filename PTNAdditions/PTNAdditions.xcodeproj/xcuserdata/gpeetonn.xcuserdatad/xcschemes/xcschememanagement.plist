@@ -3,10 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>PTNAdditions.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>PTNAdditionsAppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>F328E65A1626AD0A00654270</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F38AECCE166CD7CD005AFC7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

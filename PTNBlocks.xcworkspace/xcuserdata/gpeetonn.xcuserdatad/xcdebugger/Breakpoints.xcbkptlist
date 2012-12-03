@@ -263,5 +263,31 @@
          landmarkName = "-functionString"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PTNAdditions/PTNAdditions/UIView+PTNAdditions.m"
+         timestampString = "376236102.849403"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "42"
+         endingLineNumber = "42"
+         landmarkName = "-setSlideView:visible:animated:alignmentMask:slideMask:animationOptions:completionCallback:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PTNAdditions/PTNAdditions/UIView+PTNAdditions.m"
+         timestampString = "376236102.849403"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "88"
+         endingLineNumber = "88"
+         landmarkName = "-setSlideView:visible:animated:alignmentMask:slideMask:animationOptions:completionCallback:"
+         landmarkType = "5">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

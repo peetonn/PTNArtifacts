@@ -16,6 +16,8 @@
 		F328E66A1626AEC100654270 /* NSObject+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F7FD5B15DA32BA00F1725F /* NSObject+PTNAdditions.m */; };
 		F328E66B1626AEC100654270 /* UIImage+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F395A0DA15F4F42B001122F6 /* UIImage+PTNAdditions.m */; };
 		F328E66C1626AEC100654270 /* NSString+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3150E15FF4BAC008AA3B7 /* NSString+PTNAdditions.m */; };
+		F38AEC89166CCE22005AFC7F /* UIView+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F38AEC88166CCE22005AFC7F /* UIView+PTNAdditions.m */; };
+		F38AECC8166CD7A6005AFC7F /* UIView+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38AEC87166CCE22005AFC7F /* UIView+PTNAdditions.h */; };
 		F3F7FD4415DA329400F1725F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD4315DA329400F1725F /* SenTestingKit.framework */; };
 		F3F7FD4515DA329400F1725F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD2B15DA329400F1725F /* UIKit.framework */; };
 		F3F7FD4615DA329400F1725F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD2D15DA329400F1725F /* Foundation.framework */; };
@@ -30,6 +32,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				F38AECC8166CD7A6005AFC7F /* UIView+PTNAdditions.h in CopyFiles */,
 				F328E6671626AE5D00654270 /* NSObject+PTNAdditions.h in CopyFiles */,
 				F328E6681626AE5D00654270 /* UIImage+PTNAdditions.h in CopyFiles */,
 				F328E6691626AE5D00654270 /* NSString+PTNAdditions.h in CopyFiles */,
@@ -44,6 +47,17 @@
 		F328E6601626AD0A00654270 /* PTNAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNAdditions.h; sourceTree = "<group>"; };
 		F328E6621626AD0A00654270 /* PTNAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNAdditions.m; sourceTree = "<group>"; };
 		F328E66D1626B03A00654270 /* PTNAdditions-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTNAdditions-Prefix.pch"; sourceTree = "<group>"; };
+		F38AEC87166CCE22005AFC7F /* UIView+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PTNAdditions.h"; sourceTree = "<group>"; };
+		F38AEC88166CCE22005AFC7F /* UIView+PTNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PTNAdditions.m"; sourceTree = "<group>"; };
+		F38AECD1166CD7CD005AFC7F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		F38AECD4166CD7CD005AFC7F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F38AECD5166CD7CD005AFC7F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F38AECD6166CD7CD005AFC7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F38AECD9166CD7CD005AFC7F /* PTNAdditionsAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTNAdditionsAppTests-Info.plist"; sourceTree = "<group>"; };
+		F38AECDB166CD7CD005AFC7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F38AECDD166CD7CD005AFC7F /* PTNAdditionsAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNAdditionsAppTests.h; sourceTree = "<group>"; };
+		F38AECDE166CD7CD005AFC7F /* PTNAdditionsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNAdditionsAppTests.m; sourceTree = "<group>"; };
+		F38AECE0166CD7CD005AFC7F /* PTNAdditionsAppTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNAdditionsAppTests-Prefix.pch"; sourceTree = "<group>"; };
 		F395A0D915F4F42B001122F6 /* UIImage+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PTNAdditions.h"; sourceTree = "<group>"; };
 		F395A0DA15F4F42B001122F6 /* UIImage+PTNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PTNAdditions.m"; sourceTree = "<group>"; };
 		F3B3150D15FF4BAC008AA3B7 /* NSString+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PTNAdditions.h"; sourceTree = "<group>"; };
@@ -86,6 +100,8 @@
 		F328E65D1626AD0A00654270 /* PTNAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				F38AEC87166CCE22005AFC7F /* UIView+PTNAdditions.h */,
+				F38AEC88166CCE22005AFC7F /* UIView+PTNAdditions.m */,
 				F3F7FD5A15DA32BA00F1725F /* NSObject+PTNAdditions.h */,
 				F3F7FD5B15DA32BA00F1725F /* NSObject+PTNAdditions.m */,
 				F395A0D915F4F42B001122F6 /* UIImage+PTNAdditions.h */,
@@ -107,11 +123,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F38AECD3166CD7CD005AFC7F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F38AECD4166CD7CD005AFC7F /* AppKit.framework */,
+				F38AECD5166CD7CD005AFC7F /* CoreData.framework */,
+				F38AECD6166CD7CD005AFC7F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F38AECD7166CD7CD005AFC7F /* PTNAdditionsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F38AECDD166CD7CD005AFC7F /* PTNAdditionsAppTests.h */,
+				F38AECDE166CD7CD005AFC7F /* PTNAdditionsAppTests.m */,
+				F38AECD8166CD7CD005AFC7F /* Supporting Files */,
+			);
+			path = PTNAdditionsAppTests;
+			sourceTree = "<group>";
+		};
+		F38AECD8166CD7CD005AFC7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F38AECD9166CD7CD005AFC7F /* PTNAdditionsAppTests-Info.plist */,
+				F38AECDA166CD7CD005AFC7F /* InfoPlist.strings */,
+				F38AECE0166CD7CD005AFC7F /* PTNAdditionsAppTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F3F7FD1C15DA329400F1725F = {
 			isa = PBXGroup;
 			children = (
 				F328E65D1626AD0A00654270 /* PTNAdditions */,
 				F3F7FD4915DA329400F1725F /* PTNAdditionsTests */,
+				F38AECD7166CD7CD005AFC7F /* PTNAdditionsAppTests */,
 				F3F7FD2A15DA329400F1725F /* Frameworks */,
 				F3F7FD2815DA329400F1725F /* Products */,
 			);
@@ -133,6 +180,8 @@
 				F3F7FD2D15DA329400F1725F /* Foundation.framework */,
 				F3F7FD2F15DA329400F1725F /* CoreGraphics.framework */,
 				F3F7FD4315DA329400F1725F /* SenTestingKit.framework */,
+				F38AECD1166CD7CD005AFC7F /* Cocoa.framework */,
+				F38AECD3166CD7CD005AFC7F /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,6 +306,7 @@
 				F328E66B1626AEC100654270 /* UIImage+PTNAdditions.m in Sources */,
 				F328E66C1626AEC100654270 /* NSString+PTNAdditions.m in Sources */,
 				F328E6631626AD0A00654270 /* PTNAdditions.m in Sources */,
+				F38AEC89166CCE22005AFC7F /* UIView+PTNAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +321,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F38AECDA166CD7CD005AFC7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F38AECDB166CD7CD005AFC7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F3F7FD4C15DA329400F1725F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

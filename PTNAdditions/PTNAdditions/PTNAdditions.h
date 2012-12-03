@@ -11,6 +11,8 @@
 #import "NSObject+PTNAdditions.h"
 #import "UIImage+PTNAdditions.h"
 #import "NSString+PTNAdditions.h"
+#import "UIView+PTNAdditions.h"
+
 
 @interface PTNAdditions : NSObject
 

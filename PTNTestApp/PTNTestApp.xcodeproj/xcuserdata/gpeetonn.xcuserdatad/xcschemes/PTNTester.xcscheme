@@ -36,6 +36,14 @@
                BlueprintName = "PTNTester"
                ReferencedContainer = "container:PTNTestApp.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "PTNTester/testAlertView">
+               </Test>
+               <Test
+                  Identifier = "PTNTester/testReadMoreLabel">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
