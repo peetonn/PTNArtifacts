@@ -183,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3FF80BB15BEC17400D1684B /* Build configuration list for PBXNativeTarget "PTNStorage" */;
 			buildPhases = (
+				F3173DD5166E347400EDD533 /* ShellScript */,
 				F3FF809315BEC17300D1684B /* Sources */,
 				F3FF809415BEC17300D1684B /* Frameworks */,
 				F3FF809515BEC17300D1684B /* Headers */,
@@ -279,6 +280,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		F3173DD5166E347400EDD533 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = env;
+		};
 		F3FF80A515BEC17400D1684B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +408,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -404,12 +419,14 @@
 				DSTROOT = /tmp/PTNStorage.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNStorage/PTNStorage-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
