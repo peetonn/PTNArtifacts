@@ -7,6 +7,7 @@
 //
 
 #import "UIView+PTNAdditions.h"
+#import <QuartzCore/QuartzCore.h>
 
 static float PTNPopupAnimationDuration = 0.2;
 static float PTNPopupAnimationDelay = 0.;
@@ -39,14 +40,13 @@ static float PTNPopupAnimationDelay = 0.;
     CGRect hiddenFrame = slideView.frame;
     CGRect visibleFrame = slideView.frame;
     
-//    hiddenFrame.size.height = (slideMask&PTNSlideDirectionMaskVertical)?0:hiddenFrame.size.height;
-//    hiddenFrame.size.width = (slideMask&PTNSlideDirectionMaskHorizontal)?0:hiddenFrame.size.width;
+    hiddenFrame.size.height = (slideMask&PTNSlideDirectionMaskVertical)?0:hiddenFrame.size.height;
+    hiddenFrame.size.width = (slideMask&PTNSlideDirectionMaskHorizontal)?0:hiddenFrame.size.width;
     
     // horizontal alignment
     if (mask & PTNPopupAlignmentMaskLeft)
     {
         visibleFrame.origin.x = 0;
-        hiddenFrame.origin.x = (slideMask & PTNSlideDirectionMaskHorizontal)?-slideView.frame.size.width:visibleFrame.origin.x;
     }
     else
     {
@@ -58,7 +58,7 @@ static float PTNPopupAnimationDelay = 0.;
         else
         {
             hiddenFrame.origin.x = self.frame.size.width/2.-slideView.frame.size.width/2.;
-            visibleFrame.origin.x = hiddenFrame.origin.x;
+            visibleFrame.origin.x = self.frame.size.width/2.-slideView.frame.size.width/2.;
         }
         
     }
@@ -66,7 +66,7 @@ static float PTNPopupAnimationDelay = 0.;
     if (mask & PTNPopupAlignmentMaskTop)
     {
         visibleFrame.origin.y = 0;
-        hiddenFrame.origin.y = (slideMask&PTNSlideDirectionMaskVertical)?-slideView.frame.size.height:visibleFrame.origin.y;
+        hiddenFrame.origin.y = (slideMask&PTNSlideDirectionMaskVertical)?0:visibleFrame.origin.y;
     }
     else
     {
@@ -116,6 +116,24 @@ static float PTNPopupAnimationDelay = 0.;
                          }];
         
     }
+}
+
+-(void)viewOnTop:(UIView *)presentedView setSisible:(BOOL)setVisible
+{
+    // if view is to be presented and already presented or
+    // if view was not presented and to be hidden - return
+    if (!setVisible^[self.subviews containsObject:presentedView])
+        return;
+    
+    if (setVisible)
+    {
+        presentedView.hidden = NO;
+        presentedView.frame = self.bounds;
+        [self addSubview:presentedView];
+        [self bringSubviewToFront:presentedView];
+    }
+    else
+        [presentedView removeFromSuperview];
 }
 
 @end

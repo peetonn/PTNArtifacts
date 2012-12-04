@@ -84,7 +84,7 @@
 
 -(void)testPopupViews
 {
-    UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 320, 200)];
+    UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(60, 100, 200, 200)];
     bg.backgroundColor = [UIColor grayColor];
     bg.userInteractionEnabled = YES;
     

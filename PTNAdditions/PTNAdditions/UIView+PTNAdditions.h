@@ -49,5 +49,10 @@ typedef enum _PTNSlideDirectionMask {
    animationOptions:(UIViewAnimationOptions)animationOptions
  completionCallback:(void (^)())callback;
 
+/**
+ * Presents view on top of current view
+ */
+-(void)viewOnTop:(UIView *)presentedView setSisible:(BOOL)setVisible;
+
 
 @end
