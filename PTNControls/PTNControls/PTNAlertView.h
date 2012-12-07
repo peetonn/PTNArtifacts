@@ -17,6 +17,7 @@ typedef enum {
 
 @interface PTNAlertView : UIAlertView <UITextFieldDelegate>
 {
+    CGRect _lastFrame;
     NSString *_message;
     UITextView *_labelView;
 }

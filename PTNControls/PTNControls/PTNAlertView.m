@@ -10,8 +10,9 @@
 
 
 #define PTN_ALERTVIEW_CONTENT_WIDTH 260
-#define PTN_ALERTVIEW_CONTENT_MAXHEIGHT_VERTICAL 81
-#define PTN_ALERTVIEW_CONTENT_MAXHEIGHT_HORIZONTAL 40
+
+#define PTN_ALERTVIEW_MAX_HEIGHT_VER 180
+#define PTN_ALERTVIEW_MAX_HEIGHT_HOR 158
 
 #define PTN_ALERTVIEW_LABEL_X 12
 #define PTN_ALERTVIEW_LABEL_Y 40
@@ -24,8 +25,10 @@
 #define PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN_HOR 0
 
 #define PTN_ALERTVIEW_TEXTFIELD_X 16
+#define PTN_ALERTVIEW_TEXTFIELD_Y 87
 #define PTN_ALERTVIEW_TEXTFIELD_HEIGHT 28
 #define PTN_ALERTVIEW_TEXTFIELD_WIDTH (PTN_ALERTVIEW_CONTENT_WIDTH-8)
+#define PTN_ALERTVIEW_TEXTFIELD_BOTTOM_MARGIN 65
 
 @interface PTNAlertView ()
 
@@ -76,30 +79,51 @@
     
     [super layoutSubviews];
 
-    CGFloat fieldHeight;
+    CGFloat fieldY, labelHeight, labelY;
     if ([self isLandscape])
     {
-        self.labelView.frame = CGRectMake(self.labelView.frame.origin.x,
-                                          PTN_ALERTVIEW_LABEL_Y_HOR,
-                                          self.labelView.frame.size.width,
-                                          PTN_ALERTVIEW_LABEL_HEIGHT_HOR);
-        fieldHeight = self.labelView.frame.origin.y+self.labelView.frame.size.height+PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN_HOR;
+        // for some reasons, at startup, alertview's frame has incorrect height
+        // we need to correct y-coordinate of textfield view accordingly
+        // view's size is not changing for iPad idiom!!!
+        CGFloat delta = 0;
+        if (self.frame.size.height > PTN_ALERTVIEW_MAX_HEIGHT_HOR)
+            delta = (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)?PTN_ALERTVIEW_MAX_HEIGHT_HOR-self.frame.size.height:PTN_ALERTVIEW_MAX_HEIGHT_VER-self.frame.size.height;
+        
+        fieldY = self.frame.size.height-PTN_ALERTVIEW_TEXTFIELD_BOTTOM_MARGIN-PTN_ALERTVIEW_TEXTFIELD_HEIGHT+delta;
         self.passwordField.frame = CGRectMake(PTN_ALERTVIEW_TEXTFIELD_X,
-                                              fieldHeight,
+                                              fieldY,
                                               PTN_ALERTVIEW_TEXTFIELD_WIDTH,
                                               PTN_ALERTVIEW_TEXTFIELD_HEIGHT);
+        
+        labelHeight = (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)?(fieldY-PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN)-PTN_ALERTVIEW_LABEL_Y_HOR:(fieldY-PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN)-PTN_ALERTVIEW_LABEL_Y;
+        labelY = (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)?PTN_ALERTVIEW_LABEL_Y_HOR:PTN_ALERTVIEW_LABEL_Y;
+        
+        self.labelView.frame = CGRectMake(self.labelView.frame.origin.x,
+                                          labelY,
+                                          PTN_ALERTVIEW_LABEL_WIDTH,
+                                          labelHeight);
     }
     else
     {
-        self.labelView.frame = CGRectMake(self.labelView.frame.origin.x,
-                                          PTN_ALERTVIEW_LABEL_Y,
-                                          self.labelView.frame.size.width,
-                                          PTN_ALERTVIEW_LABEL_HEIGHT);
-        fieldHeight = self.labelView.frame.origin.y+self.labelView.frame.size.height+PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN;
+        // for some reasons, at startup, alertview's frame has incorrect height
+        // we need to correct y-coordinate of textfield view accordingly
+        CGFloat delta = 0;
+        if (self.frame.size.height > PTN_ALERTVIEW_MAX_HEIGHT_VER)
+        {
+            delta = PTN_ALERTVIEW_MAX_HEIGHT_VER-self.frame.size.height;
+        }
+        
+        fieldY = self.frame.size.height-PTN_ALERTVIEW_TEXTFIELD_BOTTOM_MARGIN-PTN_ALERTVIEW_TEXTFIELD_HEIGHT+delta;
         self.passwordField.frame = CGRectMake(PTN_ALERTVIEW_TEXTFIELD_X,
-                                              fieldHeight,
+                                              fieldY,
                                               PTN_ALERTVIEW_TEXTFIELD_WIDTH,
                                               PTN_ALERTVIEW_TEXTFIELD_HEIGHT);
+        
+        labelHeight = (fieldY-PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN)-PTN_ALERTVIEW_LABEL_Y;
+        self.labelView.frame = CGRectMake(self.labelView.frame.origin.x,
+                                          PTN_ALERTVIEW_LABEL_Y,
+                                          PTN_ALERTVIEW_LABEL_WIDTH,
+                                          labelHeight);
     }
     
     [self addSubview:self.labelView];
@@ -108,7 +132,7 @@
 }
 -(void)show
 {
-    [self prepareAlertView];       
+    [self prepareAlertView];           
     [super show];
 }
 
@@ -157,12 +181,9 @@
     [self setupLabel];
     [self setupInputField];
 
-    CGFloat contentHeight = self.labelView.frame.size.height;
-    CGFloat maxHeight = UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])?PTN_ALERTVIEW_CONTENT_MAXHEIGHT_VERTICAL:PTN_ALERTVIEW_CONTENT_MAXHEIGHT_HORIZONTAL;
-    [self setAlertViewHeightForHeight:contentHeight maxHeight:maxHeight andLabelFontSize:self.labelView.font.lineHeight];
+    [self setAlertViewHeight];
     
-    [self addSubview:self.labelView];
-    [self addSubview:self.passwordField];
+    [self layoutSubviews];
 }
 
 -(UITextView*)setupLabel
@@ -186,14 +207,14 @@
 }
 // in order to increase height of alertiview for emracing content
 // we calculate the text (made with "\n") which should be set as
-// an alrtview's label content
--(void)setAlertViewHeightForHeight:(CGFloat)height maxHeight:(CGFloat)maxHeight andLabelFontSize:(CGFloat)fontHeight
+// an alertview's label content
+-(void)setAlertViewHeight //ForHeight:(CGFloat)height maxHeight:(CGFloat)maxHeight andLabelFontSize:(CGFloat)fontHeight
 {
     _message = self.message;
     
     NSString *messageStubText = @"\n";
     
-    int nStubLines = (height > maxHeight)?maxHeight/fontHeight:(int) (height / fontHeight);
+    int nStubLines = 2; //(height > maxHeight)?maxHeight/fontHeight:(int) (height / fontHeight);
     
     for (int i = 0; i < nStubLines; i++)
         messageStubText = [NSString stringWithFormat:@"%@\n",messageStubText];
@@ -202,9 +223,8 @@
 
 -(UIView*)setupInputField
 {
-    CGFloat fieldHeight = self.labelView.frame.origin.y+self.labelView.frame.size.height+PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN;
     self.passwordField = [[UITextField alloc] initWithFrame:CGRectMake(PTN_ALERTVIEW_TEXTFIELD_X,
-                                                                       fieldHeight,
+                                                                       PTN_ALERTVIEW_TEXTFIELD_Y,
                                                                        PTN_ALERTVIEW_TEXTFIELD_WIDTH,
                                                                        PTN_ALERTVIEW_TEXTFIELD_HEIGHT)];
     self.passwordField.font = [UIFont systemFontOfSize:18];
