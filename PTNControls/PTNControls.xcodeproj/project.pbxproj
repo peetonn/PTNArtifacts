@@ -31,7 +31,6 @@
 /* Begin PBXFileReference section */
 		F307D585162ACFBD00340F22 /* PTNAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNAlertView.h; sourceTree = "<group>"; };
 		F307D586162ACFBD00340F22 /* PTNAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNAlertView.m; sourceTree = "<group>"; };
-		F307D58B162AF06500340F22 /* ptnalertview_tfbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ptnalertview_tfbg.png; sourceTree = "<group>"; };
 		F32363F215DB816C00AFF591 /* libPTNControls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPTNControls.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32363F515DB816C00AFF591 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F32363F915DB816C00AFF591 /* PTNControls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNControls-Prefix.pch"; sourceTree = "<group>"; };
@@ -79,19 +78,10 @@
 		F307D584162ACF7700340F22 /* Alert view */ = {
 			isa = PBXGroup;
 			children = (
-				F307D58C162AF06D00340F22 /* Resources */,
 				F307D585162ACFBD00340F22 /* PTNAlertView.h */,
 				F307D586162ACFBD00340F22 /* PTNAlertView.m */,
 			);
 			name = "Alert view";
-			sourceTree = "<group>";
-		};
-		F307D58C162AF06D00340F22 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F307D58B162AF06500340F22 /* ptnalertview_tfbg.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		F32363E715DB816C00AFF591 = {

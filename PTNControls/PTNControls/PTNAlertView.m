@@ -8,14 +8,34 @@
 
 #import "PTNAlertView.h"
 
+
+#define PTN_ALERTVIEW_CONTENT_WIDTH 260
+#define PTN_ALERTVIEW_CONTENT_MAXHEIGHT_VERTICAL 81
+#define PTN_ALERTVIEW_CONTENT_MAXHEIGHT_HORIZONTAL 40
+
+#define PTN_ALERTVIEW_LABEL_X 12
+#define PTN_ALERTVIEW_LABEL_Y 40
+#define PTN_ALERTVIEW_LABEL_Y_HOR (PTN_ALERTVIEW_LABEL_Y-8)
+#define PTN_ALERTVIEW_LABEL_WIDTH PTN_ALERTVIEW_CONTENT_WIDTH
+#define PTN_ALERTVIEW_LABEL_HEIGHT 48 // default
+#define PTN_ALERTVIEW_LABEL_HEIGHT_HOR 37
+
+#define PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN 3
+#define PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN_HOR 0
+
+#define PTN_ALERTVIEW_TEXTFIELD_X 16
+#define PTN_ALERTVIEW_TEXTFIELD_HEIGHT 28
+#define PTN_ALERTVIEW_TEXTFIELD_WIDTH (PTN_ALERTVIEW_CONTENT_WIDTH-8)
+
 @interface PTNAlertView ()
 
 @property (nonatomic, retain) UITextField *passwordField;
+@property (nonatomic, retain) UITextView *labelView;
 
 @end
 
 @implementation PTNAlertView
-@synthesize ptnAlertViewStyle = _alertViewStyle;
+@synthesize ptnAlertViewStyle = _alertViewStyle, labelView = _labelView;
 
 //********************************************************************
 #pragma mark - received actions
@@ -49,18 +69,46 @@
 
 //********************************************************************
 #pragma mark - overriden
-/*
- // Only override drawRect: if you perform custom drawing.
- // An empty implementation adversely affects performance during animation.
- - (void)drawRect:(CGRect)rect
- {
- // Drawing code
- }
- */
+-(void)layoutSubviews
+{
+    [self.labelView removeFromSuperview];
+    [self.passwordField removeFromSuperview];
+    
+    [super layoutSubviews];
 
+    CGFloat fieldHeight;
+    if ([self isLandscape])
+    {
+        self.labelView.frame = CGRectMake(self.labelView.frame.origin.x,
+                                          PTN_ALERTVIEW_LABEL_Y_HOR,
+                                          self.labelView.frame.size.width,
+                                          PTN_ALERTVIEW_LABEL_HEIGHT_HOR);
+        fieldHeight = self.labelView.frame.origin.y+self.labelView.frame.size.height+PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN_HOR;
+        self.passwordField.frame = CGRectMake(PTN_ALERTVIEW_TEXTFIELD_X,
+                                              fieldHeight,
+                                              PTN_ALERTVIEW_TEXTFIELD_WIDTH,
+                                              PTN_ALERTVIEW_TEXTFIELD_HEIGHT);
+    }
+    else
+    {
+        self.labelView.frame = CGRectMake(self.labelView.frame.origin.x,
+                                          PTN_ALERTVIEW_LABEL_Y,
+                                          self.labelView.frame.size.width,
+                                          PTN_ALERTVIEW_LABEL_HEIGHT);
+        fieldHeight = self.labelView.frame.origin.y+self.labelView.frame.size.height+PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN;
+        self.passwordField.frame = CGRectMake(PTN_ALERTVIEW_TEXTFIELD_X,
+                                              fieldHeight,
+                                              PTN_ALERTVIEW_TEXTFIELD_WIDTH,
+                                              PTN_ALERTVIEW_TEXTFIELD_HEIGHT);
+    }
+    
+    [self addSubview:self.labelView];
+    [self addSubview:self.passwordField];
+    [self.labelView flashScrollIndicators];    
+}
 -(void)show
 {
-    [self prepareAlertView];
+    [self prepareAlertView];       
     [super show];
 }
 
@@ -85,7 +133,6 @@
 //********************************************************************
 #pragma mark - public methods
 
-
 //********************************************************************
 #pragma mark - private methods
 -(void)prepareAlertView
@@ -107,49 +154,122 @@
 
 -(void)prepareSecureInpuAlertView
 {
+    [self setupLabel];
+    [self setupInputField];
+
+    CGFloat contentHeight = self.labelView.frame.size.height;
+    CGFloat maxHeight = UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])?PTN_ALERTVIEW_CONTENT_MAXHEIGHT_VERTICAL:PTN_ALERTVIEW_CONTENT_MAXHEIGHT_HORIZONTAL;
+    [self setAlertViewHeightForHeight:contentHeight maxHeight:maxHeight andLabelFontSize:self.labelView.font.lineHeight];
     
-    UILabel *passwordLabel = [[UILabel alloc] initWithFrame:CGRectMake(12,40,260,25)];
-    passwordLabel.font = [UIFont systemFontOfSize:16];
-    passwordLabel.textColor = [UIColor whiteColor];
-    passwordLabel.backgroundColor = [UIColor clearColor];
-    passwordLabel.shadowColor = [UIColor blackColor];
-    passwordLabel.shadowOffset = CGSizeMake(0,-1);
-    passwordLabel.textAlignment = UITextAlignmentCenter;
-    passwordLabel.text = self.message;
-    passwordLabel.numberOfLines = 4;
-    passwordLabel.lineBreakMode = UILineBreakModeWordWrap;
-    passwordLabel.textAlignment = NSTextAlignmentLeft;
+    [self addSubview:self.labelView];
+    [self addSubview:self.passwordField];
+}
+
+-(UITextView*)setupLabel
+{
+    UITextView *lbl = [[UITextView alloc] initWithFrame:CGRectMake(PTN_ALERTVIEW_LABEL_X,
+                                              PTN_ALERTVIEW_LABEL_Y,
+                                              PTN_ALERTVIEW_LABEL_WIDTH,
+                                              PTN_ALERTVIEW_LABEL_HEIGHT)];
+    lbl.font = [UIFont systemFontOfSize:16];
+    lbl.textColor = [UIColor whiteColor];
+    lbl.backgroundColor = [UIColor clearColor];
+    lbl.textAlignment = UITextAlignmentCenter;
+    lbl.text = self.message;
+    lbl.textAlignment = NSTextAlignmentLeft;
+    lbl.editable = NO;
+    lbl.allowsEditingTextAttributes = NO;
     
-    CGSize labelSize = [passwordLabel.text sizeWithFont:passwordLabel.font
-                                      constrainedToSize:CGSizeMake(passwordLabel.frame.size.width, 999)
-                                          lineBreakMode:passwordLabel.lineBreakMode];
+    self.labelView = lbl;
+    
+    return lbl;
+}
+// in order to increase height of alertiview for emracing content
+// we calculate the text (made with "\n") which should be set as
+// an alrtview's label content
+-(void)setAlertViewHeightForHeight:(CGFloat)height maxHeight:(CGFloat)maxHeight andLabelFontSize:(CGFloat)fontHeight
+{
     _message = self.message;
     
     NSString *messageStubText = @"\n";
     
-    int nStubLines = (int) (labelSize.height / passwordLabel.font.lineHeight);
-    nStubLines = (nStubLines<=4)?nStubLines:4;
+    int nStubLines = (height > maxHeight)?maxHeight/fontHeight:(int) (height / fontHeight);
+    
     for (int i = 0; i < nStubLines; i++)
         messageStubText = [NSString stringWithFormat:@"%@\n",messageStubText];
     self.message = messageStubText;
+}
 
-    [passwordLabel sizeToFit];
-    [self addSubview:passwordLabel];
-    
-    UIImageView *passwordImage =     [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ptnalertview_tfbg" ofType:@"png"]]];
-    passwordImage.frame = CGRectMake(11,labelSize.height + 44,262,31);
-    
-    
-    [self addSubview:passwordImage];
-    
-    self.passwordField = [[UITextField alloc] initWithFrame:CGRectMake(16,labelSize.height + 48,252,25)];
+-(UIView*)setupInputField
+{
+    CGFloat fieldHeight = self.labelView.frame.origin.y+self.labelView.frame.size.height+PTN_ALERTVIEW_LABEL_TEXTFIELD_SPAN;
+    self.passwordField = [[UITextField alloc] initWithFrame:CGRectMake(PTN_ALERTVIEW_TEXTFIELD_X,
+                                                                       fieldHeight,
+                                                                       PTN_ALERTVIEW_TEXTFIELD_WIDTH,
+                                                                       PTN_ALERTVIEW_TEXTFIELD_HEIGHT)];
     self.passwordField.font = [UIFont systemFontOfSize:18];
     self.passwordField.backgroundColor = [UIColor whiteColor];
+    self.passwordField.borderStyle = UITextBorderStyleBezel;
     self.passwordField.secureTextEntry = YES;
     self.passwordField.keyboardAppearance = UIKeyboardAppearanceAlert;
     self.passwordField.delegate = self;
     [self.passwordField becomeFirstResponder];
-    [self addSubview:self.passwordField];
+
+    return self.passwordField;
+}
+-(UIButton*)getButton
+{
+    for (UIView *view in self.subviews)
+    {
+        if ([view isKindOfClass:[UIButton class]])
+            return (UIButton*)view;
+    }
+    return nil;
+}
+-(BOOL)isLandscape
+{
+    return UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation]);
+}
+@end
+
+static PTNInputAlertViewController *currentAlertViewController;
+
+@implementation PTNInputAlertViewController
+
+-(void)showInputAlertViewWithTitle:(NSString *)title
+                           message:(NSString *)message
+                 cancelButtonTitle:(NSString *)cancelButtonTitle
+              andDismissalCallback:(PTNALertViewDismissalCallback)clbck
+{
+    _alertView = [[PTNAlertView alloc] initWithTitle:title
+                                                          message:message
+                                                         delegate:self
+                                                cancelButtonTitle:cancelButtonTitle
+                                                otherButtonTitles: nil];
+    
+    _callback = clbck;
+    _alertView.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
+    [_alertView show];
+    currentAlertViewController = self;
+}
+-(void)dealloc
+{
+    _alertView.delegate = nil;
+    _alertView = nil;
+    _callback = nil;
+}
+
+// UIAlertViewDelegate
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [self invokeCallback];
+}
+
+// private
+-(void)invokeCallback
+{
+    _callback(_alertView, _alertView.enteredText);
+    currentAlertViewController = nil;
 }
 
 @end

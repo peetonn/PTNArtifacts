@@ -34,12 +34,51 @@
 
 -(void)testAlertView
 {
-    PTNAlertView *alert = [[PTNAlertView alloc] initWithTitle:@"Alert view" message:@"Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-    
-    alert.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
-    
-    [alert show];
-    [self waitFor:30];
+    {
+        PTNAlertView *alert = [[PTNAlertView alloc] initWithTitle:@"Super Short" message:@"Enter code Enter code" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        
+        alert.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
+        
+        [alert show];
+        [self waitFor:15];
+        [alert dismissWithClickedButtonIndex:0 animated:NO];        
+    }
+    {
+        PTNAlertView *alert = [[PTNAlertView alloc] initWithTitle:@"Short" message:@"Código incorreto. Por favor entre novamente o código enviado por SMS" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        
+        alert.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
+        
+        [alert show];
+        [self waitFor:15];
+        [alert dismissWithClickedButtonIndex:0 animated:NO];
+    }
+    {
+        PTNAlertView *alert = [[PTNAlertView alloc] initWithTitle:@"Medium" message:@"잘못된 코드입니다. SMS로 발송된 코드를 다시 입력하세요" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        
+        alert.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
+        
+        [alert show];
+        [self waitFor:15];
+        [alert dismissWithClickedButtonIndex:0 animated:NO];        
+    }
+    {
+        PTNAlertView *alert = [[PTNAlertView alloc] initWithTitle:@"Long" message:@"Неверный код авторизации. Попробуйте ввести код, полученный в SMS, еще раз" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        
+        alert.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
+        
+        [alert show];
+        [self waitFor:15];
+        [alert dismissWithClickedButtonIndex:0 animated:NO];
+    }
+    {
+        PTNAlertView *alert = [[PTNAlertView alloc] initWithTitle:@"Super long" message:@"Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code Enter code" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        
+        alert.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
+        
+        [alert show];
+        [self waitFor:15];
+        [alert dismissWithClickedButtonIndex:0 animated:NO];
+    }
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex

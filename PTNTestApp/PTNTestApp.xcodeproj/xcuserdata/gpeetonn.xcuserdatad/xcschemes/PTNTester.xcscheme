@@ -8,7 +8,7 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
+            buildForProfiling = "YES"
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
             <BuildableReference
@@ -38,10 +38,10 @@
             </BuildableReference>
             <SkippedTests>
                <Test
-                  Identifier = "PTNTester/testAlertView">
+                  Identifier = "PTNTester/testReadMoreLabel">
                </Test>
                <Test
-                  Identifier = "PTNTester/testReadMoreLabel">
+                  Identifier = "PTNTester/testPopupViews">
                </Test>
             </SkippedTests>
          </TestableReference>
@@ -56,15 +56,33 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F3B315AA15FFABBF008AA3B7"
+            BuildableName = "PTNTestApp.app"
+            BlueprintName = "PTNTestApp"
+            ReferencedContainer = "container:PTNTestApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       shouldUseLaunchSchemeArgsEnv = "YES"
-      savedToolIdentifier = ""
+      savedToolIdentifier = "/Applications/Xcode.app/Contents/Applications/Instruments.app/Contents/Resources/templates/Allocations.tracetemplate"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F3B315AA15FFABBF008AA3B7"
+            BuildableName = "PTNTestApp.app"
+            BlueprintName = "PTNTestApp"
+            ReferencedContainer = "container:PTNTestApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

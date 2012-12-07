@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F307D58E162AF29200340F22 /* ptnalertview_tfbg.png in Resources */ = {isa = PBXBuildFile; fileRef = F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */; };
 		F336388F166CDA9C0091D62E /* libPTNArtifacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F336388B166CD9890091D62E /* libPTNArtifacts.a */; };
 		F3363896166CDC720091D62E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B315B315FFABBF008AA3B7 /* CoreGraphics.framework */; };
+		F38800C316702153007E282F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38800C116702145007E282F /* View.xib */; };
+		F38800C616702179007E282F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38800C516702179007E282F /* MyViewController.m */; };
 		F38AECE8166CD822005AFC7F /* PTNArtifacts.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */; };
 		F38AECE9166CD822005AFC7F /* PTNArtifacts.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */; };
 		F38AECEB166CD878005AFC7F /* libPTNArtifacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F38AECEA166CD878005AFC7F /* libPTNArtifacts.a */; };
@@ -30,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F3067620166FE7F900C02A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B315A215FFABBF008AA3B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B315AA15FFABBF008AA3B7;
+			remoteInfo = PTNTestApp;
+		};
 		F336388A166CD9890091D62E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */;
@@ -54,7 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ptnalertview_tfbg.png; sourceTree = "<group>"; };
+		F38800C116702145007E282F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = ../PTNTester/View.xib; sourceTree = "<group>"; };
+		F38800C416702179007E282F /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		F38800C516702179007E282F /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		F38AECE7166CD822005AFC7F /* PTNArtifacts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTNArtifacts.xcodeproj; path = ../PTNArtifacts/PTNArtifacts.xcodeproj; sourceTree = "<group>"; };
 		F38AECEA166CD878005AFC7F /* libPTNArtifacts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNArtifacts.a; path = "../PTNArtifacts/build/Release-iphoneos/libPTNArtifacts.a"; sourceTree = "<group>"; };
 		F3B315AB15FFABBF008AA3B7 /* PTNTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTNTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +162,9 @@
 		F3B315B515FFABBF008AA3B7 /* PTNTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				F38800C416702179007E282F /* MyViewController.h */,
+				F38800C516702179007E282F /* MyViewController.m */,
+				F38800C116702145007E282F /* View.xib */,
 				F3B315BE15FFABBF008AA3B7 /* AppDelegate.h */,
 				F3B315BF15FFABBF008AA3B7 /* AppDelegate.m */,
 				F3B315B615FFABBF008AA3B7 /* Supporting Files */,
@@ -183,7 +196,6 @@
 		F3B315DC15FFAC1F008AA3B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F307D58D162AF29200340F22 /* ptnalertview_tfbg.png */,
 				F3B315DD15FFAC1F008AA3B7 /* PTNTester-Info.plist */,
 				F3B315DE15FFAC1F008AA3B7 /* InfoPlist.strings */,
 				F3B315E415FFAC1F008AA3B7 /* PTNTester-Prefix.pch */,
@@ -224,6 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F3067621166FE7F900C02A11 /* PBXTargetDependency */,
 				F3363891166CDAA00091D62E /* PBXTargetDependency */,
 			);
 			name = PTNTester;
@@ -280,8 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B315BA15FFABBF008AA3B7 /* InfoPlist.strings in Resources */,
-				F307D58E162AF29200340F22 /* ptnalertview_tfbg.png in Resources */,
 				F38AECE8166CD822005AFC7F /* PTNArtifacts.xcodeproj in Resources */,
+				F38800C316702153007E282F /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +332,7 @@
 			files = (
 				F3B315BC15FFABBF008AA3B7 /* main.m in Sources */,
 				F3B315C015FFABBF008AA3B7 /* AppDelegate.m in Sources */,
+				F38800C616702179007E282F /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +348,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F3067621166FE7F900C02A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B315AA15FFABBF008AA3B7 /* PTNTestApp */;
+			targetProxy = F3067620166FE7F900C02A11 /* PBXContainerItemProxy */;
+		};
 		F336388E166CD9C20091D62E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PTNArtifacts;
