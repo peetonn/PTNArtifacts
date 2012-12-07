@@ -33,6 +33,21 @@
     va_end(n_list);
 }
 
+-(void)unsubscribeFromNotifications:(NSString*)notification1,...
+{
+    va_list n_list;
+    va_start(n_list, notification1);
+    
+    NSString *notification = [notification1 copy];
+    
+    while (notification) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:notification object:nil];
+        notification = va_arg(n_list, NSString*);
+    }
+    
+    va_end(n_list);
+}
+
 -(void)unsubscribeFromNotifications
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
