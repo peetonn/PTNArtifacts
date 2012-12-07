@@ -32,6 +32,11 @@
 /**
  * Unsubscribe from notifications
  */
+-(void)unsubscribeFromNotifications:(NSString*)notification1,...;
+
+/**
+ * Unsubscribe from notifications
+ */
 -(void)unsubscribeFromNotifications;
 
 @end
