@@ -42,6 +42,14 @@
  */
 +(PTNStorage*)sharedStorageController;
 /**
+ * Saves shared storage controller instance
+ */
++(void)setSharedStorageController:(PTNStorage*)aStorage;
+/**
+ * Checks whether shared storage was previously initialized
+ */
++(BOOL)isSharedStorageControllerInitialized;
+/**
  * Dictionary of default settings loaded from file
  */
 - (void)registerDefaults;

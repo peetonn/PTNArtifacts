@@ -10,6 +10,7 @@
 #import "PTNExpandableLabel.h"
 #import "PTNCoverView.h"
 #import "PTNAlertView.h"
+#import "PTNContainerViewController.h"
 
 @interface PTNControls : NSObject
 

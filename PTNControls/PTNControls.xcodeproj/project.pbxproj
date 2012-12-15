@@ -21,6 +21,8 @@
 		F328E5EC1626A22700654270 /* PTNControls.h in Headers */ = {isa = PBXBuildFile; fileRef = F32363FA15DB816C00AFF591 /* PTNControls.h */; settings = {ATTRIBUTES = (); }; };
 		F328E5F01626A31300654270 /* PTNCoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = F323641C15DB81BB00AFF591 /* PTNCoverView.h */; settings = {ATTRIBUTES = (); }; };
 		F328E5F11626A31300654270 /* PTNExpandableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D48A516248D8B004D7165 /* PTNExpandableLabel.h */; settings = {ATTRIBUTES = (); }; };
+		F36CB64F167C8E4C0054C9E3 /* PTNContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F36CB64D167C8E4C0054C9E3 /* PTNContainerViewController.h */; };
+		F36CB650167C8E4C0054C9E3 /* PTNContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F36CB64E167C8E4C0054C9E3 /* PTNContainerViewController.m */; };
 		F3B3153115FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */; };
 		F3B3153215FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */; };
 		F3B3153415FFA11B008AA3B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B3153315FFA11B008AA3B7 /* QuartzCore.framework */; };
@@ -46,6 +48,8 @@
 		F323641C15DB81BB00AFF591 /* PTNCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNCoverView.h; sourceTree = "<group>"; };
 		F323641D15DB81BB00AFF591 /* PTNCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNCoverView.m; sourceTree = "<group>"; };
 		F35D48A516248D8B004D7165 /* PTNExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNExpandableLabel.h; sourceTree = "<group>"; };
+		F36CB64D167C8E4C0054C9E3 /* PTNContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNContainerViewController.h; sourceTree = "<group>"; };
+		F36CB64E167C8E4C0054C9E3 /* PTNContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNContainerViewController.m; sourceTree = "<group>"; };
 		F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNExpandableLabel.m; sourceTree = "<group>"; };
 		F3B3153315FFA11B008AA3B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F3B3159815FFA927008AA3B7 /* NSAttributedString+PTNAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+PTNAttributes.h"; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 		F32363F715DB816C00AFF591 /* PTNControls */ = {
 			isa = PBXGroup;
 			children = (
+				F36CB64B167C8E340054C9E3 /* Container view controller */,
 				F307D584162ACF7700340F22 /* Alert view */,
 				F3B3152915FF9AC7008AA3B7 /* Cover View */,
 				F3B3152215FF9A97008AA3B7 /* Expandable label */,
@@ -155,6 +160,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F36CB64B167C8E340054C9E3 /* Container view controller */ = {
+			isa = PBXGroup;
+			children = (
+				F36CB64D167C8E4C0054C9E3 /* PTNContainerViewController.h */,
+				F36CB64E167C8E4C0054C9E3 /* PTNContainerViewController.m */,
+			);
+			name = "Container view controller";
+			sourceTree = "<group>";
+		};
 		F3B3152215FF9A97008AA3B7 /* Expandable label */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +201,7 @@
 				F328E5EC1626A22700654270 /* PTNControls.h in Headers */,
 				F328E5F01626A31300654270 /* PTNCoverView.h in Headers */,
 				F328E5F11626A31300654270 /* PTNExpandableLabel.h in Headers */,
+				F36CB64F167C8E4C0054C9E3 /* PTNContainerViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +307,7 @@
 				F3B3153115FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */,
 				F3B3159B15FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m in Sources */,
 				F307D588162ACFBD00340F22 /* PTNAlertView.m in Sources */,
+				F36CB650167C8E4C0054C9E3 /* PTNContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

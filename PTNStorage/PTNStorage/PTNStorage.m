@@ -49,8 +49,15 @@ static PTNStorage *sharedStorage = nil;
         sharedStorage = [[PTNStorage alloc] initWithStorageFile:PTN_DEFAULT_PARAMS_FILE];
     
     return sharedStorage;
-}    
-
+}
++(void)setSharedStorageController:(PTNStorage*)aStorage
+{
+    sharedStorage = aStorage;
+}
++(BOOL)isSharedStorageControllerInitialized
+{
+    return (sharedStorage != nil);
+}
 // register application default parameters - saved in PTN_DEFAULT_PARAMS_FILE file
 -(void)registerDefaults
 {    

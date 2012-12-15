@@ -12,6 +12,7 @@
 		F3363893166CDBBB0091D62E /* libPTNAdditions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B081626F54800FF686B /* libPTNAdditions.a */; };
 		F3363894166CDBBB0091D62E /* libPTNLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B181626F54900FF686B /* libPTNLogger.a */; };
 		F3363895166CDBBB0091D62E /* libPTNStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B101626F54900FF686B /* libPTNStorage.a */; };
+		F36CB657167C8EAD0054C9E3 /* PTNContainerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F36CB651167C8EA70054C9E3 /* PTNContainerViewController.h */; };
 		F3863B2D1626F67300FF686B /* PTNExpandableLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2C1626F63A00FF686B /* PTNExpandableLabel.h */; };
 		F3863B2E1626F67300FF686B /* PTNCoverView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2B1626F60F00FF686B /* PTNCoverView.h */; };
 		F3863B2F1626F67300FF686B /* PTNControls.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2A1626F60400FF686B /* PTNControls.h */; };
@@ -133,6 +134,7 @@
 				F3863B341626F67300FF686B /* NSString+PTNAdditions.h in CopyFiles */,
 				F3863B351626F67300FF686B /* PTNAdditions.h in CopyFiles */,
 				F3C642B71626F4EC00D5D81B /* PTNArtifacts.h in CopyFiles */,
+				F36CB657167C8EAD0054C9E3 /* PTNContainerViewController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,7 @@
 
 /* Begin PBXFileReference section */
 		F307D589162AED0500340F22 /* PTNAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNAlertView.h; path = ../../PTNControls/PTNControls/PTNAlertView.h; sourceTree = "<group>"; };
+		F36CB651167C8EA70054C9E3 /* PTNContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = PTNContainerViewController.h; path = ../../PTNControls/PTNControls/PTNContainerViewController.h; sourceTree = "<group>"; };
 		F3863B241626F5DC00FF686B /* NSObject+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/NSObject+PTNAdditions.h"; sourceTree = "<group>"; };
 		F3863B251626F5DC00FF686B /* UIImage+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/UIImage+PTNAdditions.h"; sourceTree = "<group>"; };
 		F3863B261626F5DC00FF686B /* NSString+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/NSString+PTNAdditions.h"; sourceTree = "<group>"; };
@@ -229,6 +232,7 @@
 				F3863B251626F5DC00FF686B /* UIImage+PTNAdditions.h */,
 				F3863B261626F5DC00FF686B /* NSString+PTNAdditions.h */,
 				F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */,
+				F36CB651167C8EA70054C9E3 /* PTNContainerViewController.h */,
 				F3863B271626F5DC00FF686B /* PTNAdditions.h */,
 			);
 			name = Headers;
