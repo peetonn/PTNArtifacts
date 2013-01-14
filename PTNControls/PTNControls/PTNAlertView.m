@@ -199,7 +199,6 @@
     lbl.text = self.message;
     lbl.textAlignment = NSTextAlignmentLeft;
     lbl.editable = NO;
-    lbl.allowsEditingTextAttributes = NO;
     
     self.labelView = lbl;
     
