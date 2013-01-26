@@ -55,9 +55,10 @@ typedef void(^PTNALertViewDismissalCallback)(PTNAlertView *alertView, NSString *
 /**
  * Shows alert view
  */
--(void)showInputAlertViewWithTitle:(NSString *)title
-                           message:(NSString *)message
-                 cancelButtonTitle:(NSString *)cancelButtonTitle
-              andDismissalCallback:(PTNALertViewDismissalCallback)clbck;
+-(void)showAlertViewWithTitle:(NSString *)title
+                      message:(NSString *)message
+            cancelButtonTitle:(NSString *)cancelButtonTitle
+                        style:(PTNAlertViewStyle)style
+         andDismissalCallback:(PTNALertViewDismissalCallback)clbck;
 
 @end

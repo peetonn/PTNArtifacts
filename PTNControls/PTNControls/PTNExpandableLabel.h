@@ -26,8 +26,8 @@ typedef enum _PTNExpandableLableState {
 @property (nonatomic, retain) id<PTNExpandableLabelDelegate> delegate;
 @property (nonatomic, readonly) PTNExpandableLabelState currentState;
 @property (nonatomic) NSUInteger visibleCharactersNum;
-@property (nonatomic) UIColor *functionColor;
-@property (nonatomic) UIColor *functionHighlightedColor;
+@property (nonatomic, retain) UIColor *functionColor;
+@property (nonatomic, retain) UIColor *functionHighlightedColor;
 @property (nonatomic) BOOL isExpandable;
 @property (nonatomic) float expansionAnimationDuration;
 

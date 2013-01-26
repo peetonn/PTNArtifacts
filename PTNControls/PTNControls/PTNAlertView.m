@@ -255,10 +255,11 @@ static PTNInputAlertViewController *currentAlertViewController;
 
 @implementation PTNInputAlertViewController
 
--(void)showInputAlertViewWithTitle:(NSString *)title
-                           message:(NSString *)message
-                 cancelButtonTitle:(NSString *)cancelButtonTitle
-              andDismissalCallback:(PTNALertViewDismissalCallback)clbck
+-(void)showAlertViewWithTitle:(NSString *)title
+                      message:(NSString *)message
+            cancelButtonTitle:(NSString *)cancelButtonTitle
+                        style:(PTNAlertViewStyle)style
+         andDismissalCallback:(PTNALertViewDismissalCallback)clbck
 {
     _alertView = [[PTNAlertView alloc] initWithTitle:title
                                                           message:message
@@ -267,7 +268,7 @@ static PTNInputAlertViewController *currentAlertViewController;
                                                 otherButtonTitles: nil];
     
     _callback = clbck;
-    _alertView.ptnAlertViewStyle = PTNAlertViewStyleSecureInput;
+    _alertView.ptnAlertViewStyle = style;
     [_alertView show];
     currentAlertViewController = self;
 }
