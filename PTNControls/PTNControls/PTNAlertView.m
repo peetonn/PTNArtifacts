@@ -173,7 +173,7 @@
 
 -(void)prepareDefaultView
 {
-    self.message = _message;
+    // nothing here yet
 }
 
 -(void)prepareSecureInpuAlertView
