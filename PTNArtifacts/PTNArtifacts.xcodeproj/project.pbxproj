@@ -26,6 +26,7 @@
 		F38AECEC166CD93C005AFC7F /* UIView+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3C642B71626F4EC00D5D81B /* PTNArtifacts.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C642B61626F4EC00D5D81B /* PTNArtifacts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3C642B91626F4EC00D5D81B /* PTNArtifacts.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C642B81626F4EC00D5D81B /* PTNArtifacts.m */; };
+		F3E5AB0B16B8369400E09857 /* NSTimer+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E5AB0516B8361500E09857 /* NSTimer+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,7 @@
 		F3C642C31626F52600D5D81B /* libPTNAdditions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNAdditions.a; path = "../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos/libPTNAdditions.a"; sourceTree = "<group>"; };
 		F3C642C51626F52600D5D81B /* libPTNLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNLogger.a; path = "../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos/libPTNLogger.a"; sourceTree = "<group>"; };
 		F3C642C61626F52600D5D81B /* libPTNStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNStorage.a; path = "../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos/libPTNStorage.a"; sourceTree = "<group>"; };
+		F3E5AB0516B8361500E09857 /* NSTimer+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "NSTimer+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/NSTimer+PTNAdditions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				F3863B251626F5DC00FF686B /* UIImage+PTNAdditions.h */,
 				F3863B261626F5DC00FF686B /* NSString+PTNAdditions.h */,
 				F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */,
+				F3E5AB0516B8361500E09857 /* NSTimer+PTNAdditions.h */,
 				F36CB651167C8EA70054C9E3 /* PTNContainerViewController.h */,
 				F3863B271626F5DC00FF686B /* PTNAdditions.h */,
 			);
@@ -282,6 +285,7 @@
 				F3863B331626F67300FF686B /* UIImage+PTNAdditions.h in Headers */,
 				F3863B341626F67300FF686B /* NSString+PTNAdditions.h in Headers */,
 				F388064516B5760700345922 /* PTNContainerViewController.h in Headers */,
+				F3E5AB0B16B8369400E09857 /* NSTimer+PTNAdditions.h in Headers */,
 				F3863B351626F67300FF686B /* PTNAdditions.h in Headers */,
 				F3C642B71626F4EC00D5D81B /* PTNArtifacts.h in Headers */,
 			);

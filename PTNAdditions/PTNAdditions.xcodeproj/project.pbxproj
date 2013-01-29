@@ -18,6 +18,8 @@
 		F328E66C1626AEC100654270 /* NSString+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3150E15FF4BAC008AA3B7 /* NSString+PTNAdditions.m */; };
 		F38AEC89166CCE22005AFC7F /* UIView+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F38AEC88166CCE22005AFC7F /* UIView+PTNAdditions.m */; };
 		F38AECC8166CD7A6005AFC7F /* UIView+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F38AEC87166CCE22005AFC7F /* UIView+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3E5AB0216B8346300E09857 /* NSTimer+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E5AB0016B8346300E09857 /* NSTimer+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3E5AB0316B8346300E09857 /* NSTimer+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E5AB0116B8346300E09857 /* NSTimer+PTNAdditions.m */; };
 		F3F7FD4415DA329400F1725F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD4315DA329400F1725F /* SenTestingKit.framework */; };
 		F3F7FD4515DA329400F1725F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD2B15DA329400F1725F /* UIKit.framework */; };
 		F3F7FD4615DA329400F1725F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD2D15DA329400F1725F /* Foundation.framework */; };
@@ -45,6 +47,8 @@
 		F395A0DA15F4F42B001122F6 /* UIImage+PTNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PTNAdditions.m"; sourceTree = "<group>"; };
 		F3B3150D15FF4BAC008AA3B7 /* NSString+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PTNAdditions.h"; sourceTree = "<group>"; };
 		F3B3150E15FF4BAC008AA3B7 /* NSString+PTNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PTNAdditions.m"; sourceTree = "<group>"; };
+		F3E5AB0016B8346300E09857 /* NSTimer+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+PTNAdditions.h"; sourceTree = "<group>"; };
+		F3E5AB0116B8346300E09857 /* NSTimer+PTNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+PTNAdditions.m"; sourceTree = "<group>"; };
 		F3F7FD2B15DA329400F1725F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3F7FD2D15DA329400F1725F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3F7FD2F15DA329400F1725F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,6 +98,8 @@
 				F328E6601626AD0A00654270 /* PTNAdditions.h */,
 				F328E6621626AD0A00654270 /* PTNAdditions.m */,
 				F328E65E1626AD0A00654270 /* Supporting Files */,
+				F3E5AB0016B8346300E09857 /* NSTimer+PTNAdditions.h */,
+				F3E5AB0116B8346300E09857 /* NSTimer+PTNAdditions.m */,
 			);
 			path = PTNAdditions;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 				F328E6681626AE5D00654270 /* UIImage+PTNAdditions.h in Headers */,
 				F328E6691626AE5D00654270 /* NSString+PTNAdditions.h in Headers */,
 				F328E6611626AD0A00654270 /* PTNAdditions.h in Headers */,
+				F3E5AB0216B8346300E09857 /* NSTimer+PTNAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +312,7 @@
 				F328E66C1626AEC100654270 /* NSString+PTNAdditions.m in Sources */,
 				F328E6631626AD0A00654270 /* PTNAdditions.m in Sources */,
 				F38AEC89166CCE22005AFC7F /* UIView+PTNAdditions.m in Sources */,
+				F3E5AB0316B8346300E09857 /* NSTimer+PTNAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
