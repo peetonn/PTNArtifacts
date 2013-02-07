@@ -30,6 +30,7 @@ static float PTNPopupAnimationDelay = 0.;
       alignmentMask:(PTNPopupAlignmentMask)mask
           slideMask:(PTNSlideDirectionMask)slideMask 
    animationOptions:(UIViewAnimationOptions)animationOptions
+     animationBlock:(void (^)())animationBlock
  completionCallback:(void (^)())callback
 {
     // if already shown or already hidden - skip
@@ -88,6 +89,9 @@ static float PTNPopupAnimationDelay = 0.;
                             options:animationOptions
                          animations:^(){
                              slideView.frame = visibleFrame;
+                             
+                             if (animationBlock)
+                                 animationBlock();
                          }
                          completion:^(BOOL finished){
                              if (callback)
@@ -106,6 +110,9 @@ static float PTNPopupAnimationDelay = 0.;
                             options:animationOptions
                          animations:^(){
                              slideView.frame = hiddenFrame;
+                             
+                             if (animationBlock)
+                                 animationBlock();
                          }
                          completion:^(BOOL finished){
                              slideView.hidden = YES;
