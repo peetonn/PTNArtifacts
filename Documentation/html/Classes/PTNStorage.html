@@ -1,0 +1,1136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PTNStorage Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.4 (build 703)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PTNArtifacts </a></h1>
+				<a id="developerHome" href="../index.html">Peter Gusev</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PTNStorage Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/defaults">&nbsp;&nbsp;&nbsp;&nbsp;defaults</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/isSharedStorageControllerInitialized">&nbsp;&nbsp;&nbsp;&nbsp;+ isSharedStorageControllerInitialized</option>
+	
+	<option value="//api/name/setSharedStorageController:">&nbsp;&nbsp;&nbsp;&nbsp;+ setSharedStorageController:</option>
+	
+	<option value="//api/name/sharedStorageController">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedStorageController</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/getParamWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- getParamWithName:</option>
+	
+	<option value="//api/name/initWithStorageFile:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithStorageFile:</option>
+	
+	<option value="//api/name/registerDefaults">&nbsp;&nbsp;&nbsp;&nbsp;- registerDefaults</option>
+	
+	<option value="//api/name/resetDefaults">&nbsp;&nbsp;&nbsp;&nbsp;- resetDefaults</option>
+	
+	<option value="//api/name/saveBool:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- saveBool:forKey:</option>
+	
+	<option value="//api/name/saveFloat:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- saveFloat:forKey:</option>
+	
+	<option value="//api/name/saveInt:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- saveInt:forKey:</option>
+	
+	<option value="//api/name/saveParam:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- saveParam:forKey:</option>
+	
+	<option value="//api/name/saveParams">&nbsp;&nbsp;&nbsp;&nbsp;- saveParams</option>
+	
+	<option value="//api/name/setAppEndedNormally:">&nbsp;&nbsp;&nbsp;&nbsp;- setAppEndedNormally:</option>
+	
+	<option value="//api/name/wasAppEndedNormally">&nbsp;&nbsp;&nbsp;&nbsp;- wasAppEndedNormally</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initialization">Initialization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Instance methods">Instance methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaults">defaults</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isSharedStorageControllerInitialized">isSharedStorageControllerInitialized</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSharedStorageController:">setSharedStorageController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedStorageController">sharedStorageController</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getParamWithName:">getParamWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithStorageFile:">initWithStorageFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerDefaults">registerDefaults</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetDefaults">resetDefaults</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveBool:forKey:">saveBool:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveFloat:forKey:">saveFloat:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveInt:forKey:">saveInt:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveParam:forKey:">saveParam:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveParams">saveParams</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAppEndedNormally:">setAppEndedNormally:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wasAppEndedNormally">wasAppEndedNormally</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PTNStorage Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PTNStorage Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PTNStorage.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Class for storing all necessary parameters and <a href="#//api/name/defaults">defaults</a> of application between launches</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaults">&nbsp;&nbsp;defaults</a></code>
+		<span class="tooltip"><p>Dictionary of default settings loaded from file</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initialization" name="task_Initialization"></a>
+						<h3 class="subsubtitle task-title">Initialization</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithStorageFile:">&ndash;&nbsp;initWithStorageFile:</a></code>
+		<span class="tooltip"><p>Initializes an instance of <a href="PTNStorage.html">PTNStorage</a> with sepcified storage file.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Instance methods" name="task_Instance methods"></a>
+						<h3 class="subsubtitle task-title">Instance methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedStorageController">+&nbsp;sharedStorageController</a></code>
+		<span class="tooltip"><p>Returns shared instance of IVStorageController</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSharedStorageController:">+&nbsp;setSharedStorageController:</a></code>
+		<span class="tooltip"><p>Saves shared storage controller instance</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isSharedStorageControllerInitialized">+&nbsp;isSharedStorageControllerInitialized</a></code>
+		<span class="tooltip"><p>Checks whether shared storage was previously initialized</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerDefaults">&ndash;&nbsp;registerDefaults</a></code>
+		<span class="tooltip"><p>Dictionary of default settings loaded from file</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveParams">&ndash;&nbsp;saveParams</a></code>
+		<span class="tooltip"><p>Save current settings to file on disk</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetDefaults">&ndash;&nbsp;resetDefaults</a></code>
+		<span class="tooltip"><p>Restire default values from file</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveParam:forKey:">&ndash;&nbsp;saveParam:forKey:</a></code>
+		<span class="tooltip"><p>Saves setting</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveInt:forKey:">&ndash;&nbsp;saveInt:forKey:</a></code>
+		<span class="tooltip"><p>Saves int value</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveFloat:forKey:">&ndash;&nbsp;saveFloat:forKey:</a></code>
+		<span class="tooltip"><p>Saves float value</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveBool:forKey:">&ndash;&nbsp;saveBool:forKey:</a></code>
+		<span class="tooltip"><p>Saves boolean</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getParamWithName:">&ndash;&nbsp;getParamWithName:</a></code>
+		<span class="tooltip"><p>Returns saved setting</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wasAppEndedNormally">&ndash;&nbsp;wasAppEndedNormally</a></code>
+		<span class="tooltip"><p>Indicates whether application was ended normally or crahsed
+It gets checked on storage intialization, if flag is set to NO, PTNStorageAppCrashedNotification gets generated. Otherwise, this flag is set to NO. Upon correct app termination this flag is set to YES.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAppEndedNormally:">&ndash;&nbsp;setAppEndedNormally:</a></code>
+		<span class="tooltip"><p>Sets application end flag when ther was no crash</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defaults" title="defaults"></a>
+	<h3 class="subsubtitle method-title">defaults</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dictionary of default settings loaded from file</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDictionary *defaults</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dictionary of default settings loaded from file</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isSharedStorageControllerInitialized" title="isSharedStorageControllerInitialized"></a>
+	<h3 class="subsubtitle method-title">isSharedStorageControllerInitialized</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks whether shared storage was previously initialized</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isSharedStorageControllerInitialized</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Checks whether shared storage was previously initialized</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSharedStorageController:" title="setSharedStorageController:"></a>
+	<h3 class="subsubtitle method-title">setSharedStorageController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves shared storage controller instance</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (void)setSharedStorageController:(PTNStorage *)<em>aStorage</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Saves shared storage controller instance</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedStorageController" title="sharedStorageController"></a>
+	<h3 class="subsubtitle method-title">sharedStorageController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns shared instance of IVStorageController</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (PTNStorage *)sharedStorageController</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns shared instance of IVStorageController</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getParamWithName:" title="getParamWithName:"></a>
+	<h3 class="subsubtitle method-title">getParamWithName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns saved setting</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)getParamWithName:(NSString *)<em>key</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>Name of setting in settings dictionary</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns saved setting</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithStorageFile:" title="initWithStorageFile:"></a>
+	<h3 class="subsubtitle method-title">initWithStorageFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes an instance of <a href="PTNStorage.html">PTNStorage</a> with sepcified storage file.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithStorageFile:(NSString *)<em>fname</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fname</em></dt>
+			<dd><p>Name of storage file. If nil, PTN_DEFAULT_PARAMS_FILE is used</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes an instance of <a href="PTNStorage.html">PTNStorage</a> with sepcified storage file.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerDefaults" title="registerDefaults"></a>
+	<h3 class="subsubtitle method-title">registerDefaults</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dictionary of default settings loaded from file</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)registerDefaults</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dictionary of default settings loaded from file</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetDefaults" title="resetDefaults"></a>
+	<h3 class="subsubtitle method-title">resetDefaults</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Restire default values from file</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)resetDefaults</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Restire default values from file</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveBool:forKey:" title="saveBool:forKey:"></a>
+	<h3 class="subsubtitle method-title">saveBool:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves boolean</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)saveBool:(bool)<em>param</em> forKey:(NSString *)<em>key</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Setting value</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>Setting name</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Saves boolean</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveFloat:forKey:" title="saveFloat:forKey:"></a>
+	<h3 class="subsubtitle method-title">saveFloat:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves float value</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)saveFloat:(float)<em>param</em> forKey:(NSString *)<em>key</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Setting value</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>Setting name</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Saves float value</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveInt:forKey:" title="saveInt:forKey:"></a>
+	<h3 class="subsubtitle method-title">saveInt:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves int value</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)saveInt:(int)<em>param</em> forKey:(NSString *)<em>key</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Setting value</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>Setting name</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Saves int value</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveParam:forKey:" title="saveParam:forKey:"></a>
+	<h3 class="subsubtitle method-title">saveParam:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves setting</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)saveParam:(id)<em>param</em> forKey:(NSString *)<em>key</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>param</em></dt>
+			<dd><p>Setting value</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>Setting name</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Saves setting</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveParams" title="saveParams"></a>
+	<h3 class="subsubtitle method-title">saveParams</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Save current settings to file on disk</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)saveParams</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Save current settings to file on disk</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAppEndedNormally:" title="setAppEndedNormally:"></a>
+	<h3 class="subsubtitle method-title">setAppEndedNormally:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets application end flag when ther was no crash</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setAppEndedNormally:(BOOL)<em>terminationFlag</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets application end flag when ther was no crash</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wasAppEndedNormally" title="wasAppEndedNormally"></a>
+	<h3 class="subsubtitle method-title">wasAppEndedNormally</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates whether application was ended normally or crahsed
+It gets checked on storage intialization, if flag is set to NO, PTNStorageAppCrashedNotification gets generated. Otherwise, this flag is set to NO. Upon correct app termination this flag is set to YES.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)wasAppEndedNormally</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES means application ended normally, NO means application crashed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Indicates whether application was ended normally or crahsed
+It gets checked on storage intialization, if flag is set to NO, PTNStorageAppCrashedNotification gets generated. Otherwise, this flag is set to NO. Upon correct app termination this flag is set to YES.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNStorage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Peter Gusev. All rights reserved. (Last updated: 2013-02-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

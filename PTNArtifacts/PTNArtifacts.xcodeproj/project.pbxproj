@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F37D9BA016D042AE003A09D9 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F37D9BA716D042AE003A09D9 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				F37D9BA816D042BA003A09D9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Docementation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		F307D58A162AED1400340F22 /* PTNAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = F307D589162AED0500340F22 /* PTNAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3363892166CDBB60091D62E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642B11626F4EC00D5D81B /* Foundation.framework */; };
@@ -142,7 +156,7 @@
 		F3C642C31626F52600D5D81B /* libPTNAdditions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNAdditions.a; path = "../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos/libPTNAdditions.a"; sourceTree = "<group>"; };
 		F3C642C51626F52600D5D81B /* libPTNLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNLogger.a; path = "../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos/libPTNLogger.a"; sourceTree = "<group>"; };
 		F3C642C61626F52600D5D81B /* libPTNStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTNStorage.a; path = "../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos/libPTNStorage.a"; sourceTree = "<group>"; };
-		F3DBA35216BA965A007AE152 /* NSDate+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "NSDate+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/NSDate+PTNAdditions.h"; sourceTree = "<group>"; };
+		F3DBA35216BA965A007AE152 /* NSDate+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/NSDate+PTNAdditions.h"; sourceTree = "<group>"; };
 		F3E5AB0516B8361500E09857 /* NSTimer+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimer+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/NSTimer+PTNAdditions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -359,6 +373,7 @@
 			projectRoot = "";
 			targets = (
 				F3C642AD1626F4EC00D5D81B /* PTNArtifacts */,
+				F37D9BA016D042AE003A09D9 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -422,6 +437,23 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F37D9BA816D042BA003A09D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appledoc ..\nmv Documentation ../Documentation\ntar czvf ../documentation.tar.gz ../Documentation/";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F3C642AA1626F4EC00D5D81B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -457,6 +489,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F37D9BA116D042AE003A09D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F37D9BA216D042AE003A09D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F3C642BA1626F4EC00D5D81B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -542,6 +588,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F37D9BA716D042AE003A09D9 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37D9BA116D042AE003A09D9 /* Debug */,
+				F37D9BA216D042AE003A09D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F3C642A81626F4EC00D5D81B /* Build configuration list for PBXProject "PTNArtifacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

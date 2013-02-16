@@ -1,0 +1,470 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PTNLogger Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.4 (build 703)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PTNArtifacts </a></h1>
+				<a id="developerHome" href="../index.html">Peter Gusev</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PTNLogger Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/logFrom:withLevel:withFormat:">&nbsp;&nbsp;&nbsp;&nbsp;+ logFrom:withLevel:withFormat:</option>
+	
+	<option value="//api/name/logToFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ logToFile:</option>
+	
+	<option value="//api/name/sharedLogger">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedLogger</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Class methods">Class methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logFrom:withLevel:withFormat:">logFrom:withLevel:withFormat:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logToFile:">logToFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedLogger">sharedLogger</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PTNLogger Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PTNLogger Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PTNLogger.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class is used for logging events throughout the applications on the console and (optionaly) to the log file.
+Events are logged in the following format:</p>
+
+<p><code>"["event_type"]"[code_location]":"event_info</code></p>
+
+<p><strong>For example:</strong></p>
+
+<p><code>[TRACE] [IVVideoWindowController moviePlayerLoadStateChanged:]: New player state: playthrough</code></p>
+
+<p>which means trace event in method <code>moviePlayerLoadStateChanged:</code> of class <code>IVVideoWindowController</code>.</p>
+
+<p>One should note that <em>code_location</em> is available only for TRACE and DEBUG events.</p>
+
+<p>Logging events are divided into 5 groups:</p>
+
+<ul>
+<li>Errors &ndash; represent errors</li>
+<li>Warnings &ndash; represent undesirable situations</li>
+<li>Info &ndash; normal events</li>
+<li>Debug &ndash; events used for debugging</li>
+<li>Trace &ndash; events used for tracing code during development</li>
+</ul>
+
+
+<p>Right after app initialization in <code>applicationDidFinishLaunching</code> method of app delegate, the logger should be initialized with calling <code>logToFile</code> method. After this, logging can be performed.</p>
+
+<p>For each type of event there is a macro, which simplifies calling logger:</p>
+
+<ul>
+<li><code>LOG_ERROR(...)</code></li>
+<li><code>LOG_WARN(...)</code></li>
+<li><code>LOG_INFO(...)</code></li>
+<li><code>LOG_DEBUG(...)</code></li>
+<li><code>LOG_TRACE(...)</code></li>
+</ul>
+
+
+<p>One should use macroses defined above for logging instead of direct calling <a href="#//api/name/logFrom:withLevel:withFormat:"><code>logFrom:withLevel:withFormat:</code></a> method. By using these macroses user can easily enable/disable them by defining/undefining following macroses:</p>
+
+<ul>
+<li><code>PTN_LOG_ERROR</code> &ndash; allows error logging</li>
+<li><code>PTN_LOG_WARN</code> &ndash; allows warnings logging</li>
+<li><code>PTN_LOG_INFO</code> &ndash; allows informational events logging</li>
+<li><code>PTN_LOG_DEBUG</code> &ndash; allows debug logging</li>
+<li><code>PTN_LOG_TRACE</code> &ndash; allows trace logging</li>
+</ul>
+
+
+<p>Defining/undefining macro <code>PTN_LOGGING</code> enables or disables whole logging in a module or entire project (if defined on project level). Logging for certain .m file (module) can be disabled by simplty using <code>#undef</code> directive for necessary log events.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Class methods" name="task_Class methods"></a>
+						
+<h3 class="subsubtitle task-title">Class methods</h3>
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedLogger">+&nbsp;sharedLogger</a></code>
+		<span class="tooltip"><p>Shared instance of logger</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logToFile:">+&nbsp;logToFile:</a></code>
+		<span class="tooltip"><p>Initializes logger to log into file</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logFrom:withLevel:withFormat:">+&nbsp;logFrom:withLevel:withFormat:</a></code>
+		<span class="tooltip"><p>Log formatted string with prefix and additional (code location) information</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/logFrom:withLevel:withFormat:" title="logFrom:withLevel:withFormat:"></a>
+	<h3 class="subsubtitle method-title">logFrom:withLevel:withFormat:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Log formatted string with prefix and additional (code location) information</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (void)logFrom:(NSString *)<em>location</em> withLevel:(NSString *)<em>lvl</em> withFormat:(NSString *)<em>format</em>, <em>...</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>location</em></dt>
+			<dd><p>Used for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Log formatted string with prefix and additional (code location) information</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logToFile:" title="logToFile:"></a>
+	<h3 class="subsubtitle method-title">logToFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes logger to log into file</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (void)logToFile:(NSString *)<em>aFile</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aFile</em></dt>
+			<dd><p>File name which is saved in app&rsquo;s documents direcotry and can be accessible trough iTunes (if file sharing enabled for app). In case if this parameter is nil, logging performed only to the console.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes logger to log into file</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedLogger" title="sharedLogger"></a>
+	<h3 class="subsubtitle method-title">sharedLogger</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shared instance of logger</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (PTNLogger *)sharedLogger</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Shared instance of logger</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PTNLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Peter Gusev. All rights reserved. (Last updated: 2013-02-16)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

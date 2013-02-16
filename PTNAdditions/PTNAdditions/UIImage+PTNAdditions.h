@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Contains extensions for UIImage like cropping/resizing/complex combining images
+ */
 @interface UIImage (PTNAdditions)
 /**
  * Generates new image with img2 as a base background and img1 on top of it. Img1 get scaled with scale factor and center of img1 is placed in (kx*w,ky*h) point, where w and h - width and height of img2 respectively.
