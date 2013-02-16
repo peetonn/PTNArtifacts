@@ -8,11 +8,13 @@ This project contains code artifacts that I've found re-usable during my profess
 * PTNStorage - convenient interface for storing user defaults and app parameters
 * PTNArtifacts - library which combines all above libraries 
 
-Documentation
-
 It also includes additional testing project:
 
 * PTNTestApp
+
+# Documentation
+
+Documentation in appledoc format for this project can be found in documentation.tar.gz archive.
 
 # License
 
