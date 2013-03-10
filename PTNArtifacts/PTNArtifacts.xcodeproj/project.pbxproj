@@ -595,6 +595,7 @@
 				F37D9BA216D042AE003A09D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3C642A81626F4EC00D5D81B /* Build configuration list for PBXProject "PTNArtifacts" */ = {
 			isa = XCConfigurationList;
