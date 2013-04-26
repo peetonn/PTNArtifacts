@@ -84,7 +84,8 @@ static float PTNPopupAnimationDelay = 0.;
         slideView.frame = hiddenFrame;
         slideView.hidden = NO;
         
-        [UIView animateWithDuration:PTNPopupAnimationDuration
+        if (animated)        
+            [UIView animateWithDuration:PTNPopupAnimationDuration
                               delay:PTNPopupAnimationDelay
                             options:animationOptions
                          animations:^(){
@@ -97,6 +98,8 @@ static float PTNPopupAnimationDelay = 0.;
                              if (callback)
                                  callback();
                          }];
+        else
+            slideView.frame = visibleFrame;
     }
     else
     {
@@ -105,7 +108,8 @@ static float PTNPopupAnimationDelay = 0.;
         [self bringSubviewToFront:slideView];
         slideView.frame = visibleFrame;
         
-        [UIView animateWithDuration:PTNPopupAnimationDuration
+        if (animated)
+            [UIView animateWithDuration:PTNPopupAnimationDuration
                               delay:PTNPopupAnimationDelay
                             options:animationOptions
                          animations:^(){
@@ -122,7 +126,13 @@ static float PTNPopupAnimationDelay = 0.;
                              if (callback)
                                  callback();
                          }];
-        
+        else
+        {
+            slideView.frame = hiddenFrame;
+            slideView.hidden = YES;
+            slideView.frame = initialFrame;
+            [slideView removeFromSuperview];   
+        }
     }
 }
 
