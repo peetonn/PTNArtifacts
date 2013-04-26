@@ -90,7 +90,7 @@ static float PTNPopupAnimationDelay = 0.;
                          animations:^(){
                              slideView.frame = visibleFrame;
                              
-                             if (animationBlock)
+                             if (animated && animationBlock)
                                  animationBlock();
                          }
                          completion:^(BOOL finished){
@@ -111,7 +111,7 @@ static float PTNPopupAnimationDelay = 0.;
                          animations:^(){
                              slideView.frame = hiddenFrame;
                              
-                             if (animationBlock)
+                             if (animated && animationBlock)
                                  animationBlock();
                          }
                          completion:^(BOOL finished){
