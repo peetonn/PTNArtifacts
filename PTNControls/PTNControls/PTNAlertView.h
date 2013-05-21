@@ -12,7 +12,8 @@
 
 typedef enum {
     PTNAlertViewStyleDefault = 1,
-    PTNAlertViewStyleSecureInput = 2
+    PTNAlertViewStyleSecureInput = 2,
+    PTNAlertViewStyleInput = 3
     } PTNAlertViewStyle;
 
 /**

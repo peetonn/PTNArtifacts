@@ -26,6 +26,21 @@
 		F3363893166CDBBB0091D62E /* libPTNAdditions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B081626F54800FF686B /* libPTNAdditions.a */; };
 		F3363894166CDBBB0091D62E /* libPTNLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B181626F54900FF686B /* libPTNLogger.a */; };
 		F3363895166CDBBB0091D62E /* libPTNStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B101626F54900FF686B /* libPTNStorage.a */; };
+		F35352E717481E390047CA00 /* NSDate+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3DBA35216BA965A007AE152 /* NSDate+PTNAdditions.h */; };
+		F35352E817481E390047CA00 /* PTNAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F307D589162AED0500340F22 /* PTNAlertView.h */; };
+		F35352E917481E390047CA00 /* PTNExpandableLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2C1626F63A00FF686B /* PTNExpandableLabel.h */; };
+		F35352EA17481E390047CA00 /* PTNCoverView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2B1626F60F00FF686B /* PTNCoverView.h */; };
+		F35352EB17481E390047CA00 /* PTNControls.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B2A1626F60400FF686B /* PTNControls.h */; };
+		F35352EC17481E390047CA00 /* PTNStorage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B291626F5F800FF686B /* PTNStorage.h */; };
+		F35352ED17481E390047CA00 /* PTNLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B281626F5EB00FF686B /* PTNLogger.h */; };
+		F35352EE17481E390047CA00 /* NSObject+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B241626F5DC00FF686B /* NSObject+PTNAdditions.h */; };
+		F35352EF17481E390047CA00 /* UIImage+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B251626F5DC00FF686B /* UIImage+PTNAdditions.h */; };
+		F35352F017481E390047CA00 /* NSString+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B261626F5DC00FF686B /* NSString+PTNAdditions.h */; };
+		F35352F117481E390047CA00 /* UIView+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */; };
+		F35352F217481E390047CA00 /* NSTimer+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3E5AB0516B8361500E09857 /* NSTimer+PTNAdditions.h */; };
+		F35352F317481E390047CA00 /* PTNContainerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F36CB651167C8EA70054C9E3 /* PTNContainerViewController.h */; };
+		F35352F417481E390047CA00 /* PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3863B271626F5DC00FF686B /* PTNAdditions.h */; };
+		F35352F517481E390047CA00 /* PTNArtifacts.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3C642B61626F4EC00D5D81B /* PTNArtifacts.h */; };
 		F3863B2D1626F67300FF686B /* PTNExpandableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F3863B2C1626F63A00FF686B /* PTNExpandableLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3863B2E1626F67300FF686B /* PTNCoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = F3863B2B1626F60F00FF686B /* PTNCoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3863B2F1626F67300FF686B /* PTNControls.h in Headers */ = {isa = PBXBuildFile; fileRef = F3863B2A1626F60400FF686B /* PTNControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,6 +145,33 @@
 			remoteInfo = PTNLogger;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F35352E617481E1C0047CA00 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				F35352E717481E390047CA00 /* NSDate+PTNAdditions.h in CopyFiles */,
+				F35352E817481E390047CA00 /* PTNAlertView.h in CopyFiles */,
+				F35352E917481E390047CA00 /* PTNExpandableLabel.h in CopyFiles */,
+				F35352EA17481E390047CA00 /* PTNCoverView.h in CopyFiles */,
+				F35352EB17481E390047CA00 /* PTNControls.h in CopyFiles */,
+				F35352EC17481E390047CA00 /* PTNStorage.h in CopyFiles */,
+				F35352ED17481E390047CA00 /* PTNLogger.h in CopyFiles */,
+				F35352EE17481E390047CA00 /* NSObject+PTNAdditions.h in CopyFiles */,
+				F35352EF17481E390047CA00 /* UIImage+PTNAdditions.h in CopyFiles */,
+				F35352F017481E390047CA00 /* NSString+PTNAdditions.h in CopyFiles */,
+				F35352F117481E390047CA00 /* UIView+PTNAdditions.h in CopyFiles */,
+				F35352F217481E390047CA00 /* NSTimer+PTNAdditions.h in CopyFiles */,
+				F35352F317481E390047CA00 /* PTNContainerViewController.h in CopyFiles */,
+				F35352F417481E390047CA00 /* PTNAdditions.h in CopyFiles */,
+				F35352F517481E390047CA00 /* PTNArtifacts.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F307D589162AED0500340F22 /* PTNAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNAlertView.h; path = ../../PTNControls/PTNControls/PTNAlertView.h; sourceTree = "<group>"; };
@@ -319,6 +361,7 @@
 				F3C642AA1626F4EC00D5D81B /* Sources */,
 				F3C642AB1626F4EC00D5D81B /* Frameworks */,
 				F3749E86167B5F90003BC748 /* Headers */,
+				F35352E617481E1C0047CA00 /* CopyFiles */,
 			);
 			buildRules = (
 			);
