@@ -10,8 +10,6 @@
 
 @interface NSTimer()
 
-+(void)PTNexecuteBlockWithTimer:(NSTimer*)timer;
-
 @end
 
 @implementation NSTimer (PTNAdditions)
@@ -34,7 +32,7 @@
                                   repeats:yesOrNo];
 }
 
-+(void)PTNexecuteBlockWithTimer:(NSTimer *)timer
++(void)PTNExecuteBlockWithTimer:(NSTimer *)timer
 {
     PTNTimerBlock block = [timer userInfo];
     block(timer);

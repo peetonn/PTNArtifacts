@@ -141,7 +141,7 @@
         
         [UIView animateWithDuration:self.expansionAnimationDuration
                               delay:0.
-                            options:UIViewAnimationCurveLinear
+                            options:UIViewAnimationOptionCurveLinear
                          animations:^(void){
                              CGRect newFrame = self.frame;
                              newFrame.size.height = newLabelSize.height;
