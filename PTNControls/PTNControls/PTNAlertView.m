@@ -163,7 +163,10 @@
 {
     switch (self.ptnAlertViewStyle) {
         case PTNAlertViewStyleSecureInput:
-            [self prepareSecureInpuAlertView];
+            [self prepareInpuAlertViewSecured:YES];
+            break;
+        case PTNAlertViewStyleInput:
+            [self prepareInpuAlertViewSecured:NO];
             break;
         default:
             [self prepareDefaultView];
@@ -176,10 +179,10 @@
     // nothing here yet
 }
 
--(void)prepareSecureInpuAlertView
+-(void)prepareInpuAlertViewSecured:(BOOL)isSecured
 {
     [self setupLabel];
-    [self setupInputField];
+    [self setupInputFieldSecured:isSecured];
 
     [self setAlertViewHeight];
     
@@ -220,7 +223,7 @@
     self.message = messageStubText;
 }
 
--(UIView*)setupInputField
+-(UIView*)setupInputFieldSecured:(BOOL)isSecured
 {
     self.passwordField = [[UITextField alloc] initWithFrame:CGRectMake(PTN_ALERTVIEW_TEXTFIELD_X,
                                                                        PTN_ALERTVIEW_TEXTFIELD_Y,
@@ -229,7 +232,7 @@
     self.passwordField.font = [UIFont systemFontOfSize:18];
     self.passwordField.backgroundColor = [UIColor whiteColor];
     self.passwordField.borderStyle = UITextBorderStyleBezel;
-    self.passwordField.secureTextEntry = YES;
+    self.passwordField.secureTextEntry = isSecured;
     self.passwordField.keyboardAppearance = UIKeyboardAppearanceAlert;
     self.passwordField.delegate = self;
     [self.passwordField becomeFirstResponder];
