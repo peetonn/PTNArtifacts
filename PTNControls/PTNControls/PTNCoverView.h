@@ -10,30 +10,15 @@
 
 @protocol PTNCoverViewDelegate;
 
-/**
- * General cover view for fadding out elements on background while presenting views on top of it.
- */
 @interface PTNCoverView : UIView
 
-/**
- * @name Properties
- */
-/**
- * Delegate of view
- */
 @property (nonatomic, weak) IBOutlet id<PTNCoverViewDelegate> delegate;
 
 @end
 
-/**
- * Protocol for PTNCoverView
- */
 @protocol PTNCoverViewDelegate <NSObject>
 
 @optional
-/**
- * Called upon tapping cover view
- */
 -(void)coverViewWasTapped:(PTNCoverView*)coverView;
 
 @end

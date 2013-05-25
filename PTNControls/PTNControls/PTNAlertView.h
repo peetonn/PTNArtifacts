@@ -15,9 +15,6 @@ typedef enum {
     PTNAlertViewStyleSecureInput = 2
     } PTNAlertViewStyle;
 
-/**
- * Modal alert view with optional secure text input on it. Can be used for promptimg users to enter passwords/codes in modal view. Derived from UIAlertView.
- */
 @interface PTNAlertView : UIAlertView <UITextFieldDelegate>
 {
     CGRect _lastFrame;
@@ -40,9 +37,6 @@ typedef enum {
 
 @end
 
-/**
- * Dismissal callback for PTNAlertView
- */
 typedef void(^PTNALertViewDismissalCallback)(PTNAlertView *alertView, NSString *enteredText);
 
 /**

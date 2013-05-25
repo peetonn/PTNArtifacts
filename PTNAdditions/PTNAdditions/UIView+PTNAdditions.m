@@ -84,22 +84,19 @@ static float PTNPopupAnimationDelay = 0.;
         slideView.frame = hiddenFrame;
         slideView.hidden = NO;
         
-        if (animated)        
-            [UIView animateWithDuration:PTNPopupAnimationDuration
+        [UIView animateWithDuration:PTNPopupAnimationDuration
                               delay:PTNPopupAnimationDelay
                             options:animationOptions
                          animations:^(){
                              slideView.frame = visibleFrame;
                              
-                             if (animated && animationBlock)
+                             if (animationBlock)
                                  animationBlock();
                          }
                          completion:^(BOOL finished){
                              if (callback)
                                  callback();
                          }];
-        else
-            slideView.frame = visibleFrame;
     }
     else
     {
@@ -108,14 +105,13 @@ static float PTNPopupAnimationDelay = 0.;
         [self bringSubviewToFront:slideView];
         slideView.frame = visibleFrame;
         
-        if (animated)
-            [UIView animateWithDuration:PTNPopupAnimationDuration
+        [UIView animateWithDuration:PTNPopupAnimationDuration
                               delay:PTNPopupAnimationDelay
                             options:animationOptions
                          animations:^(){
                              slideView.frame = hiddenFrame;
                              
-                             if (animated && animationBlock)
+                             if (animationBlock)
                                  animationBlock();
                          }
                          completion:^(BOOL finished){
@@ -126,13 +122,7 @@ static float PTNPopupAnimationDelay = 0.;
                              if (callback)
                                  callback();
                          }];
-        else
-        {
-            slideView.frame = hiddenFrame;
-            slideView.hidden = YES;
-            slideView.frame = initialFrame;
-            [slideView removeFromSuperview];   
-        }
+        
     }
 }
 

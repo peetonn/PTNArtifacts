@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		F37D9BA016D042AE003A09D9 /* Documentation */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = F37D9BA716D042AE003A09D9 /* Build configuration list for PBXAggregateTarget "Documentation" */;
-			buildPhases = (
-				F37D9BA816D042BA003A09D9 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Documentation;
-			productName = Docementation;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		F307D58A162AED1400340F22 /* PTNAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = F307D589162AED0500340F22 /* PTNAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3363892166CDBB60091D62E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642B11626F4EC00D5D81B /* Foundation.framework */; };
@@ -373,7 +359,6 @@
 			projectRoot = "";
 			targets = (
 				F3C642AD1626F4EC00D5D81B /* PTNArtifacts */,
-				F37D9BA016D042AE003A09D9 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -437,23 +422,6 @@
 		};
 /* End PBXReferenceProxy section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		F37D9BA816D042BA003A09D9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "appledoc ..\nmv Documentation ../Documentation\ntar czvf ../documentation.tar.gz ../Documentation/";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F3C642AA1626F4EC00D5D81B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -489,20 +457,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F37D9BA116D042AE003A09D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		F37D9BA216D042AE003A09D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		F3C642BA1626F4EC00D5D81B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -588,15 +542,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F37D9BA716D042AE003A09D9 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F37D9BA116D042AE003A09D9 /* Debug */,
-				F37D9BA216D042AE003A09D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		F3C642A81626F4EC00D5D81B /* Build configuration list for PBXProject "PTNArtifacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

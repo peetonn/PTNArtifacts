@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- * Category contains extension of NSObject class like:
- * * subscribing/unsubscribing for notifications
- * * sending notifications
+ * Category contains extension of NSObject class
  */
 @interface NSObject (PTNAdditions)
 

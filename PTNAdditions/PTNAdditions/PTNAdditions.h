@@ -13,11 +13,8 @@
 #import "NSString+PTNAdditions.h"
 #import "UIView+PTNAdditions.h"
 #import "NSTimer+PTNAdditions.h"
-#import "NSDate+PTNAdditions.h"
 
-/**
- * Contains class methods for this library
- */
+
 @interface PTNAdditions : NSObject
 
 @end

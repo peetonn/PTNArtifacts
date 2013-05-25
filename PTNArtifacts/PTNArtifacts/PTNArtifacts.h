@@ -19,10 +19,6 @@
 #import "PTNAdditions.h"
 #import "UIView+PTNAdditions.h"
 
-
-/**
- * This class have only class methods common for all libraries it is linked to.
- */
 @interface PTNArtifacts : NSObject
 
 @end

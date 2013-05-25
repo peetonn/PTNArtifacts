@@ -12,9 +12,6 @@
 #import "PTNAlertView.h"
 #import "PTNContainerViewController.h"
 
-/**
- * This class have common class methods for this library
- */
 @interface PTNControls : NSObject
 
 @end

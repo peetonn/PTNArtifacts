@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-/**
- * Contains extensions for NSString class
- */
 @interface NSString (PTNAdditions)
 
 /**
