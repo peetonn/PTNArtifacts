@@ -82,11 +82,15 @@ In case of subclassing PTNStorage one should note that overriding of `sharedStor
 
 PTNControls
 -----------
-PTNControls contains few useful UI controls such as:
+PTNControls contains few simple useful UI controls such as:
 
 - alert view with input field
 - expandable label
 - simple cover view
+
+Requirements
+=======
+Minimal deployment target - iOS 5.x.
 
 License
 =======
