@@ -18,7 +18,7 @@
 {
     return [NSTimer scheduledTimerWithTimeInterval:ti
                                             target:self
-                                          selector:@selector(PTNexecuteBlockWithTimer:)
+                                          selector:@selector(PTNExecuteBlockWithTimer:)
                                           userInfo:[block copy]
                                            repeats:yesOrNo];
 }
@@ -27,7 +27,7 @@
 {
     return [NSTimer timerWithTimeInterval:ti
                                    target:self
-                                 selector:@selector(PTNexecuteBlockWithTimer:)
+                                 selector:@selector(PTNExecuteBlockWithTimer:)
                                  userInfo:[block copy]
                                   repeats:yesOrNo];
 }
