@@ -47,7 +47,7 @@ typedef enum _PTNSlideDirectionMask {
       alignmentMask:(PTNPopupAlignmentMask)mask
           slideMask:(PTNSlideDirectionMask)slideMask
    animationOptions:(UIViewAnimationOptions)animationOptions
-     animationBlock:(void(^)())animationBlock
+     animationBlock:(void(^)(UIView *slideView))animationBlock
  completionCallback:(void (^)())callback;
 
 /**

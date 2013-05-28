@@ -11,7 +11,7 @@
 #define PTN_DEFAULT_PARAMS_FILE @"PTNDefaults"
 
 /**
- * Class for storing all necessary parameters and defaults of application
+ * Class for storing all necessary parameters and defaults of application between launches
  */
 @interface PTNStorage : NSObject {
     NSUserDefaults *_defaultParams;

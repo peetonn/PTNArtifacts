@@ -12,6 +12,7 @@
 static PTNLogger *sharedLogger;
 
 @interface PTNLogger ()
++(NSString*)getLogFile:(NSString*)file;
 -(void)log:(NSString*)str;
 -(void)setupLogFile:(NSString*)file;
 @end
@@ -60,8 +61,6 @@ static PTNLogger *sharedLogger;
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     logFile = [documentsDirectory stringByAppendingPathComponent:file];
     [@"" writeToFile:logFile atomically:NO encoding:NSUTF8StringEncoding error:NULL];
-   // f = [NSFileHandle fileHandleForUpdatingAtPath:logFile];
-    //[f seekToEndOfFile];
 }
 
 -(void)log:(NSString*)str
@@ -76,7 +75,6 @@ static PTNLogger *sharedLogger;
             f = [NSFileHandle fileHandleForUpdatingAtPath:logFile];
             [f seekToEndOfFile];
             [f writeData:[fstr dataUsingEncoding:NSUTF8StringEncoding]];
-//            [f synchronizeFile];
             [f closeFile];
         }
     }
