@@ -53,6 +53,7 @@
 		F3863C2B16283FBD00FF686B /* libPTNControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863AFF1626F54800FF686B /* libPTNControls.a */; };
 		F388064516B5760700345922 /* PTNContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F36CB651167C8EA70054C9E3 /* PTNContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F38AECEC166CD93C005AFC7F /* UIView+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F39EF4B51756BB0500A25D38 /* UIViewController+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F39EF4B01756BAFC00A25D38 /* UIViewController+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3C642B71626F4EC00D5D81B /* PTNArtifacts.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C642B61626F4EC00D5D81B /* PTNArtifacts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3C642B91626F4EC00D5D81B /* PTNArtifacts.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C642B81626F4EC00D5D81B /* PTNArtifacts.m */; };
 		F3DBA35816BA965D007AE152 /* NSDate+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DBA35216BA965A007AE152 /* NSDate+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -186,6 +187,7 @@
 		F3863B2B1626F60F00FF686B /* PTNCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNCoverView.h; path = ../../PTNControls/PTNControls/PTNCoverView.h; sourceTree = "<group>"; };
 		F3863B2C1626F63A00FF686B /* PTNExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNExpandableLabel.h; path = ../../PTNControls/PTNControls/PTNExpandableLabel.h; sourceTree = "<group>"; };
 		F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/UIView+PTNAdditions.h"; sourceTree = "<group>"; };
+		F39EF4B01756BAFC00A25D38 /* UIViewController+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIViewController+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/UIViewController+PTNAdditions.h"; sourceTree = "<group>"; };
 		F3C642AE1626F4EC00D5D81B /* libPTNArtifacts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPTNArtifacts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C642B11626F4EC00D5D81B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3C642B51626F4EC00D5D81B /* PTNArtifacts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNArtifacts-Prefix.pch"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 		F3863B231626F5C400FF686B /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				F39EF4B01756BAFC00A25D38 /* UIViewController+PTNAdditions.h */,
 				F3DBA35216BA965A007AE152 /* NSDate+PTNAdditions.h */,
 				F307D589162AED0500340F22 /* PTNAlertView.h */,
 				F3863B2C1626F63A00FF686B /* PTNExpandableLabel.h */,
@@ -343,6 +346,7 @@
 				F3863B321626F67300FF686B /* NSObject+PTNAdditions.h in Headers */,
 				F3863B331626F67300FF686B /* UIImage+PTNAdditions.h in Headers */,
 				F3863B341626F67300FF686B /* NSString+PTNAdditions.h in Headers */,
+				F39EF4B51756BB0500A25D38 /* UIViewController+PTNAdditions.h in Headers */,
 				F388064516B5760700345922 /* PTNContainerViewController.h in Headers */,
 				F3E5AB0B16B8369400E09857 /* NSTimer+PTNAdditions.h in Headers */,
 				F3863B351626F67300FF686B /* PTNAdditions.h in Headers */,

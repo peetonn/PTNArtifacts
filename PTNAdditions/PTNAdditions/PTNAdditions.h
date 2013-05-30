@@ -14,6 +14,7 @@
 #import "UIView+PTNAdditions.h"
 #import "NSTimer+PTNAdditions.h"
 #import "NSDate+PTNAdditions.h"
+#import "UIViewController+PTNAdditions.h"
 
 /**
  * Contains class methods for this library
