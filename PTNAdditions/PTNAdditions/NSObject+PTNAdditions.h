@@ -41,4 +41,13 @@
  */
 -(void)unsubscribeFromNotifications;
 
+/**
+ * Adds observer of object for specified key paths
+ */
+-(void)watchObject:(id)object forKeypaths:(NSString*)keyPath1,...;
+
+/**
+ * Removes observer of object for specified key paths
+ */
+-(void)stopWatchingObject:(id)object forKeypaths:(NSString*)keyPath1,...;
 @end
