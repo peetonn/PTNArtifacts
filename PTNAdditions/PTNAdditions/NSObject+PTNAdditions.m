@@ -53,7 +53,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void)watchObject:(id)object forKeypaths:(NSString *)keyPath1, ...
+-(void)addObserver:(id)observer forKeyPaths:(NSString *)keyPath1, ...
 {
     va_list n_list;
     va_start(n_list, keyPath1);
@@ -61,7 +61,7 @@
     NSString *keyPath = [keyPath1 copy];
     
     while (keyPath) {
-        [self addObserver:self forKeyPath:keyPath
+        [self addObserver:observer forKeyPath:keyPath
                   options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld)
                   context:nil];
         keyPath = va_arg(n_list, NSString*);
@@ -70,7 +70,7 @@
     va_end(n_list);
 }
 
--(void)stopWatchingObject:(id)object forKeypaths:(NSString*)keyPath1,...
+-(void)removeObserver:(id)observer forKeyPaths:(NSString *)keyPath1, ...
 {
     va_list n_list;
     va_start(n_list, keyPath1);
@@ -78,7 +78,7 @@
     NSString *keyPath = [keyPath1 copy];
     
     while (keyPath) {
-        [self removeObserver:self forKeyPath:keyPath];
+        [self removeObserver:observer forKeyPath:keyPath];
         keyPath = va_arg(n_list, NSString*);
     }
     

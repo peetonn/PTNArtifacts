@@ -42,12 +42,12 @@
 -(void)unsubscribeFromNotifications;
 
 /**
- * Adds observer of object for specified key paths
+ * Adds observer of object for specified key paths. Observer class need to implement  -(void)observeValueForKeyPath:ofObject:change:context: method in order to get updates. Change dictionary in this case will conatin old and new values.
  */
--(void)watchObject:(id)object forKeypaths:(NSString*)keyPath1,...;
+-(void)addObserver:(id)observer forKeyPaths:(NSString*)keyPath1,...;
 
 /**
  * Removes observer of object for specified key paths
  */
--(void)stopWatchingObject:(id)object forKeypaths:(NSString*)keyPath1,...;
+-(void)removeObserver:(id)observer forKeyPaths:(NSString*)keyPath1,...;
 @end
