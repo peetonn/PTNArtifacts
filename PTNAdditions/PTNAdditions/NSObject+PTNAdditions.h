@@ -50,4 +50,19 @@
  * Removes observer of object for specified key paths
  */
 -(void)removeObserver:(id)observer forKeyPaths:(NSString*)keyPath1,...;
+
+///**
+// * Adds block for exectution
+// */
+//-(void)dispatchBlock:(void(^)())block after:(NSTimeInterval)seconds;
+//
+///**
+// * Cancels execution of a block
+// */
+//-(void)cancelBlock:(void(^)())block;
+//
+///**
+// * Cancels all
+// */
+
 @end

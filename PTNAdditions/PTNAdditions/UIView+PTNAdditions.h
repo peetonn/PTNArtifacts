@@ -53,7 +53,7 @@ typedef enum _PTNSlideDirectionMask {
 /**
  * Presents view on top of current view
  */
--(void)viewOnTop:(UIView *)presentedView setSisible:(BOOL)setVisible;
+-(void)viewOnTop:(UIView *)presentedView setVisible:(BOOL)setVisible;
 
 
 @end
