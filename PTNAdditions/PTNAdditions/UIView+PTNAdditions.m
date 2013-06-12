@@ -136,7 +136,7 @@ static float PTNPopupAnimationDelay = 0.;
     }
 }
 
--(void)viewOnTop:(UIView *)presentedView setSisible:(BOOL)setVisible
+-(void)viewOnTop:(UIView *)presentedView setVisible:(BOOL)setVisible
 {
     // if view is to be presented and already presented or
     // if view was not presented and to be hidden - return
