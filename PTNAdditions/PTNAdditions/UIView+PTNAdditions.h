@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 typedef enum _PTNPopupAlignmentMask {
-    PTNPopupAlignmentMaskLeft = 1<<0,
-    PTNPopupAlignmentMaskRight = 1<<1,
-    PTNPopupAlignmentMaskCenter = 1<<2,
-    PTNPopupAlignmentMaskTop = 1<<3,
-    PTNPopupAlignmentMaskBottom = 1<<4,
-    } PTNPopupAlignmentMask;
+    PTNAlignmentMaskLeft = 1<<0,
+    PTNAlignmentMaskRight = 1<<1,
+    PTNAlignmentMaskCenter = 1<<2,
+    PTNAlignmentMaskTop = 1<<3,
+    PTNAlignmentMaskBottom = 1<<4,
+    } PTNAlignmentMask;
 
 typedef enum _PTNSlideDirectionMask {
     PTNSlideDirectionMaskVertical = 1<<0,
@@ -44,7 +44,7 @@ typedef enum _PTNSlideDirectionMask {
 -(void)setSlideView:(UIView *)slideView
             visible:(BOOL)setVisible
            animated:(BOOL)animated
-      alignmentMask:(PTNPopupAlignmentMask)mask
+      alignmentMask:(PTNAlignmentMask)mask
           slideMask:(PTNSlideDirectionMask)slideMask
    animationOptions:(UIViewAnimationOptions)animationOptions
      animationBlock:(void(^)(UIView *slideView))animationBlock
@@ -55,5 +55,16 @@ typedef enum _PTNSlideDirectionMask {
  */
 -(void)viewOnTop:(UIView *)presentedView setVisible:(BOOL)setVisible;
 
+//********************************************************************************
+/**
+ * @name Drawing functions
+ */
+/**
+ * Creates path with rounded cornere along the specified recttangle
+ * @param rect Rectangle which is used as a baseline for a path
+ * @param radius Corner radius
+ * @param corners Corners required to be rounded. Must be compound using left|right and top|bottom alignemnt masks. PTNAlignmentMaskMiddle is ignored.
+ */
+-(CGMutablePathRef)roundedPathForRect:(CGRect)rect radius:(CGFloat)radius corners:(PTNAlignmentMask)corners;
 
 @end

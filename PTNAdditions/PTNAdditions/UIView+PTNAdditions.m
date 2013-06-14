@@ -27,7 +27,7 @@ static float PTNPopupAnimationDelay = 0.;
 -(void)setSlideView:(UIView *)slideView
             visible:(BOOL)setVisible
            animated:(BOOL)animated
-      alignmentMask:(PTNPopupAlignmentMask)mask
+      alignmentMask:(PTNAlignmentMask)mask
           slideMask:(PTNSlideDirectionMask)slideMask 
    animationOptions:(UIViewAnimationOptions)animationOptions
      animationBlock:(void (^)(UIView *slideView))animationBlock
@@ -46,13 +46,13 @@ static float PTNPopupAnimationDelay = 0.;
     hiddenFrame.size.width = (slideMask&PTNSlideDirectionMaskHorizontal)?0:hiddenFrame.size.width;
     
     // horizontal alignment
-    if (mask & PTNPopupAlignmentMaskLeft)
+    if (mask & PTNAlignmentMaskLeft)
     {
         visibleFrame.origin.x = 0;
     }
     else
     {
-        if (mask & PTNPopupAlignmentMaskRight)
+        if (mask & PTNAlignmentMaskRight)
         {
             visibleFrame.origin.x = self.frame.size.width - slideView.frame.size.width;
             hiddenFrame.origin.x = (slideMask & PTNSlideDirectionMaskHorizontal)?self.frame.size.width:visibleFrame.origin.x;            
@@ -65,7 +65,7 @@ static float PTNPopupAnimationDelay = 0.;
         
     }
     // vertical alignment
-    if (mask & PTNPopupAlignmentMaskTop)
+    if (mask & PTNAlignmentMaskTop)
     {
         visibleFrame.origin.y = 0;
         hiddenFrame.origin.y = (slideMask&PTNSlideDirectionMaskVertical)?0:visibleFrame.origin.y;
@@ -154,4 +154,22 @@ static float PTNPopupAnimationDelay = 0.;
         [presentedView removeFromSuperview];
 }
 
+-(CGMutablePathRef)roundedPathForRect:(CGRect)rect radius:(CGFloat)radius corners:(PTNAlignmentMask)corners
+
+{
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, CGRectGetMidX(rect), CGRectGetMinY(rect));
+
+    // draw top right corner
+    CGPathAddArcToPoint(path, NULL, CGRectGetMaxX(rect), CGRectGetMinY(rect), CGRectGetMaxX(rect), CGRectGetMaxY(rect), radius*(corners&PTNAlignmentMaskTop && corners&PTNAlignmentMaskRight));
+    // draw bottom right corner
+    CGPathAddArcToPoint(path, NULL, CGRectGetMaxX(rect), CGRectGetMaxY(rect), CGRectGetMinX(rect), CGRectGetMaxY(rect), radius*(corners&PTNAlignmentMaskBottom && corners&PTNAlignmentMaskRight));
+    // draw bottom left corner
+    CGPathAddArcToPoint(path, NULL, CGRectGetMinX(rect), CGRectGetMaxY(rect), CGRectGetMinX(rect), CGRectGetMinY(rect), radius*(corners&PTNAlignmentMaskBottom && corners&PTNAlignmentMaskLeft));
+    // draw top left corner
+    CGPathAddArcToPoint(path, NULL, CGRectGetMinX(rect), CGRectGetMinY(rect), CGRectGetMaxX(rect), CGRectGetMinY(rect), radius*(corners&PTNAlignmentMaskTop && corners&PTNAlignmentMaskLeft));
+    CGPathCloseSubpath(path);
+    
+    return path;
+}
 @end
