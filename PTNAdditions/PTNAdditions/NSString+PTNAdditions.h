@@ -18,4 +18,9 @@
  */
 -(NSString*)strippedURLString;
 
+/**
+ * Checks, whether string is a valid e-mail
+ */
+-(BOOL)isValidEmail;
+
 @end
