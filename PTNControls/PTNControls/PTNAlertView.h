@@ -44,7 +44,7 @@ typedef enum {
 /**
  * Dismissal callback for PTNAlertView
  */
-typedef void(^PTNALertViewDismissalCallback)(PTNAlertView *alertView, NSString *enteredText);
+typedef void(^PTNALertViewDismissalCallback)(PTNAlertView *alertView, NSString *enteredText, NSInteger buttonIndex);
 
 /**
  * Class wrapper for PTNAlertView with style PTNAlertViewStyleSecureInput
@@ -58,14 +58,22 @@ typedef void(^PTNALertViewDismissalCallback)(PTNAlertView *alertView, NSString *
 /**
  * @name Class methods
  */
-
++(void)showAlertViewWithTitle:(NSString *)title
+                       message:(NSString *)message
+                         style:(PTNAlertViewStyle)style
+          andDismissalCallback:(PTNALertViewDismissalCallback)clbck
+             cancelButtonTitle:(NSString *)cancelButtonTitle
+             otherButtonTitle:(NSString*)title1;
 /**
  * Shows alert view
  */
 -(void)showAlertViewWithTitle:(NSString *)title
                       message:(NSString *)message
-            cancelButtonTitle:(NSString *)cancelButtonTitle
                         style:(PTNAlertViewStyle)style
-         andDismissalCallback:(PTNALertViewDismissalCallback)clbck;
+         andDismissalCallback:(PTNALertViewDismissalCallback)clbck
+            cancelButtonTitle:(NSString *)cancelButtonTitle
+             otherButtonTitle:(NSString*)title1;
+
+
 
 @end

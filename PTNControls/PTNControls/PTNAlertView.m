@@ -258,17 +258,34 @@ static PTNInputAlertViewController *currentAlertViewController;
 
 @implementation PTNInputAlertViewController
 
--(void)showAlertViewWithTitle:(NSString *)title
++(void)showAlertViewWithTitle:(NSString *)title
                       message:(NSString *)message
-            cancelButtonTitle:(NSString *)cancelButtonTitle
                         style:(PTNAlertViewStyle)style
          andDismissalCallback:(PTNALertViewDismissalCallback)clbck
+            cancelButtonTitle:(NSString *)cancelButtonTitle
+            otherButtonTitle:(NSString*)title1
+{
+    currentAlertViewController = [[PTNInputAlertViewController alloc] init];
+    [currentAlertViewController showAlertViewWithTitle:title
+                                               message:message
+                                                 style:style
+                                  andDismissalCallback:clbck
+                                     cancelButtonTitle:cancelButtonTitle
+                                      otherButtonTitle:title1];
+}
+
+-(void)showAlertViewWithTitle:(NSString *)title
+                      message:(NSString *)message
+                        style:(PTNAlertViewStyle)style
+         andDismissalCallback:(PTNALertViewDismissalCallback)clbck
+            cancelButtonTitle:(NSString *)cancelButtonTitle
+            otherButtonTitle:(NSString*)title1
 {
     _alertView = [[PTNAlertView alloc] initWithTitle:title
                                                           message:message
                                                          delegate:self
                                                 cancelButtonTitle:cancelButtonTitle
-                                                otherButtonTitles: nil];
+                                                otherButtonTitles: title1,nil];
     
     _callback = clbck;
     _alertView.ptnAlertViewStyle = style;
@@ -285,13 +302,13 @@ static PTNInputAlertViewController *currentAlertViewController;
 // UIAlertViewDelegate
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    [self invokeCallback];
+    [self invokeCallback:buttonIndex];
 }
 
 // private
--(void)invokeCallback
+-(void)invokeCallback:(NSInteger)buttonIndex
 {
-    _callback(_alertView, _alertView.enteredText);
+    _callback(_alertView, _alertView.enteredText,buttonIndex);
     currentAlertViewController = nil;
 }
 

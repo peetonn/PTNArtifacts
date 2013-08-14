@@ -99,7 +99,15 @@ static float PTNPopupAnimationDelay = 0.;
                                  callback();
                          }];
         else
+        {
+            if (animationBlock)
+                animationBlock(slideView);
+            
             slideView.frame = visibleFrame;
+            
+            if (callback)
+                callback();
+        }
     }
     else
     {
@@ -128,10 +136,16 @@ static float PTNPopupAnimationDelay = 0.;
                          }];
         else
         {
+            if (animationBlock)
+                animationBlock(slideView);
+            
             slideView.frame = hiddenFrame;
             slideView.hidden = YES;
             slideView.frame = initialFrame;
-            [slideView removeFromSuperview];   
+            [slideView removeFromSuperview];
+            
+            if (callback)
+                callback();
         }
     }
 }
