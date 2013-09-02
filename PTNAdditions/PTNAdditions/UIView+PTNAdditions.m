@@ -150,7 +150,7 @@ static float PTNPopupAnimationDelay = 0.;
     }
 }
 
--(void)viewOnTop:(UIView *)presentedView setVisible:(BOOL)setVisible
+-(void)viewOnTop:(UIView *)presentedView setVisible:(BOOL)setVisible animate:(BOOL)animate
 {
     // if view is to be presented and already presented or
     // if view was not presented and to be hidden - return
@@ -163,12 +163,37 @@ static float PTNPopupAnimationDelay = 0.;
         presentedView.frame = self.bounds;
         [self addSubview:presentedView];
         [self bringSubviewToFront:presentedView];
+        
+        if (animate)
+        {
+            presentedView.alpha = 0.;
+            [UIView animateWithDuration:PTNPopupAnimationDuration
+                             animations:^(){
+                                 presentedView.alpha = 1.;
+                             }];
+        }
+        
     }
     else
-        [presentedView removeFromSuperview];
+    {
+        if (animate)
+        {
+            [UIView animateWithDuration:PTNPopupAnimationDuration
+                             animations:^(){
+                                 presentedView.alpha = 0.;
+                             }
+                             completion:^(BOOL finished){
+                                 [presentedView removeFromSuperview];
+                             }];
+        }
+        else
+            [presentedView removeFromSuperview];
+    }
 }
 
--(CGMutablePathRef)roundedPathForRect:(CGRect)rect radius:(CGFloat)radius corners:(PTNAlignmentMask)corners
+-(CGMutablePathRef)roundedPathForRect:(CGRect)rect
+                               radius:(CGFloat)radius
+                              corners:(PTNAlignmentMask)corners
 
 {
     CGMutablePathRef path = CGPathCreateMutable();
@@ -185,5 +210,51 @@ static float PTNPopupAnimationDelay = 0.;
     CGPathCloseSubpath(path);
     
     return path;
+}
+
+-(void)drawText:(NSString *)text
+           font:(UIFont *)textFont
+      withColor:(UIColor *)textColor
+     centeredAt:(CGPoint)centerPoint
+{
+    CGContextRef con = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(con);
+    CGContextSetFillColorWithColor(con, textColor.CGColor);
+    
+    CGSize textSize = [text sizeWithFont:textFont];
+    
+    [text drawAtPoint:CGPointMake(centerPoint.x-textSize.width/2.,centerPoint.y-textSize.height/2.)
+             withFont:textFont];
+    CGContextRestoreGState(con);
+}
+-(void)drawLinearGradientForPath:(CGPathRef)path
+                       withColors:(NSArray *)colors
+                      startPoint:(CGPoint)start
+                        endPoint:(CGPoint)end
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(context);
+    
+    __block CGFloat *colorsComponents = malloc(4*colors.count*sizeof(CGFloat));
+    [colors enumerateObjectsUsingBlock:^(UIColor *color, NSUInteger idx, BOOL *stop){
+        [color getRed:&colorsComponents[4*idx]
+                green:&colorsComponents[4*idx+1]
+                 blue:&colorsComponents[4*idx+2]
+                alpha:&colorsComponents[4*idx+3]];
+    }];
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, colorsComponents, NULL, colors.count);
+    
+    CGContextAddPath(context, path);
+    CGContextClip(context);
+    
+    CGContextDrawLinearGradient(context, gradient, start, end, 0);
+    
+    free(colorsComponents);
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorSpace);
+    
+    CGContextRestoreGState(context);
 }
 @end

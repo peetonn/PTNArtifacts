@@ -53,7 +53,7 @@ typedef enum _PTNSlideDirectionMask {
 /**
  * Presents view on top of current view
  */
--(void)viewOnTop:(UIView *)presentedView setVisible:(BOOL)setVisible;
+-(void)viewOnTop:(UIView *)presentedView setVisible:(BOOL)setVisible animate:(BOOL)animate;
 
 //********************************************************************************
 /**
@@ -65,6 +65,28 @@ typedef enum _PTNSlideDirectionMask {
  * @param radius Corner radius
  * @param corners Corners required to be rounded. Must be compound using left|right and top|bottom alignemnt masks. PTNAlignmentMaskMiddle is ignored.
  */
--(CGMutablePathRef)roundedPathForRect:(CGRect)rect radius:(CGFloat)radius corners:(PTNAlignmentMask)corners;
+-(CGMutablePathRef)roundedPathForRect:(CGRect)rect
+                               radius:(CGFloat)radius
+                              corners:(PTNAlignmentMask)corners;
+/**
+ * Draws text on view with the center at specified point
+ * @param text Text to be drawn
+ * @param textFont Font of a text to be drawn
+ * @param textColot Color of a text to be drawn
+ * @param centerPoint Center point at which text will be placed
+ * @details If shadow for text needed, set it with CGContextSetShadowWithColor call before calling this method. Shadow will be applied upon drawing.
+ */
+-(void)drawText:(NSString*)text
+           font:(UIFont*)textFont
+      withColor:(UIColor*)textColor
+     centeredAt:(CGPoint)centerPoint;
+/**
+ * Draws simple linear gradient for given path with array of colors from starting point to ending point
+ */
+-(void)drawLinearGradientForPath:(CGPathRef)path
+                       withColors:(NSArray *)colors
+                      startPoint:(CGPoint)start
+                        endPoint:(CGPoint)end;
+
 
 @end

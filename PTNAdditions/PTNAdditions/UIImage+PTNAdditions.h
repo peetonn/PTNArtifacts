@@ -32,4 +32,9 @@
  */
 +(UIImage*)imageWithImage:(UIImage *)image aspectScaledAndCropped:(CGRect)rect;
 
+/**
+ * Returns new image rotated
+ */
++(UIImage*)imageWithImage:(UIImage*)image rotatedByDegrees:(CGFloat)degrees;
+
 @end

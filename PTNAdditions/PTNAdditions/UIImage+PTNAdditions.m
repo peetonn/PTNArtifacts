@@ -61,4 +61,35 @@
     
     return [UIImage imageWithImage:[UIImage imageWithImage:image scaledToSize:resizeSize] croppedToRect:rect];
 }
+
++(UIImage*)imageWithImage:(UIImage*)image rotatedByDegrees:(CGFloat)degrees
+{
+    // calculate the size of the rotated view's containing box for our drawing space
+//    UIView *rotatedViewBox = [[UIView alloc] initWithFrame:CGRectMake(0,0,image.size.width, image.size.height)];
+//    CGAffineTransform t = CGAffineTransformMakeRotation(M_PI*degrees/180.);
+//    rotatedViewBox.transform = t;
+//    CGSize rotatedSize = rotatedViewBox.frame.size;
+    
+    // Create the bitmap context
+    CGFloat scale = image.scale;//[[UIScreen mainScreen] scale];
+    CGSize imageSize = CGSizeMake(image.size.width, image.size.height);
+    
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, image.scale);
+    CGContextRef bitmap = UIGraphicsGetCurrentContext();
+    
+    // Move the origin to the middle of the image so we will rotate and scale around the center.
+    CGContextTranslateCTM(bitmap, imageSize.width/2, imageSize.height/2);
+    
+    //   // Rotate the image context
+    CGContextRotateCTM(bitmap, M_PI*degrees/180.);
+    
+    // Now, draw the rotated/scaled image into the context
+    CGContextScaleCTM(bitmap, 1.0, -1.0);
+    CGContextDrawImage(bitmap, CGRectMake(-imageSize.width / 2, -imageSize.height / 2, imageSize.width, imageSize.height), [image CGImage]);
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 @end
