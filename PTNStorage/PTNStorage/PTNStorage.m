@@ -29,6 +29,16 @@ static PTNStorage *sharedStorage = nil;
 }
 
 #pragma mark - initialization and memory management
+-(id)init
+{
+    if ((self = [super init]))
+    {
+        _defaultParams = [NSUserDefaults standardUserDefaults];
+    }
+    
+    return self;
+}
+
 - (id)initWithStorageFile:(NSString *)fname
 {
     if ((self = [super init]))
