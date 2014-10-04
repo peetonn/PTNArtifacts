@@ -63,6 +63,12 @@ static PTNStorage *sharedStorage = nil;
     return (PTNStorage*)[super sharedInstance];
 }
 
++(dispatch_once_t)token
+{
+    static dispatch_once_t token;
+    return token;
+}
+
 +(PTNStorage *)sharedInstanceWithDefaultsFile:(NSString *)defaultFile
 {
     [self sharedInstance]->_storageFile = [defaultFile copy];
