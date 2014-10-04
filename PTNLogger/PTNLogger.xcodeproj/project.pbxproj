@@ -8,38 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F398665A15BD13740077A0F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F398665915BD13740077A0F0 /* Foundation.framework */; };
-		F398666815BD13740077A0F0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F398666715BD13740077A0F0 /* SenTestingKit.framework */; };
-		F398666A15BD13740077A0F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F398666915BD13740077A0F0 /* UIKit.framework */; };
-		F398666B15BD13740077A0F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F398665915BD13740077A0F0 /* Foundation.framework */; };
-		F398666E15BD13740077A0F0 /* libPTNLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F398665615BD13740077A0F0 /* libPTNLogger.a */; };
-		F398667415BD13740077A0F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F398667215BD13740077A0F0 /* InfoPlist.strings */; };
-		F398667715BD13740077A0F0 /* PTNLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F398667615BD13740077A0F0 /* PTNLoggerTests.m */; };
 		F398668615BD13C00077A0F0 /* PTNLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F398668415BD13C00077A0F0 /* PTNLogger.h */; };
 		F398668715BD13C00077A0F0 /* PTNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F398668515BD13C00077A0F0 /* PTNLogger.m */; };
-		F398668815BD13C00077A0F0 /* PTNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F398668515BD13C00077A0F0 /* PTNLogger.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F398666C15BD13740077A0F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F398664D15BD13730077A0F0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F398665515BD13740077A0F0;
-			remoteInfo = PTNLogger;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F398665615BD13740077A0F0 /* libPTNLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPTNLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F398665915BD13740077A0F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F398665D15BD13740077A0F0 /* PTNLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNLogger-Prefix.pch"; sourceTree = "<group>"; };
-		F398666615BD13740077A0F0 /* PTNLoggerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTNLoggerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F398666715BD13740077A0F0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F398666915BD13740077A0F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F398667115BD13740077A0F0 /* PTNLoggerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTNLoggerTests-Info.plist"; sourceTree = "<group>"; };
-		F398667315BD13740077A0F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F398667515BD13740077A0F0 /* PTNLoggerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNLoggerTests.h; sourceTree = "<group>"; };
-		F398667615BD13740077A0F0 /* PTNLoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNLoggerTests.m; sourceTree = "<group>"; };
 		F398668415BD13C00077A0F0 /* PTNLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNLogger.h; sourceTree = "<group>"; };
 		F398668515BD13C00077A0F0 /* PTNLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,17 +31,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F398666215BD13740077A0F0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F398666815BD13740077A0F0 /* SenTestingKit.framework in Frameworks */,
-				F398666A15BD13740077A0F0 /* UIKit.framework in Frameworks */,
-				F398666B15BD13740077A0F0 /* Foundation.framework in Frameworks */,
-				F398666E15BD13740077A0F0 /* libPTNLogger.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,7 +38,6 @@
 			isa = PBXGroup;
 			children = (
 				F398665B15BD13740077A0F0 /* PTNLogger */,
-				F398666F15BD13740077A0F0 /* PTNLoggerTests */,
 				F398665815BD13740077A0F0 /* Frameworks */,
 				F398665715BD13740077A0F0 /* Products */,
 			);
@@ -81,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				F398665615BD13740077A0F0 /* libPTNLogger.a */,
-				F398666615BD13740077A0F0 /* PTNLoggerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,25 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				F398665D15BD13740077A0F0 /* PTNLogger-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F398666F15BD13740077A0F0 /* PTNLoggerTests */ = {
-			isa = PBXGroup;
-			children = (
-				F398667515BD13740077A0F0 /* PTNLoggerTests.h */,
-				F398667615BD13740077A0F0 /* PTNLoggerTests.m */,
-				F398667015BD13740077A0F0 /* Supporting Files */,
-			);
-			path = PTNLoggerTests;
-			sourceTree = "<group>";
-		};
-		F398667015BD13740077A0F0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F398667115BD13740077A0F0 /* PTNLoggerTests-Info.plist */,
-				F398667215BD13740077A0F0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,25 +111,6 @@
 			productReference = F398665615BD13740077A0F0 /* libPTNLogger.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		F398666515BD13740077A0F0 /* PTNLoggerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F398667D15BD13740077A0F0 /* Build configuration list for PBXNativeTarget "PTNLoggerTests" */;
-			buildPhases = (
-				F398666115BD13740077A0F0 /* Sources */,
-				F398666215BD13740077A0F0 /* Frameworks */,
-				F398666315BD13740077A0F0 /* Resources */,
-				F398666415BD13740077A0F0 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F398666D15BD13740077A0F0 /* PBXTargetDependency */,
-			);
-			name = PTNLoggerTests;
-			productName = PTNLoggerTests;
-			productReference = F398666615BD13740077A0F0 /* PTNLoggerTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,36 +133,11 @@
 			projectRoot = "";
 			targets = (
 				F398665515BD13740077A0F0 /* PTNLogger */,
-				F398666515BD13740077A0F0 /* PTNLoggerTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		F398666315BD13740077A0F0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F398667415BD13740077A0F0 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXShellScriptBuildPhase section */
-		F398666415BD13740077A0F0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 		F398669415BD31FA0077A0F0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -260,35 +162,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F398666115BD13740077A0F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F398667715BD13740077A0F0 /* PTNLoggerTests.m in Sources */,
-				F398668815BD13C00077A0F0 /* PTNLogger.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F398666D15BD13740077A0F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F398665515BD13740077A0F0 /* PTNLogger */;
-			targetProxy = F398666C15BD13740077A0F0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F398667215BD13740077A0F0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F398667315BD13740077A0F0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F398667815BD13740077A0F0 /* Debug */ = {
@@ -371,36 +245,6 @@
 			};
 			name = Release;
 		};
-		F398667E15BD13740077A0F0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PTNLogger/PTNLogger-Prefix.pch";
-				INFOPLIST_FILE = "PTNLoggerTests/PTNLoggerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		F398667F15BD13740077A0F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PTNLogger/PTNLogger-Prefix.pch";
-				INFOPLIST_FILE = "PTNLoggerTests/PTNLoggerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,15 +262,6 @@
 			buildConfigurations = (
 				F398667B15BD13740077A0F0 /* Debug */,
 				F398667C15BD13740077A0F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F398667D15BD13740077A0F0 /* Build configuration list for PBXNativeTarget "PTNLoggerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F398667E15BD13740077A0F0 /* Debug */,
-				F398667F15BD13740077A0F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

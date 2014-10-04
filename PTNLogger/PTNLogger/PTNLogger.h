@@ -6,8 +6,10 @@
 //  Copyright (c) 2012 peetonn inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef __ptnlogger_h__
+#define __ptnlogger_h__
 
+#import <Foundation/Foundation.h>
 
 #if !defined(PTN_LOGGING)
 #undef PTN_LOG_TRACE
@@ -116,3 +118,5 @@
 +(void)logFrom:(NSString*)location withLevel:(NSString*)lvl withFormat:(NSString*)format,...;
 
 @end
+
+#endif

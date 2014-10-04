@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 peetonn inc. All rights reserved.
 //
 
+#ifndef __ptnsingleton_h__
+#define __ptnsingleton_h__
+
 #import <Foundation/Foundation.h>
 
 /**
@@ -42,3 +45,5 @@
 +(PTNSingleton*)createInstance;
 
 @end
+
+#endif

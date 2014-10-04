@@ -6,8 +6,11 @@
 //  Copyright (c) 2012 peetonn inc. All rights reserved.
 //
 
+#ifndef __ptnstorage_h__
+#define __ptnstorage_h__
+
 #import <Foundation/Foundation.h>
-#import <PTNAdditions/PTNAdditions.h>
+#import <PTNAdditions/PTNSingleton.h>
 
 #define PTN_DEFAULT_PARAMS_FILE @"PTNDefaults"
 
@@ -94,3 +97,5 @@
 -(void)setAppEndedNormally:(BOOL)terminationFlag;
 
 @end
+
+#endif
