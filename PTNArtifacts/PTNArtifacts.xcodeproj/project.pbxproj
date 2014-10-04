@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		AFE6A67919DFB428009D6600 /* PTNSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE6A67819DFB428009D6600 /* PTNSingleton.h */; };
+		AFE6A67919DFB428009D6600 /* PTNSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE6A67819DFB428009D6600 /* PTNSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F307D58A162AED1400340F22 /* PTNAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = F307D589162AED0500340F22 /* PTNAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3363892166CDBB60091D62E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642B11626F4EC00D5D81B /* Foundation.framework */; };
 		F3363893166CDBBB0091D62E /* libPTNAdditions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B081626F54800FF686B /* libPTNAdditions.a */; };
@@ -97,26 +97,12 @@
 			remoteGlobalIDString = F3FF809715BEC17300D1684B;
 			remoteInfo = PTNStorage;
 		};
-		F3863B111626F54900FF686B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3C642C01626F51100D5D81B /* PTNStorage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F3FF80A715BEC17400D1684B;
-			remoteInfo = PTNStorageTests;
-		};
 		F3863B171626F54900FF686B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3C642C11626F51100D5D81B /* PTNLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F398665615BD13740077A0F0;
 			remoteInfo = PTNLogger;
-		};
-		F3863B191626F54900FF686B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3C642C11626F51100D5D81B /* PTNLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F398666615BD13740077A0F0;
-			remoteInfo = PTNLoggerTests;
 		};
 		F3863B1B1626F55C00FF686B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -244,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				F3863B101626F54900FF686B /* libPTNStorage.a */,
-				F3863B121626F54900FF686B /* PTNStorageTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,7 +238,6 @@
 			isa = PBXGroup;
 			children = (
 				F3863B181626F54900FF686B /* libPTNLogger.a */,
-				F3863B1A1626F54900FF686B /* PTNLoggerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,7 +330,6 @@
 				F3863B2F1626F67300FF686B /* PTNControls.h in Headers */,
 				F3863B301626F67300FF686B /* PTNStorage.h in Headers */,
 				F3863B311626F67300FF686B /* PTNLogger.h in Headers */,
-				AFE6A67919DFB428009D6600 /* PTNSingleton.h in Headers */,
 				F3863B321626F67300FF686B /* NSObject+PTNAdditions.h in Headers */,
 				F3863B331626F67300FF686B /* UIImage+PTNAdditions.h in Headers */,
 				F3863B341626F67300FF686B /* NSString+PTNAdditions.h in Headers */,
@@ -355,6 +338,7 @@
 				F3E5AB0B16B8369400E09857 /* NSTimer+PTNAdditions.h in Headers */,
 				F3863B351626F67300FF686B /* PTNAdditions.h in Headers */,
 				F3DBA35816BA965D007AE152 /* NSDate+PTNAdditions.h in Headers */,
+				AFE6A67919DFB428009D6600 /* PTNSingleton.h in Headers */,
 				F3C642B71626F4EC00D5D81B /* PTNArtifacts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,25 +449,11 @@
 			remoteRef = F3863B0F1626F54900FF686B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F3863B121626F54900FF686B /* PTNStorageTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PTNStorageTests.octest;
-			remoteRef = F3863B111626F54900FF686B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		F3863B181626F54900FF686B /* libPTNLogger.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libPTNLogger.a;
 			remoteRef = F3863B171626F54900FF686B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F3863B1A1626F54900FF686B /* PTNLoggerTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PTNLoggerTests.octest;
-			remoteRef = F3863B191626F54900FF686B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
