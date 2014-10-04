@@ -29,12 +29,6 @@ static PTNStorage *sharedStorage = nil;
 }
 
 #pragma mark - initialization and memory management
-// prohibit explicit initialization
-- (id)init
-{
-    return nil;
-}
-
 - (id)initWithStorageFile:(NSString *)fname
 {
     if ((self = [super init]))
