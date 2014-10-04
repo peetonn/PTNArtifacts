@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <PTNAdditions/PTNAdditions.h>
 
 #define PTN_DEFAULT_PARAMS_FILE @"PTNDefaults"
 
 /**
  * Class for storing all necessary parameters and defaults of application between launches
  */
-@interface PTNStorage : NSObject {
+@interface PTNStorage : PTNSingleton
+{
     NSUserDefaults *_defaultParams;
     NSString *_storageFile;
 }
@@ -26,29 +28,17 @@
 @property (nonatomic, readonly) NSDictionary *defaults;
 
 /////////////////////////////////////////////////////////////////////////
-/// @name Initialization
-/////////////////////////////////////////////////////////////////////////
-/**
- * Initializes an instance of PTNStorage with sepcified storage file. 
- * @param fname Name of storage file. If nil, PTN_DEFAULT_PARAMS_FILE is used
- */
-- (id)initWithStorageFile:(NSString*)fname;
-
-/////////////////////////////////////////////////////////////////////////
 /// @name Instance methods
 /////////////////////////////////////////////////////////////////////////
 /**
- * Returns shared instance of IVStorageController
+ * Returns shared instance of PTNStorageController
  */
-+(PTNStorage*)sharedStorageController;
++(PTNStorage*)sharedInstance;
 /**
- * Saves shared storage controller instance
+ * Returns shared instance of PTNStorageController initialized with
+ * specified defaults file
  */
-+(void)setSharedStorageController:(PTNStorage*)aStorage;
-/**
- * Checks whether shared storage was previously initialized
- */
-+(BOOL)isSharedStorageControllerInitialized;
++(PTNStorage*)sharedInstanceWithDefaultsFile:(NSString*)defaultFile;
 /**
  * Dictionary of default settings loaded from file
  */

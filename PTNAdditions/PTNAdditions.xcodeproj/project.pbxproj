@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFE6A67619DFB40C009D6600 /* PTNSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE6A67419DFB40C009D6600 /* PTNSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFE6A67719DFB40C009D6600 /* PTNSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6A67519DFB40C009D6600 /* PTNSingleton.m */; };
 		F328E65C1626AD0A00654270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD2D15DA329400F1725F /* Foundation.framework */; };
 		F328E6611626AD0A00654270 /* PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F328E6601626AD0A00654270 /* PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F328E6631626AD0A00654270 /* PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F328E6621626AD0A00654270 /* PTNAdditions.m */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AFE6A67419DFB40C009D6600 /* PTNSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNSingleton.h; sourceTree = "<group>"; };
+		AFE6A67519DFB40C009D6600 /* PTNSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNSingleton.m; sourceTree = "<group>"; };
 		F328E65B1626AD0A00654270 /* libPTNAdditions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPTNAdditions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F328E6601626AD0A00654270 /* PTNAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNAdditions.h; sourceTree = "<group>"; };
 		F328E6621626AD0A00654270 /* PTNAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNAdditions.m; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				F3DBA34E16BA960B007AE152 /* NSDate+PTNAdditions.m */,
 				F39EF4AC1756A95F00A25D38 /* UIViewController+PTNAdditions.h */,
 				F39EF4AD1756A95F00A25D38 /* UIViewController+PTNAdditions.m */,
+				AFE6A67419DFB40C009D6600 /* PTNSingleton.h */,
+				AFE6A67519DFB40C009D6600 /* PTNSingleton.m */,
 			);
 			path = PTNAdditions;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				F328E6611626AD0A00654270 /* PTNAdditions.h in Headers */,
 				F39EF4AE1756A95F00A25D38 /* UIViewController+PTNAdditions.h in Headers */,
 				F3E5AB0216B8346300E09857 /* NSTimer+PTNAdditions.h in Headers */,
+				AFE6A67619DFB40C009D6600 /* PTNSingleton.h in Headers */,
 				F3DBA34F16BA960B007AE152 /* NSDate+PTNAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +267,7 @@
 			name = PTNAdditionsTests;
 			productName = PTNAdditionsTests;
 			productReference = F3F7FD4215DA329400F1725F /* PTNAdditionsTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -329,6 +336,7 @@
 				F3E5AB0316B8346300E09857 /* NSTimer+PTNAdditions.m in Sources */,
 				F3DBA35016BA960B007AE152 /* NSDate+PTNAdditions.m in Sources */,
 				F39EF4AF1756A95F00A25D38 /* UIViewController+PTNAdditions.m in Sources */,
+				AFE6A67719DFB40C009D6600 /* PTNSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

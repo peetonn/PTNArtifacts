@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>031FBAF8-67AD-43B7-A273-FB202DCED6DF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PTNBlocks</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>89BA901AC2833AA0D6BFC2B76FC2A7037980785F</key>
+		<string>https://github.com/peetonn/PTNArtifacts.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PTNBlocks.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>89BA901AC2833AA0D6BFC2B76FC2A7037980785F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/peetonn/PTNArtifacts.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>89BA901AC2833AA0D6BFC2B76FC2A7037980785F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89BA901AC2833AA0D6BFC2B76FC2A7037980785F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PTNArtifacts</string>
+		</dict>
+	</array>
+</dict>
+</plist>

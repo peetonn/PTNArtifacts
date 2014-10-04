@@ -29,6 +29,12 @@ static PTNStorage *sharedStorage = nil;
 }
 
 #pragma mark - initialization and memory management
+// prohibit explicit initialization
+- (id)init
+{
+    return nil;
+}
+
 - (id)initWithStorageFile:(NSString *)fname
 {
     if ((self = [super init]))
@@ -43,21 +49,24 @@ static PTNStorage *sharedStorage = nil;
 }
 
 #pragma mark - public methods
-+(PTNStorage*)sharedStorageController
++(PTNSingleton *)createInstance
 {
-    if (!sharedStorage)    
-        sharedStorage = [[PTNStorage alloc] initWithStorageFile:PTN_DEFAULT_PARAMS_FILE];
+    return [[PTNStorage alloc] init];
+}
+
++(PTNStorage *)sharedInstance
+{
+    return (PTNStorage*)[super sharedInstance];
+}
+
++(PTNStorage *)sharedInstanceWithDefaultsFile:(NSString *)defaultFile
+{
+    [self sharedInstance]->_storageFile = [defaultFile copy];
+    [[self sharedInstance] registerDefaults];
     
-    return sharedStorage;
+    return [self sharedInstance];
 }
-+(void)setSharedStorageController:(PTNStorage*)aStorage
-{
-    sharedStorage = aStorage;
-}
-+(BOOL)isSharedStorageControllerInitialized
-{
-    return (sharedStorage != nil);
-}
+
 // register application default parameters - saved in PTN_DEFAULT_PARAMS_FILE file
 -(void)registerDefaults
 {    

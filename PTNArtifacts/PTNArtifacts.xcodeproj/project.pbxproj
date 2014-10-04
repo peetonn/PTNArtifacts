@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		AFE6A67919DFB428009D6600 /* PTNSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE6A67819DFB428009D6600 /* PTNSingleton.h */; };
 		F307D58A162AED1400340F22 /* PTNAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = F307D589162AED0500340F22 /* PTNAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3363892166CDBB60091D62E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C642B11626F4EC00D5D81B /* Foundation.framework */; };
 		F3363893166CDBBB0091D62E /* libPTNAdditions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3863B081626F54800FF686B /* libPTNAdditions.a */; };
@@ -175,6 +176,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AFE6A67819DFB428009D6600 /* PTNSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNSingleton.h; path = ../../PTNAdditions/PTNAdditions/PTNSingleton.h; sourceTree = "<group>"; };
 		F307D589162AED0500340F22 /* PTNAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNAlertView.h; path = ../../PTNControls/PTNControls/PTNAlertView.h; sourceTree = "<group>"; };
 		F36CB651167C8EA70054C9E3 /* PTNContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTNContainerViewController.h; path = ../../PTNControls/PTNControls/PTNContainerViewController.h; sourceTree = "<group>"; };
 		F3863B241626F5DC00FF686B /* NSObject+PTNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PTNAdditions.h"; path = "../../PTNAdditions/PTNAdditions/NSObject+PTNAdditions.h"; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				F38AEC8B166CD6B8005AFC7F /* UIView+PTNAdditions.h */,
 				F3E5AB0516B8361500E09857 /* NSTimer+PTNAdditions.h */,
 				F36CB651167C8EA70054C9E3 /* PTNContainerViewController.h */,
+				AFE6A67819DFB428009D6600 /* PTNSingleton.h */,
 				F3863B271626F5DC00FF686B /* PTNAdditions.h */,
 			);
 			name = Headers;
@@ -343,6 +346,7 @@
 				F3863B2F1626F67300FF686B /* PTNControls.h in Headers */,
 				F3863B301626F67300FF686B /* PTNStorage.h in Headers */,
 				F3863B311626F67300FF686B /* PTNLogger.h in Headers */,
+				AFE6A67919DFB428009D6600 /* PTNSingleton.h in Headers */,
 				F3863B321626F67300FF686B /* NSObject+PTNAdditions.h in Headers */,
 				F3863B331626F67300FF686B /* UIImage+PTNAdditions.h in Headers */,
 				F3863B341626F67300FF686B /* NSString+PTNAdditions.h in Headers */,
