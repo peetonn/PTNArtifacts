@@ -36,10 +36,10 @@
  *          return [[MySingleton alloc] init];
  *      }
  *
- *      +(dispatch_once_t)token
+ *      static dispatch_once_t token;
+ *      +(dispatch_once_t*)token
  *      {
- *          static dispatch_once_t token;
- *          return token;
+ *          return &token;
  *      }
  *      @end
  *      ...
@@ -53,7 +53,7 @@
 +(PTNSingleton*)sharedInstance;
 +(PTNSingleton*)createInstance;
 
-+(dispatch_once_t)token;
++(dispatch_once_t*)token;
 
 @end
 
