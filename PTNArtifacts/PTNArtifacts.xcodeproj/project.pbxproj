@@ -138,7 +138,7 @@
 		F35352E617481E1C0047CA00 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
+			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 				F35352E717481E390047CA00 /* NSDate+PTNAdditions.h in CopyFiles */,
@@ -578,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/PTNArtifacts.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNArtifacts/PTNArtifacts-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
@@ -598,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/PTNArtifacts.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNArtifacts/PTNArtifacts-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (

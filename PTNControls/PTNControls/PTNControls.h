@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PTNExpandableLabel.h"
-#import "PTNCoverView.h"
-#import "PTNAlertView.h"
-#import "PTNContainerViewController.h"
+#import <PTNControls/PTNExpandableLabel.h>
+#import <PTNControls/PTNCoverView.h>
+#import <PTNControls/PTNAlertView.h>
+#import <PTNControls/PTNContainerViewController.h>
 
 /**
  * This class have common class methods for this library

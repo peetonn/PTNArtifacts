@@ -10,14 +10,28 @@
 
 @implementation PTNSingleton
 
+static PTNSingleton *singleton = nil;
+static NSMutableDictionary *ClassToSingletonMap;
+
 +(PTNSingleton*)sharedInstance
 {
-    static PTNSingleton *singleton = nil;
-    dispatch_once_t *onceToken = [[self class] token];
+    {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            ClassToSingletonMap = [[NSMutableDictionary alloc] init];
+        });
+    }
     
-    dispatch_once(onceToken, ^{
-        singleton = [[self class] createInstance];
-    });
+    __block PTNSingleton *singleton = ClassToSingletonMap[NSStringFromClass([self class])];
+    
+    if (!singleton)
+    {
+        dispatch_once_t* onceToken = [[self class] token];
+        dispatch_once(onceToken, ^{
+            singleton = [[[self class] alloc] init];
+            ClassToSingletonMap[NSStringFromClass([self class])] = singleton;
+        });
+    }
     
     return singleton;
 }

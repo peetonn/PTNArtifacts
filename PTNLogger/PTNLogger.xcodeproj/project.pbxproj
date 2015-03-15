@@ -7,10 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8C9A371AB4E093001D0B8D /* PTNLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F398668415BD13C00077A0F0 /* PTNLogger.h */; };
 		F398665A15BD13740077A0F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F398665915BD13740077A0F0 /* Foundation.framework */; };
-		F398668615BD13C00077A0F0 /* PTNLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F398668415BD13C00077A0F0 /* PTNLogger.h */; };
 		F398668715BD13C00077A0F0 /* PTNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F398668515BD13C00077A0F0 /* PTNLogger.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF8C9A361AB4E082001D0B8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AF8C9A371AB4E093001D0B8D /* PTNLogger.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F398665615BD13740077A0F0 /* libPTNLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPTNLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,17 +94,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		F398665415BD13740077A0F0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F398668615BD13C00077A0F0 /* PTNLogger.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		F398665515BD13740077A0F0 /* PTNLogger */ = {
 			isa = PBXNativeTarget;
@@ -100,7 +102,7 @@
 				F398669415BD31FA0077A0F0 /* ShellScript */,
 				F398665215BD13740077A0F0 /* Sources */,
 				F398665315BD13740077A0F0 /* Frameworks */,
-				F398665415BD13740077A0F0 /* Headers */,
+				AF8C9A361AB4E082001D0B8D /* CopyFiles */,
 			);
 			buildRules = (
 			);

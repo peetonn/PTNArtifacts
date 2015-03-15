@@ -8,14 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NSObject+PTNAdditions.h"
-#import "UIImage+PTNAdditions.h"
-#import "NSString+PTNAdditions.h"
-#import "UIView+PTNAdditions.h"
-#import "NSTimer+PTNAdditions.h"
-#import "NSDate+PTNAdditions.h"
-#import "UIViewController+PTNAdditions.h"
-#import "PTNSingleton.h"
+#ifndef __ptnadditions_h__
+#define __ptnadditions_h__
+
+#import <PTNAdditions/NSObject+PTNAdditions.h>
+#import <PTNAdditions/UIImage+PTNAdditions.h>
+#import <PTNAdditions/NSString+PTNAdditions.h>
+#import <PTNAdditions/UIView+PTNAdditions.h>
+#import <PTNAdditions/NSTimer+PTNAdditions.h>
+#import <PTNAdditions/NSDate+PTNAdditions.h>
+#import <PTNAdditions/UIViewController+PTNAdditions.h>
+#import <PTNAdditions/PTNSingleton.h>
 
 /**
  * Contains class methods for this library
@@ -23,3 +26,5 @@
 @interface PTNAdditions : NSObject
 
 @end
+
+#endif

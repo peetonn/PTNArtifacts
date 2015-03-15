@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8C9A3A1AB4E163001D0B8D /* PTNStorage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3FF809F15BEC17300D1684B /* PTNStorage.h */; };
 		F3FF809B15BEC17300D1684B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF809A15BEC17300D1684B /* Foundation.framework */; };
 		F3FF80A115BEC17300D1684B /* PTNStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FF80A015BEC17300D1684B /* PTNStorage.m */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,19 @@
 			remoteInfo = PTNAdditionsTests;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF8C9A381AB4E155001D0B8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AF8C9A3A1AB4E163001D0B8D /* PTNStorage.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F328E68A1626B4EA00654270 /* PTNAdditions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTNAdditions.xcodeproj; path = ../PTNAdditions/PTNAdditions.xcodeproj; sourceTree = "<group>"; };
@@ -117,16 +131,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		F3FF809515BEC17300D1684B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		F3FF809615BEC17300D1684B /* PTNStorage */ = {
 			isa = PBXNativeTarget;
@@ -135,7 +139,7 @@
 				F3173DD5166E347400EDD533 /* ShellScript */,
 				F3FF809315BEC17300D1684B /* Sources */,
 				F3FF809415BEC17300D1684B /* Frameworks */,
-				F3FF809515BEC17300D1684B /* Headers */,
+				AF8C9A381AB4E155001D0B8D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -288,6 +292,11 @@
 				DSTROOT = /tmp/PTNStorage.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNStorage/PTNStorage-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos\"",
@@ -305,7 +314,11 @@
 				DSTROOT = /tmp/PTNStorage.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNStorage/PTNStorage-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/PTNBlocks-gmmbsqswewomxffzdzwvfluskfho/Build/Products/Debug-iphoneos\"",

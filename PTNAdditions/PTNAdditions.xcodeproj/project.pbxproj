@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFE6A67619DFB40C009D6600 /* PTNSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE6A67419DFB40C009D6600 /* PTNSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF8C9A261AB4DFF9001D0B8D /* UIView+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F38AEC87166CCE22005AFC7F /* UIView+PTNAdditions.h */; };
+		AF8C9A271AB4DFF9001D0B8D /* NSObject+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3F7FD5A15DA32BA00F1725F /* NSObject+PTNAdditions.h */; };
+		AF8C9A281AB4DFF9001D0B8D /* UIImage+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F395A0D915F4F42B001122F6 /* UIImage+PTNAdditions.h */; };
+		AF8C9A291AB4DFF9001D0B8D /* NSString+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3B3150D15FF4BAC008AA3B7 /* NSString+PTNAdditions.h */; };
+		AF8C9A2A1AB4DFF9001D0B8D /* PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F328E6601626AD0A00654270 /* PTNAdditions.h */; };
+		AF8C9A2B1AB4DFF9001D0B8D /* NSTimer+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3E5AB0016B8346300E09857 /* NSTimer+PTNAdditions.h */; };
+		AF8C9A2C1AB4DFF9001D0B8D /* NSDate+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3DBA34D16BA960B007AE152 /* NSDate+PTNAdditions.h */; };
+		AF8C9A2D1AB4DFF9001D0B8D /* UIViewController+PTNAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F39EF4AC1756A95F00A25D38 /* UIViewController+PTNAdditions.h */; };
+		AF8C9A2E1AB4DFF9001D0B8D /* PTNSingleton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFE6A67419DFB40C009D6600 /* PTNSingleton.h */; };
 		AFE6A67719DFB40C009D6600 /* PTNSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6A67519DFB40C009D6600 /* PTNSingleton.m */; };
 		F328E65C1626AD0A00654270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD2D15DA329400F1725F /* Foundation.framework */; };
-		F328E6611626AD0A00654270 /* PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F328E6601626AD0A00654270 /* PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F328E6631626AD0A00654270 /* PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F328E6621626AD0A00654270 /* PTNAdditions.m */; };
-		F328E6671626AE5D00654270 /* NSObject+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F7FD5A15DA32BA00F1725F /* NSObject+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F328E6681626AE5D00654270 /* UIImage+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F395A0D915F4F42B001122F6 /* UIImage+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F328E6691626AE5D00654270 /* NSString+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B3150D15FF4BAC008AA3B7 /* NSString+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F328E66A1626AEC100654270 /* NSObject+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F7FD5B15DA32BA00F1725F /* NSObject+PTNAdditions.m */; };
 		F328E66B1626AEC100654270 /* UIImage+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F395A0DA15F4F42B001122F6 /* UIImage+PTNAdditions.m */; };
 		F328E66C1626AEC100654270 /* NSString+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3150E15FF4BAC008AA3B7 /* NSString+PTNAdditions.m */; };
 		F38AEC89166CCE22005AFC7F /* UIView+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F38AEC88166CCE22005AFC7F /* UIView+PTNAdditions.m */; };
-		F38AECC8166CD7A6005AFC7F /* UIView+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F38AEC87166CCE22005AFC7F /* UIView+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F39EF4AE1756A95F00A25D38 /* UIViewController+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F39EF4AC1756A95F00A25D38 /* UIViewController+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F39EF4AF1756A95F00A25D38 /* UIViewController+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F39EF4AD1756A95F00A25D38 /* UIViewController+PTNAdditions.m */; };
-		F3DBA34F16BA960B007AE152 /* NSDate+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DBA34D16BA960B007AE152 /* NSDate+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3DBA35016BA960B007AE152 /* NSDate+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DBA34E16BA960B007AE152 /* NSDate+PTNAdditions.m */; };
-		F3E5AB0216B8346300E09857 /* NSTimer+PTNAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E5AB0016B8346300E09857 /* NSTimer+PTNAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3E5AB0316B8346300E09857 /* NSTimer+PTNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E5AB0116B8346300E09857 /* NSTimer+PTNAdditions.m */; };
 		F3F7FD4415DA329400F1725F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD4315DA329400F1725F /* SenTestingKit.framework */; };
 		F3F7FD4515DA329400F1725F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7FD2B15DA329400F1725F /* UIKit.framework */; };
@@ -32,6 +32,27 @@
 		F3F7FD4E15DA329400F1725F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3F7FD4C15DA329400F1725F /* InfoPlist.strings */; };
 		F3F7FD5115DA329400F1725F /* PTNAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F7FD5015DA329400F1725F /* PTNAdditionsTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF8C9A251AB4DFCC001D0B8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AF8C9A261AB4DFF9001D0B8D /* UIView+PTNAdditions.h in CopyFiles */,
+				AF8C9A271AB4DFF9001D0B8D /* NSObject+PTNAdditions.h in CopyFiles */,
+				AF8C9A281AB4DFF9001D0B8D /* UIImage+PTNAdditions.h in CopyFiles */,
+				AF8C9A291AB4DFF9001D0B8D /* NSString+PTNAdditions.h in CopyFiles */,
+				AF8C9A2A1AB4DFF9001D0B8D /* PTNAdditions.h in CopyFiles */,
+				AF8C9A2B1AB4DFF9001D0B8D /* NSTimer+PTNAdditions.h in CopyFiles */,
+				AF8C9A2C1AB4DFF9001D0B8D /* NSDate+PTNAdditions.h in CopyFiles */,
+				AF8C9A2D1AB4DFF9001D0B8D /* UIViewController+PTNAdditions.h in CopyFiles */,
+				AF8C9A2E1AB4DFF9001D0B8D /* PTNSingleton.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AFE6A67419DFB40C009D6600 /* PTNSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNSingleton.h; sourceTree = "<group>"; };
@@ -214,25 +235,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		F3338DA6166E2C9A00985882 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F38AECC8166CD7A6005AFC7F /* UIView+PTNAdditions.h in Headers */,
-				F328E6671626AE5D00654270 /* NSObject+PTNAdditions.h in Headers */,
-				F328E6681626AE5D00654270 /* UIImage+PTNAdditions.h in Headers */,
-				F328E6691626AE5D00654270 /* NSString+PTNAdditions.h in Headers */,
-				F328E6611626AD0A00654270 /* PTNAdditions.h in Headers */,
-				F39EF4AE1756A95F00A25D38 /* UIViewController+PTNAdditions.h in Headers */,
-				F3E5AB0216B8346300E09857 /* NSTimer+PTNAdditions.h in Headers */,
-				AFE6A67619DFB40C009D6600 /* PTNSingleton.h in Headers */,
-				F3DBA34F16BA960B007AE152 /* NSDate+PTNAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		F328E65A1626AD0A00654270 /* PTNAdditions */ = {
 			isa = PBXNativeTarget;
@@ -240,7 +242,7 @@
 			buildPhases = (
 				F328E6571626AD0A00654270 /* Sources */,
 				F328E6581626AD0A00654270 /* Frameworks */,
-				F3338DA6166E2C9A00985882 /* Headers */,
+				AF8C9A251AB4DFCC001D0B8D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -379,6 +381,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNAdditions/PTNAdditions-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,6 +403,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNAdditions/PTNAdditions-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

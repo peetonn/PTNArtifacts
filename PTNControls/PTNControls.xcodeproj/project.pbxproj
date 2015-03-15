@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F307D587162ACFBD00340F22 /* PTNAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = F307D585162ACFBD00340F22 /* PTNAlertView.h */; };
+		AF8C9A301AB4E04D001D0B8D /* PTNControls.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F32363FA15DB816C00AFF591 /* PTNControls.h */; };
+		AF8C9A311AB4E054001D0B8D /* PTNContainerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F36CB64D167C8E4C0054C9E3 /* PTNContainerViewController.h */; };
+		AF8C9A321AB4E05D001D0B8D /* PTNAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F307D585162ACFBD00340F22 /* PTNAlertView.h */; };
+		AF8C9A331AB4E05D001D0B8D /* PTNCoverView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F323641C15DB81BB00AFF591 /* PTNCoverView.h */; };
+		AF8C9A341AB4E05D001D0B8D /* PTNExpandableLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F35D48A516248D8B004D7165 /* PTNExpandableLabel.h */; };
+		AF8C9A351AB4E05D001D0B8D /* NSAttributedString+PTNAttributes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3B3159815FFA927008AA3B7 /* NSAttributedString+PTNAttributes.h */; };
 		F307D588162ACFBD00340F22 /* PTNAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F307D586162ACFBD00340F22 /* PTNAlertView.m */; };
-		F313E47D165878C40032F7D3 /* NSAttributedString+PTNAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B3159815FFA927008AA3B7 /* NSAttributedString+PTNAttributes.h */; };
 		F32363F615DB816C00AFF591 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32363F515DB816C00AFF591 /* Foundation.framework */; };
 		F32363FC15DB816C00AFF591 /* PTNControls.m in Sources */ = {isa = PBXBuildFile; fileRef = F32363FB15DB816C00AFF591 /* PTNControls.m */; };
 		F323640415DB816C00AFF591 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F323640315DB816C00AFF591 /* SenTestingKit.framework */; };
@@ -18,10 +22,6 @@
 		F323641015DB816C00AFF591 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F323640E15DB816C00AFF591 /* InfoPlist.strings */; };
 		F323641315DB816C00AFF591 /* PTNControlsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F323641215DB816C00AFF591 /* PTNControlsTests.m */; };
 		F323641F15DB81BB00AFF591 /* PTNCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F323641D15DB81BB00AFF591 /* PTNCoverView.m */; };
-		F328E5EC1626A22700654270 /* PTNControls.h in Headers */ = {isa = PBXBuildFile; fileRef = F32363FA15DB816C00AFF591 /* PTNControls.h */; settings = {ATTRIBUTES = (); }; };
-		F328E5F01626A31300654270 /* PTNCoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = F323641C15DB81BB00AFF591 /* PTNCoverView.h */; settings = {ATTRIBUTES = (); }; };
-		F328E5F11626A31300654270 /* PTNExpandableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D48A516248D8B004D7165 /* PTNExpandableLabel.h */; settings = {ATTRIBUTES = (); }; };
-		F36CB64F167C8E4C0054C9E3 /* PTNContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F36CB64D167C8E4C0054C9E3 /* PTNContainerViewController.h */; };
 		F36CB650167C8E4C0054C9E3 /* PTNContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F36CB64E167C8E4C0054C9E3 /* PTNContainerViewController.m */; };
 		F3B3153115FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */; };
 		F3B3153215FF9B5C008AA3B7 /* PTNExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3152F15FF9B5C008AA3B7 /* PTNExpandableLabel.m */; };
@@ -29,6 +29,24 @@
 		F3B3159B15FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3159915FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m */; };
 		F3B3159C15FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3159915FFA927008AA3B7 /* NSAttributedString+PTNAttributes.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF8C9A2F1AB4E035001D0B8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AF8C9A301AB4E04D001D0B8D /* PTNControls.h in CopyFiles */,
+				AF8C9A321AB4E05D001D0B8D /* PTNAlertView.h in CopyFiles */,
+				AF8C9A331AB4E05D001D0B8D /* PTNCoverView.h in CopyFiles */,
+				AF8C9A341AB4E05D001D0B8D /* PTNExpandableLabel.h in CopyFiles */,
+				AF8C9A351AB4E05D001D0B8D /* NSAttributedString+PTNAttributes.h in CopyFiles */,
+				AF8C9A311AB4E054001D0B8D /* PTNContainerViewController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F307D585162ACFBD00340F22 /* PTNAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNAlertView.h; sourceTree = "<group>"; };
@@ -191,22 +209,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		F32363F015DB816C00AFF591 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F313E47D165878C40032F7D3 /* NSAttributedString+PTNAttributes.h in Headers */,
-				F307D587162ACFBD00340F22 /* PTNAlertView.h in Headers */,
-				F328E5EC1626A22700654270 /* PTNControls.h in Headers */,
-				F328E5F01626A31300654270 /* PTNCoverView.h in Headers */,
-				F328E5F11626A31300654270 /* PTNExpandableLabel.h in Headers */,
-				F36CB64F167C8E4C0054C9E3 /* PTNContainerViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		F32363F115DB816C00AFF591 /* PTNControls */ = {
 			isa = PBXNativeTarget;
@@ -214,7 +216,7 @@
 			buildPhases = (
 				F32363EE15DB816C00AFF591 /* Sources */,
 				F32363EF15DB816C00AFF591 /* Frameworks */,
-				F32363F015DB816C00AFF591 /* Headers */,
+				AF8C9A2F1AB4E035001D0B8D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -357,6 +359,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -379,6 +386,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -393,13 +405,17 @@
 				DSTROOT = /tmp/PTNControls.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNControls/PTNControls-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = /include/private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
-				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -409,13 +425,17 @@
 				DSTROOT = /tmp/PTNControls.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNControls/PTNControls-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = /include/private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
-				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
